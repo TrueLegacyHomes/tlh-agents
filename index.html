@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Realtor Partners | True Legacy Homes</title>
+  <meta name="description" content="Partner with True Legacy Homes. All-cash buyer for life-transition properties. Exclusive pre-renovation inventory for your buyers. San Diego · Orange County · Los Angeles.">
+  <link rel="icon" type="image/png" href="https://www.truelegacyhomes.com/images/tlhICON.webp">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/tailwind.min.css">
+
+  <style>
+    html { scroll-behavior: smooth; }
+    [id] { scroll-margin-top: 80px; }
+    body { font-family: 'Inter', sans-serif; }
+    h1, h2, h3, h4 { font-family: 'Source Serif Pro', Georgia, serif; color: #132b42; }
+    .hero-text { color: #fff !important; }
+    .hp-field { position: absolute; left: -9999px; top: -9999px; opacity: 0; height: 0; overflow: hidden; pointer-events: none; }
+    .track-card { transition: box-shadow 0.2s, border-color 0.2s; }
+    .track-card:hover { box-shadow: 0 8px 32px rgba(19,43,66,0.12); }
+    .nav-link { transition: color 0.15s; }
+    .nav-link:hover { color: #158c8b; }
+    #mobile-menu { display: none; }
+    #mobile-menu.open { display: block; }
+  </style>
+</head>
+<body class="bg-white text-gray-800 text-lg leading-loose antialiased">
+
+  <!-- ─── NAV ─────────────────────────────────────────────────────────── -->
+  <header class="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex items-center justify-between h-16">
+
+        <!-- Logo -->
+        <a href="/" class="flex items-center gap-3">
+          <img src="https://www.truelegacyhomes.com/images/tlhICON.webp" alt="True Legacy Homes" class="h-8 w-8">
+          <div class="leading-tight">
+            <div class="text-sm font-bold text-tlh-dark" style="font-family:'Source Serif Pro',Georgia,serif;">True Legacy Homes</div>
+            <div class="text-xs text-tlh-teal font-semibold tracking-widest uppercase">Realtor Partners</div>
+          </div>
+        </a>
+
+        <!-- Desktop nav -->
+        <nav class="hidden md:flex items-center gap-8">
+          <a href="/renovations/" class="nav-link text-sm font-semibold text-gray-700">Current Properties</a>
+          <a href="#buy-box" class="nav-link text-sm font-semibold text-gray-700">Buy Box</a>
+          <a href="#tracks" class="nav-link text-sm font-semibold text-gray-700">How It Works</a>
+          <a href="#contact" class="nav-link text-sm font-semibold text-gray-700">Contact</a>
+        </nav>
+
+        <!-- CTA -->
+        <div class="hidden md:flex items-center gap-3">
+          <a href="tel:6194501702" class="text-sm font-semibold text-tlh-dark hover:text-tlh-teal transition">(619) 450-1702</a>
+          <a href="#contact" class="bg-tlh-teal text-white px-5 py-2 rounded-[5px] text-sm font-semibold hover:bg-tlh-teal-dark transition">Send Us a Property</a>
+        </div>
+
+        <!-- Mobile menu button -->
+        <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-600" aria-label="Menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+
+      <!-- Mobile menu -->
+      <div id="mobile-menu" class="pb-4 border-t border-gray-100 mt-0">
+        <nav class="flex flex-col gap-1 pt-3">
+          <a href="/renovations/" class="text-sm font-semibold text-gray-700 py-2 hover:text-tlh-teal">Current Properties</a>
+          <a href="#buy-box" class="text-sm font-semibold text-gray-700 py-2 hover:text-tlh-teal">Buy Box</a>
+          <a href="#tracks" class="text-sm font-semibold text-gray-700 py-2 hover:text-tlh-teal">How It Works</a>
+          <a href="#contact" class="text-sm font-semibold text-gray-700 py-2 hover:text-tlh-teal">Contact</a>
+          <a href="tel:6194501702" class="text-sm font-semibold text-tlh-teal py-2">(619) 450-1702</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ─── HERO ─────────────────────────────────────────────────────────── -->
+    <section class="relative overflow-hidden" style="min-height: 580px;">
+      <div class="absolute inset-0">
+        <img src="https://www.truelegacyhomes.com/renovations/1812-highland/images/highland-kitchen.webp"
+             alt="True Legacy Homes renovation" class="w-full h-full object-cover object-center" fetchpriority="high">
+        <div class="absolute inset-0" style="background: linear-gradient(to right, rgba(19,43,66,0.94) 0%, rgba(19,43,66,0.88) 50%, rgba(19,43,66,0.45) 100%);"></div>
+      </div>
+
+      <div class="relative z-10 max-w-6xl mx-auto px-4 py-28 md:py-36">
+        <div class="max-w-xl">
+          <p class="text-sm font-semibold tracking-widest uppercase text-tlh-teal mb-5">Realtor Partner Program</p>
+          <h1 class="hero-text text-4xl md:text-5xl font-bold mb-5 leading-tight" style="font-family:'Source Serif Pro',Georgia,serif;">
+            We help your clients<br>in life transition.
+          </h1>
+          <p class="text-xl text-white/80 mb-8 leading-relaxed">
+            All-cash acquisitions for sellers who aren't ready for the market. Exclusive pre-renovation access for buyer's agents. Two ways to work together.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-3">
+            <a href="#tracks" class="bg-tlh-teal text-white px-8 py-[15px] rounded-[5px] text-base font-semibold hover:bg-tlh-teal-dark transition inline-flex items-center justify-center gap-2">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              See How It Works
+            </a>
+            <a href="#contact" class="border-2 border-white text-white px-8 py-[15px] rounded-[5px] text-base font-semibold hover:bg-white hover:text-tlh-dark transition inline-flex items-center justify-center gap-2">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              Send Us a Property
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── STATS BAR ─────────────────────────────────────────────────────── -->
+    <section class="bg-tlh-dark text-white py-5">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          <div>
+            <div class="text-2xl font-bold text-tlh-teal" style="font-family:'Source Serif Pro',Georgia,serif;">$1M–$3M</div>
+            <div class="text-sm text-white/60 font-medium mt-0.5">Buy Box</div>
+          </div>
+          <div>
+            <div class="text-2xl font-bold text-tlh-teal" style="font-family:'Source Serif Pro',Georgia,serif;">All Cash</div>
+            <div class="text-sm text-white/60 font-medium mt-0.5">No Contingencies</div>
+          </div>
+          <div>
+            <div class="text-2xl font-bold text-tlh-teal" style="font-family:'Source Serif Pro',Georgia,serif;">24–48hr</div>
+            <div class="text-sm text-white/60 font-medium mt-0.5">Offer Decision</div>
+          </div>
+          <div>
+            <div class="text-2xl font-bold text-tlh-teal" style="font-family:'Source Serif Pro',Georgia,serif;">SD · OC · LA</div>
+            <div class="text-sm text-white/60 font-medium mt-0.5">Active Markets</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── TWO TRACKS ─────────────────────────────────────────────────────── -->
+    <section id="tracks" class="py-16 md:py-24 bg-white">
+      <div class="max-w-6xl mx-auto px-4">
+
+        <div class="text-center mb-14">
+          <p class="text-sm font-semibold tracking-widest uppercase text-tlh-teal mb-3">Two Ways to Work Together</p>
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">Pick your track.</h2>
+          <p class="text-gray-500 text-lg max-w-2xl mx-auto">Whether your client needs a quiet exit or your buyer wants first access to something special — there's a path here.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+
+          <!-- Track 1 -->
+          <div class="track-card rounded-[5px] border-2 border-gray-100 p-8 md:p-10" style="background-color:#f9f4eb;">
+            <div class="w-12 h-12 bg-tlh-dark rounded-full flex items-center justify-center mb-6">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+            </div>
+            <p class="text-sm font-semibold tracking-widest uppercase text-tlh-teal mb-2">Track 1</p>
+            <h3 class="text-2xl md:text-3xl font-bold mb-4">"I have a property."</h3>
+            <p class="text-gray-700 mb-6 leading-relaxed">
+              Your client has an inherited home, a property full of contents, or a situation where a quiet, fast close beats the circus of going public. We're all-cash, no contingencies, and we close fast.
+            </p>
+            <p class="text-gray-700 mb-8 leading-relaxed font-medium italic">
+              "Before pricing and staging, this house needs a contents plan." — We help agents say that with confidence.
+            </p>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-start gap-3 text-gray-700">
+                <svg class="w-5 h-5 text-tlh-teal mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                All-cash, no contingencies, fast close
+              </li>
+              <li class="flex items-start gap-3 text-gray-700">
+                <svg class="w-5 h-5 text-tlh-teal mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Offer decision within 24–48 hours
+              </li>
+              <li class="flex items-start gap-3 text-gray-700">
+                <svg class="w-5 h-5 text-tlh-teal mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Estate contents handled — we clear everything
+              </li>
+              <li class="flex items-start gap-3 text-gray-700">
+                <svg class="w-5 h-5 text-tlh-teal mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                1–1.5% referral fee at close
+              </li>
+            </ul>
+            <a href="#contact" class="inline-flex items-center gap-2 bg-tlh-dark text-white px-8 py-[15px] rounded-[5px] text-base font-semibold hover:bg-gray-800 transition">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              Send Us a Property
+            </a>
+          </div>
+
+          <!-- Track 2 -->
+          <div class="track-card rounded-[5px] border-2 border-tlh-teal p-8 md:p-10" style="background-color:#f9f4eb;">
+            <div class="w-12 h-12 bg-tlh-teal rounded-full flex items-center justify-center mb-6">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+            </div>
+            <p class="text-sm font-semibold tracking-widest uppercase text-tlh-teal mb-2">Track 2</p>
+            <h3 class="text-2xl md:text-3xl font-bold mb-4">"I have a buyer."</h3>
+            <p class="text-gray-700 mb-6 leading-relaxed">
+              Your buyer is frustrated by bidding wars. Give them exclusive first look at our properties before they hit MLS — before renovation even begins. They choose finishes and buy below finished value.
+            </p>
+            <p class="text-gray-700 mb-8 leading-relaxed font-medium italic">
+              "Exclusive first look before it hits the market." — Your buyer gets to choose finishes and buy below finished value.
+            </p>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-start gap-3 text-gray-700">
+                <svg class="w-5 h-5 text-tlh-teal mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Preview before MLS — exclusive access
+              </li>
+              <li class="flex items-start gap-3 text-gray-700">
+                <svg class="w-5 h-5 text-tlh-teal mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Buy below finished ARV
+              </li>
+              <li class="flex items-start gap-3 text-gray-700">
+                <svg class="w-5 h-5 text-tlh-teal mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                2.5–3% co-op commission
+              </li>
+              <li class="flex items-start gap-3 text-gray-700">
+                <svg class="w-5 h-5 text-tlh-teal mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                +0.5% bonus for pre-renovation close
+              </li>
+            </ul>
+            <a href="/renovations/" class="inline-flex items-center gap-2 bg-tlh-teal text-white px-8 py-[15px] rounded-[5px] text-base font-semibold hover:bg-tlh-teal-dark transition">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+              See Current Properties
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── CURRENT PROPERTIES ────────────────────────────────────────────── -->
+    <section class="py-16 md:py-20" style="background-color:#f9f4eb;">
+      <div class="max-w-6xl mx-auto px-4">
+
+        <div class="flex items-end justify-between mb-10">
+          <div>
+            <p class="text-sm font-semibold tracking-widest uppercase text-tlh-teal mb-2">Available Now</p>
+            <h2 class="text-3xl md:text-4xl font-bold">Current Properties</h2>
+          </div>
+          <a href="/renovations/" class="hidden md:inline-flex items-center gap-2 text-tlh-teal font-semibold text-sm hover:gap-3 transition-all">
+            View All
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          <!-- 1812 Highland -->
+          <a href="/renovations/1812-highland/" class="group block rounded-[5px] overflow-hidden shadow-sm border border-gray-200 hover:shadow-lg hover:border-tlh-teal transition bg-white">
+            <div class="relative aspect-[4/3] overflow-hidden">
+              <img src="https://www.truelegacyhomes.com/renovations/1812-highland/images/highland-kitchen.webp"
+                   alt="1812 Highland Huntington Beach pre-renovation"
+                   class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+              <span class="absolute top-3 left-3 bg-tlh-teal text-white text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded-sm">Pre-Renovation</span>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-tlh-dark mb-1 group-hover:text-tlh-teal transition">1812 Highland</h3>
+              <p class="text-sm text-gray-500 mb-3">Huntington Beach, CA</p>
+              <p class="text-gray-600 text-base mb-4">Full renovation — kitchen, primary suite, bathrooms, family room, entry. Design renders available.</p>
+              <div class="flex items-center justify-between">
+                <span class="text-sm font-semibold text-tlh-teal">Design Preview Available</span>
+                <span class="inline-flex items-center gap-1 text-tlh-teal font-semibold text-sm group-hover:gap-2 transition-all">
+                  View
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                </span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Placeholder card -->
+          <div class="rounded-[5px] border-2 border-dashed border-gray-200 p-8 flex flex-col items-center justify-center text-center min-h-[280px]">
+            <div class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+            </div>
+            <p class="text-gray-500 font-medium mb-1">Next property coming soon</p>
+            <p class="text-gray-400 text-sm">Sign up to be notified first</p>
+            <a href="#contact" class="mt-4 text-tlh-teal text-sm font-semibold hover:underline">Get on the list →</a>
+          </div>
+
+        </div>
+
+        <div class="mt-8 md:hidden">
+          <a href="/renovations/" class="inline-flex items-center gap-2 text-tlh-teal font-semibold text-sm">
+            View All Properties
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ─── BUY BOX ────────────────────────────────────────────────────────── -->
+    <section id="buy-box" class="py-16 md:py-24 bg-white">
+      <div class="max-w-6xl mx-auto px-4">
+
+        <div class="grid md:grid-cols-2 gap-12 md:gap-20 items-start">
+
+          <div>
+            <p class="text-sm font-semibold tracking-widest uppercase text-tlh-teal mb-4">Our Buy Box</p>
+            <h2 class="text-3xl md:text-4xl font-bold mb-5">Know when to call us.</h2>
+            <p class="text-gray-600 text-lg leading-relaxed mb-8">
+              We're not a vague cash buyer. Here's exactly what fits — so you know whether to make the call before you're in the appointment.
+            </p>
+            <div class="space-y-4">
+
+              <div class="flex items-start gap-4 p-5 rounded-[5px] border border-gray-100" style="background-color:#f9f4eb;">
+                <div class="w-8 h-8 bg-tlh-teal/10 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <svg class="w-4 h-4 text-tlh-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <div>
+                  <div class="font-semibold text-tlh-dark">Purchase price $1M – $3M</div>
+                  <div class="text-gray-600 text-base">ARV $1.4M – $5M. We know what renovation adds.</div>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4 p-5 rounded-[5px] border border-gray-100" style="background-color:#f9f4eb;">
+                <div class="w-8 h-8 bg-tlh-teal/10 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <svg class="w-4 h-4 text-tlh-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <div>
+                  <div class="font-semibold text-tlh-dark">Life-transition situations</div>
+                  <div class="text-gray-600 text-base">Inherited, probate, downsizing, estate, hard-to-list.</div>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4 p-5 rounded-[5px] border border-gray-100" style="background-color:#f9f4eb;">
+                <div class="w-8 h-8 bg-tlh-teal/10 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <svg class="w-4 h-4 text-tlh-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <div>
+                  <div class="font-semibold text-tlh-dark">San Diego · Orange County · Los Angeles</div>
+                  <div class="text-gray-600 text-base">SD and OC are primary. LA is active — ask about specific ZIP codes.</div>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4 p-5 rounded-[5px] border border-gray-100" style="background-color:#f9f4eb;">
+                <div class="w-8 h-8 bg-tlh-teal/10 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <svg class="w-4 h-4 text-tlh-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <div>
+                  <div class="font-semibold text-tlh-dark">Needs work or full renovation</div>
+                  <div class="text-gray-600 text-base">Dated finishes, deferred maintenance, estate contents — that's our specialty.</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div>
+            <div class="rounded-[5px] p-8 border-2 border-red-100 mb-6" style="background-color:#fff5f5;">
+              <h3 class="text-xl font-bold text-gray-800 mb-4">What doesn't fit</h3>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3 text-gray-600">
+                  <svg class="w-5 h-5 text-red-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                  Properties under $800K purchase price
+                </li>
+                <li class="flex items-start gap-3 text-gray-600">
+                  <svg class="w-5 h-5 text-red-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                  Move-in ready luxury listings
+                </li>
+                <li class="flex items-start gap-3 text-gray-600">
+                  <svg class="w-5 h-5 text-red-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                  Outside San Diego, OC, and LA markets
+                </li>
+                <li class="flex items-start gap-3 text-gray-600">
+                  <svg class="w-5 h-5 text-red-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                  Major structural or foundation issues
+                </li>
+              </ul>
+            </div>
+
+            <div class="rounded-[5px] p-8 bg-tlh-dark text-white">
+              <h3 class="text-xl font-bold text-white mb-3">Not sure if it fits?</h3>
+              <p class="text-white/70 mb-5 text-base">Just call us. We'll tell you in 5 minutes whether it makes sense, and if it doesn't, we'll say so.</p>
+              <a href="tel:6194501702" class="inline-flex items-center gap-2 bg-tlh-teal text-white px-6 py-3 rounded-[5px] text-base font-semibold hover:bg-tlh-teal-dark transition">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                (619) 450-1702
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── WHY TLH ────────────────────────────────────────────────────────── -->
+    <section class="py-16 md:py-20" style="background-color:#f9f4eb;">
+      <div class="max-w-6xl mx-auto px-4">
+
+        <div class="text-center mb-12">
+          <p class="text-sm font-semibold tracking-widest uppercase text-tlh-teal mb-3">Why Partner With Us</p>
+          <h2 class="text-3xl md:text-4xl font-bold">We don't waste your time.</h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+
+          <div class="p-7 rounded-[5px] bg-white shadow-sm border border-gray-100 text-center">
+            <div class="w-12 h-12 bg-tlh-teal/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-6 h-6 text-tlh-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Fast decisions</h3>
+            <p class="text-gray-600 text-base">Offer within 24–48 hours. No committees, no delays. Agents learn to call us first because we don't make them wait.</p>
+          </div>
+
+          <div class="p-7 rounded-[5px] bg-white shadow-sm border border-gray-100 text-center">
+            <div class="w-12 h-12 bg-tlh-teal/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-6 h-6 text-tlh-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Proven product</h3>
+            <p class="text-gray-600 text-base">1,500+ transactions across Southern California. Our renovations sell. Agents who bring buyers know what they're showing.</p>
+          </div>
+
+          <div class="p-7 rounded-[5px] bg-white shadow-sm border border-gray-100 text-center">
+            <div class="w-12 h-12 bg-tlh-teal/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-6 h-6 text-tlh-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Relationship-first</h3>
+            <p class="text-gray-600 text-base">We're building long-term partnerships. Agents who send us deals get first dibs on new pre-renovation inventory. That's the loop.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ─── CONTACT ────────────────────────────────────────────────────────── -->
+    <section id="contact" class="py-16 md:py-24 bg-tlh-dark">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-12 md:gap-20 items-start">
+
+          <!-- Left -->
+          <div class="text-white">
+            <p class="text-sm font-semibold tracking-widest uppercase text-tlh-teal mb-4">Get In Touch</p>
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-5" style="font-family:'Source Serif Pro',Georgia,serif; color:#fff;">Let's talk.</h2>
+            <p class="text-white/70 text-lg leading-relaxed mb-8">
+              Whether you have a property, a buyer, or just want to introduce yourself — we're easy to reach.
+            </p>
+
+            <div class="space-y-5 mb-8">
+              <div class="flex items-center gap-4">
+                <div class="w-10 h-10 bg-tlh-teal/20 rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5 text-tlh-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                </div>
+                <div>
+                  <div class="text-white/50 text-sm">Call or text</div>
+                  <a href="tel:6194501702" class="text-white font-semibold hover:text-tlh-teal transition">(619) 450-1702</a>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="w-10 h-10 bg-tlh-teal/20 rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5 text-tlh-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                </div>
+                <div>
+                  <div class="text-white/50 text-sm">Email</div>
+                  <a href="mailto:info@truelegacyhomes.com" class="text-white font-semibold hover:text-tlh-teal transition">info@truelegacyhomes.com</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="border-t border-white/10 pt-6">
+              <p class="text-white/40 text-sm">San Diego · Orange County · Los Angeles</p>
+            </div>
+          </div>
+
+          <!-- Right: Form -->
+          <div class="rounded-[5px] p-8 md:p-10" style="background-color:#f9f4eb;">
+            <p class="text-sm font-semibold tracking-widest uppercase text-tlh-teal mb-3">Send a Message</p>
+            <h3 class="text-2xl font-bold text-tlh-dark mb-5">Tell us what you've got.</h3>
+
+            <div id="contact-success" class="hidden text-center py-8">
+              <svg class="w-12 h-12 text-tlh-teal mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <p class="text-tlh-dark font-bold text-xl">Got it — we'll be in touch.</p>
+              <p class="text-gray-600 mt-2">We typically respond same day.</p>
+            </div>
+
+            <form id="contact-form">
+              <div class="hp-field" aria-hidden="true">
+                <label for="hp-agent">Website</label>
+                <input type="text" id="hp-agent" name="website" tabindex="-1" autocomplete="off">
+              </div>
+              <div class="space-y-4">
+                <div class="grid grid-cols-2 gap-4">
+                  <div>
+                    <label for="c-name" class="block text-sm font-semibold text-gray-700 mb-1">Your Name</label>
+                    <input type="text" id="c-name" required placeholder="Jane Smith"
+                      class="w-full border border-gray-300 rounded-[5px] px-4 py-3 text-gray-900 bg-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-tlh-teal text-base">
+                  </div>
+                  <div>
+                    <label for="c-phone" class="block text-sm font-semibold text-gray-700 mb-1">Phone</label>
+                    <input type="tel" id="c-phone" placeholder="(619) 555-0100"
+                      class="w-full border border-gray-300 rounded-[5px] px-4 py-3 text-gray-900 bg-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-tlh-teal text-base">
+                  </div>
+                </div>
+                <div>
+                  <label for="c-email" class="block text-sm font-semibold text-gray-700 mb-1">Email</label>
+                  <input type="email" id="c-email" required placeholder="jane@compass.com"
+                    class="w-full border border-gray-300 rounded-[5px] px-4 py-3 text-gray-900 bg-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-tlh-teal text-base">
+                </div>
+                <div>
+                  <label for="c-brokerage" class="block text-sm font-semibold text-gray-700 mb-1">Brokerage</label>
+                  <input type="text" id="c-brokerage" placeholder="Compass, Sotheby's, KW..."
+                    class="w-full border border-gray-300 rounded-[5px] px-4 py-3 text-gray-900 bg-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-tlh-teal text-base">
+                </div>
+                <div>
+                  <label for="c-type" class="block text-sm font-semibold text-gray-700 mb-1">I'm reaching out because...</label>
+                  <select id="c-type" class="w-full border border-gray-300 rounded-[5px] px-4 py-3 text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-tlh-teal text-base">
+                    <option value="">Select one</option>
+                    <option value="have-property">I have a property that might fit</option>
+                    <option value="have-buyer">I have a buyer looking for pre-reno access</option>
+                    <option value="both">Both</option>
+                    <option value="intro">Just introducing myself</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="c-message" class="block text-sm font-semibold text-gray-700 mb-1">Message <span class="text-gray-400 font-normal">(optional)</span></label>
+                  <textarea id="c-message" rows="3" placeholder="Address, situation, anything helpful..."
+                    class="w-full border border-gray-300 rounded-[5px] px-4 py-3 text-gray-900 bg-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-tlh-teal text-base resize-none"></textarea>
+                </div>
+                <div id="contact-error" class="hidden bg-red-50 border border-red-200 text-red-700 rounded-[5px] px-4 py-3 text-sm"></div>
+                <button type="submit" id="contact-btn"
+                  class="w-full bg-tlh-teal text-white py-[15px] rounded-[5px] text-base font-semibold hover:bg-tlh-teal-dark transition flex items-center justify-center gap-2">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ─── FOOTER ────────────────────────────────────────────────────────── -->
+  <footer class="bg-white border-t border-gray-100 py-10">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="flex items-center gap-3">
+          <img src="https://www.truelegacyhomes.com/images/tlhICON.webp" alt="True Legacy Homes" class="h-7 w-7">
+          <span class="text-sm font-semibold text-tlh-dark" style="font-family:'Source Serif Pro',Georgia,serif;">True Legacy Homes — Realtor Partners</span>
+        </div>
+        <nav class="flex gap-6 text-sm text-gray-500">
+          <a href="/renovations/" class="hover:text-tlh-teal transition">Properties</a>
+          <a href="#buy-box" class="hover:text-tlh-teal transition">Buy Box</a>
+          <a href="#contact" class="hover:text-tlh-teal transition">Contact</a>
+          <a href="https://www.truelegacyhomes.com" class="hover:text-tlh-teal transition">Main Site ↗</a>
+        </nav>
+        <p class="text-sm text-gray-400">© 2026 True Legacy Homes. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav
+    document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+      document.getElementById('mobile-menu').classList.toggle('open');
+    });
+
+    // Close mobile nav on link click
+    document.querySelectorAll('#mobile-menu a').forEach(function(a) {
+      a.addEventListener('click', function() {
+        document.getElementById('mobile-menu').classList.remove('open');
+      });
+    });
+
+    // Contact form → Supabase
+    var _formLoadTime = Date.now();
+    var _timingReset = false;
+    document.getElementById('contact-form').addEventListener('focusin', function() {
+      if (!_timingReset) { _formLoadTime = Date.now() - 3500; _timingReset = true; }
+    });
+
+    document.getElementById('contact-form').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      var btn    = document.getElementById('contact-btn');
+      var errEl  = document.getElementById('contact-error');
+      var hp     = document.getElementById('hp-agent');
+
+      if (hp && hp.value) { showSuccess(); return; }
+      if (Date.now() - _formLoadTime < 1500) { showSuccess(); return; }
+
+      var name      = document.getElementById('c-name').value.trim();
+      var email     = document.getElementById('c-email').value.trim();
+      var phone     = document.getElementById('c-phone').value.trim();
+      var brokerage = document.getElementById('c-brokerage').value.trim();
+      var agentType = document.getElementById('c-type').value;
+      var message   = document.getElementById('c-message').value.trim();
+
+      btn.disabled = true;
+      btn.textContent = 'Sending…';
+      errEl.classList.add('hidden');
+
+      try {
+        var res = await fetch('https://inqbqchjxzvdvcslvskb.supabase.co/rest/v1/form_submissions', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'apikey': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlucWJxY2hqeHp2ZHZjc2x2c2tiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzMwNzA4NzEsImV4cCI6MjA4ODY0Njg3MX0.cqOtZQQOdSI9hwVxI8RSAMsgxI3hJsZ8ttzehJRKVgk',
+            'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlucWJxY2hqeHp2ZHZjc2x2c2tiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzMwNzA4NzEsImV4cCI6MjA4ODY0Njg3MX0.cqOtZQQOdSI9hwVxI8RSAMsgxI3hJsZ8ttzehJRKVgk',
+            'Prefer': 'return=minimal'
+          },
+          body: JSON.stringify({
+            form_type: 'agent-contact',
+            name: name,
+            email: email,
+            phone: phone,
+            message: (brokerage ? 'Brokerage: ' + brokerage + '\nType: ' + agentType + '\n' : '') + message,
+            lead_source: 'Direct'
+          })
+        });
+        if (!res.ok) throw new Error('server error');
+        showSuccess();
+      } catch(err) {
+        errEl.textContent = 'Something went wrong. Please call us at (619) 450-1702.';
+        errEl.classList.remove('hidden');
+        btn.disabled = false;
+        btn.innerHTML = '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg> Send Message';
+      }
+
+      function showSuccess() {
+        document.getElementById('contact-form').classList.add('hidden');
+        document.getElementById('contact-success').classList.remove('hidden');
+      }
+    });
+  </script>
+
+</body>
+</html>

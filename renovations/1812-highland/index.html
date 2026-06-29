@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1812 Highland — Pre-Renovation Opportunity | True Legacy Homes Realtor Partners</title>
+  <meta name="description" content="Exclusive pre-renovation access at 1812 Highland, Huntington Beach CA. View design renders, commission details, and bring a buyer before this hits MLS.">
+  <link rel="icon" type="image/png" href="https://www.truelegacyhomes.com/images/tlhICON.webp">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/tailwind.min.css">
+  <link rel="preload" as="image" href="https://www.truelegacyhomes.com/renovations/1812-highland/images/highland-kitchen.webp">
+
+  <style>
+    html { scroll-behavior: smooth; }
+    [id] { scroll-margin-top: 80px; }
+    body { font-family: 'Inter', sans-serif; }
+    h1, h2, h3, h4 { font-family: 'Source Serif Pro', Georgia, serif; color: #132b42; }
+    .hero-text, .hero-sub { color: #fff !important; }
+    .hp-field { position: absolute; left: -9999px; top: -9999px; opacity: 0; height: 0; overflow: hidden; pointer-events: none; }
+    .gallery-item { cursor: pointer; }
+    .gallery-item img { transition: transform 0.35s ease; }
+    .gallery-item:hover img { transform: scale(1.04); }
+    .lightbox { display: none; position: fixed; z-index: 9999; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.92); align-items: center; justify-content: center; }
+    .lightbox.active { display: flex; }
+    .lightbox-content { position: relative; max-width: 90%; max-height: 90vh; display: flex; align-items: center; justify-content: center; }
+    .lightbox img { max-width: 100%; max-height: 90vh; object-fit: contain; border-radius: 4px; }
+    .lightbox-close, .lightbox-prev, .lightbox-next { position: absolute; background: rgba(255,255,255,0.1); color: white; border: none; cursor: pointer; padding: 1rem 1.25rem; font-size: 1.75rem; transition: background 0.2s; z-index: 10000; line-height: 1; }
+    .lightbox-close:hover, .lightbox-prev:hover, .lightbox-next:hover { background: rgba(255,255,255,0.22); }
+    .lightbox-close { top: 20px; right: 20px; font-size: 2rem; }
+    .lightbox-prev { left: 16px; top: 50%; transform: translateY(-50%); }
+    .lightbox-next { right: 16px; top: 50%; transform: translateY(-50%); }
+    .lightbox-caption { position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); background: rgba(0,0,0,0.6); color: white; padding: 0.4rem 1rem; border-radius: 9999px; font-size: 0.8rem; letter-spacing: 0.05em; white-space: nowrap; }
+    .nav-link { transition: color 0.15s; }
+    .nav-link:hover { color: #158c8b; }
+    #mobile-menu { display: none; }
+    #mobile-menu.open { display: block; }
+  </style>
+</head>
+<body class="bg-white text-gray-800 text-lg leading-loose antialiased">
+
+  <!-- ─── NAV ─────────────────────────────────────────────────────────── -->
+  <header class="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex items-center justify-between h-16">
+        <a href="/" class="flex items-center gap-3">
+          <img src="https://www.truelegacyhomes.com/images/tlhICON.webp" alt="True Legacy Homes" class="h-8 w-8">
+          <div class="leading-tight">
+            <div class="text-sm font-bold text-tlh-dark" style="font-family:'Source Serif Pro',Georgia,serif;">True Legacy Homes</div>
+            <div class="text-xs text-tlh-teal font-semibold tracking-widest uppercase">Realtor Partners</div>
+          </div>
+        </a>
+        <nav class="hidden md:flex items-center gap-8">
+          <a href="/renovations/" class="nav-link text-sm font-semibold text-tlh-teal">← All Properties</a>
+          <a href="/#buy-box" class="nav-link text-sm font-semibold text-gray-700">Buy Box</a>
+          <a href="/#contact" class="nav-link text-sm font-semibold text-gray-700">Contact</a>
+        </nav>
+        <div class="hidden md:flex items-center gap-3">
+          <a href="tel:6194501702" class="text-sm font-semibold text-tlh-dark hover:text-tlh-teal transition">(619) 450-1702</a>
+          <a href="#bring-buyer" class="bg-tlh-teal text-white px-5 py-2 rounded-[5px] text-sm font-semibold hover:bg-tlh-teal-dark transition">Bring a Buyer</a>
+        </div>
+        <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-600" aria-label="Menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+      <div id="mobile-menu" class="pb-4 border-t border-gray-100">
+        <nav class="flex flex-col gap-1 pt-3">
+          <a href="/renovations/" class="text-sm font-semibold text-tlh-teal py-2">← All Properties</a>
+          <a href="/#buy-box" class="text-sm font-semibold text-gray-700 py-2 hover:text-tlh-teal">Buy Box</a>
+          <a href="/#contact" class="text-sm font-semibold text-gray-700 py-2 hover:text-tlh-teal">Contact</a>
+          <a href="tel:6194501702" class="text-sm font-semibold text-tlh-teal py-2">(619) 450-1702</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ─── HERO ─────────────────────────────────────────────────────────── -->
+    <section class="relative overflow-hidden" style="height: 80vh; min-height: 520px;">
+      <img src="https://www.truelegacyhomes.com/renovations/1812-highland/images/highland-kitchen.webp"
+           alt="1812 Highland Huntington Beach design render"
+           class="absolute inset-0 w-full h-full object-cover object-center" fetchpriority="high">
+      <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(19,43,66,0.15) 0%, rgba(19,43,66,0.3) 40%, rgba(19,43,66,0.85) 100%);"></div>
+
+      <div class="absolute bottom-0 left-0 right-0 pb-16 px-6 md:px-12 max-w-6xl mx-auto w-full">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="bg-tlh-teal text-white text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded-sm">Pre-Renovation</span>
+          <span class="bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-sm">Exclusive Access</span>
+        </div>
+        <h1 class="hero-text text-5xl md:text-6xl font-bold mb-3 leading-none" style="font-family:'Source Serif Pro',Georgia,serif;">1812 Highland</h1>
+        <p class="hero-sub text-xl mb-2 font-light">Huntington Beach, CA · Full Renovation</p>
+        <p class="text-white/60 text-base mb-8">Your buyer gets in before MLS. Buy below finished value.</p>
+        <div class="flex flex-col sm:flex-row gap-3">
+          <a href="#gallery" class="bg-tlh-teal text-white px-8 py-[15px] rounded-[5px] text-base font-semibold hover:bg-tlh-teal-dark transition inline-flex items-center justify-center gap-2">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+            View Design Renders
+          </a>
+          <a href="https://www.truelegacyhomes.com/renovations/1812-highland/1812-highland-design-preview.pdf" download
+             class="border-2 border-white text-white px-8 py-[15px] rounded-[5px] text-base font-semibold hover:bg-white hover:text-tlh-dark transition inline-flex items-center justify-center gap-2">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+            Download Lookbook PDF
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── COMMISSION CALLOUT ────────────────────────────────────────────── -->
+    <section class="bg-tlh-dark text-white py-6">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+          <div class="flex flex-col md:flex-row gap-8">
+            <div class="text-center md:text-left">
+              <div class="text-xl font-bold text-tlh-teal">2.5 – 3%</div>
+              <div class="text-sm text-white/50">Co-op Commission</div>
+            </div>
+            <div class="text-center md:text-left">
+              <div class="text-xl font-bold text-tlh-teal">+0.5%</div>
+              <div class="text-sm text-white/50">Pre-Renovation Close Bonus</div>
+            </div>
+            <div class="text-center md:text-left">
+              <div class="text-xl font-bold text-tlh-teal">All Cash</div>
+              <div class="text-sm text-white/50">Seller — Fast Close</div>
+            </div>
+          </div>
+          <a href="#bring-buyer" class="bg-tlh-teal text-white px-6 py-3 rounded-[5px] text-base font-semibold hover:bg-tlh-teal-dark transition whitespace-nowrap">
+            Bring a Buyer →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── PROPERTY OVERVIEW ─────────────────────────────────────────────── -->
+    <section class="py-14 md:py-20" style="background-color:#f9f4eb;">
+      <div class="max-w-3xl mx-auto px-4 text-center">
+        <p class="text-sm font-semibold tracking-widest uppercase text-tlh-teal mb-4">The Property</p>
+        <h2 class="text-3xl md:text-4xl font-bold mb-5">Warm modern. Full renovation.</h2>
+        <p class="text-gray-700 mb-5 text-lg leading-relaxed">
+          A complete renovation in Huntington Beach — kitchen, primary suite, two bathrooms, family room, powder room, laundry room, and entry. Every room redesigned from the ground up with natural wood, stone details, and soft modern lighting.
+        </p>
+        <p class="text-gray-700 mb-8 text-lg leading-relaxed">
+          Your buyer gets an exclusive look at the design renders before construction begins — and the opportunity to purchase below finished ARV. The design lookbook below covers every room with full finishes detail.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-3 justify-center">
+          <a href="https://www.truelegacyhomes.com/renovations/1812-highland/1812-highland-design-preview.pdf" download
+             class="bg-tlh-dark text-white px-8 py-[15px] rounded-[5px] text-base font-semibold hover:bg-gray-800 transition inline-flex items-center justify-center gap-3">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+            Download Design Lookbook
+          </a>
+          <button onclick="copyPageLink()" id="share-btn"
+            class="border-2 border-tlh-dark text-tlh-dark px-8 py-[15px] rounded-[5px] text-base font-semibold hover:bg-tlh-dark hover:text-white transition inline-flex items-center justify-center gap-2">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
+            Send Link to Buyer
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── GALLERY ────────────────────────────────────────────────────────── -->
+    <section id="gallery" class="py-14 md:py-20 bg-white">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="mb-10">
+          <p class="text-sm font-semibold tracking-widest uppercase text-tlh-teal mb-2">Room by Room</p>
+          <h2 class="text-3xl md:text-4xl font-bold">Design Renders</h2>
+          <p class="text-gray-500 mt-2">1812 Highland, Huntington Beach · Click any image to expand · Arrow keys to navigate</p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
+
+          <div class="gallery-item col-span-2 relative overflow-hidden rounded-[5px] shadow-md aspect-[4/3]" data-index="0">
+            <img src="https://www.truelegacyhomes.com/renovations/1812-highland/images/highland-kitchen.webp"
+                 alt="Kitchen design render" class="w-full h-full object-cover" loading="eager">
+            <span class="absolute bottom-3 left-3 bg-black/50 text-white text-xs font-medium px-2 py-1 rounded">Kitchen</span>
+          </div>
+
+          <div class="gallery-item relative overflow-hidden rounded-[5px] shadow-md aspect-[4/3]" data-index="1">
+            <img src="https://www.truelegacyhomes.com/renovations/1812-highland/images/highland-breakfast-nook.webp"
+                 alt="Breakfast nook design render" class="w-full h-full object-cover" loading="lazy">
+            <span class="absolute bottom-3 left-3 bg-black/50 text-white text-xs font-medium px-2 py-1 rounded">Breakfast Nook</span>
+          </div>
+
+          <div class="gallery-item relative overflow-hidden rounded-[5px] shadow-md aspect-[4/3]" data-index="2">
+            <img src="https://www.truelegacyhomes.com/renovations/1812-highland/images/highland-family-fireplace.webp"
+                 alt="Family room design render" class="w-full h-full object-cover" loading="lazy">
+            <span class="absolute bottom-3 left-3 bg-black/50 text-white text-xs font-medium px-2 py-1 rounded">Family Room</span>
+          </div>
+
+          <div class="gallery-item relative overflow-hidden rounded-[5px] shadow-md aspect-[4/3]" data-index="3">
+            <img src="https://www.truelegacyhomes.com/renovations/1812-highland/images/highland-fireplace-1.webp"
+                 alt="Fireplace design render" class="w-full h-full object-cover" loading="lazy">
+            <span class="absolute bottom-3 left-3 bg-black/50 text-white text-xs font-medium px-2 py-1 rounded">Fireplace</span>
+          </div>
+
+          <div class="gallery-item relative overflow-hidden rounded-[5px] shadow-md aspect-[4/3]" data-index="4">
+            <img src="https://www.truelegacyhomes.com/renovations/1812-highland/images/highland-stairs-entry.webp"
+                 alt="Entry and staircase design render" class="w-full h-full object-cover" loading="lazy">
+            <span class="absolute bottom-3 left-3 bg-black/50 text-white text-xs font-medium px-2 py-1 rounded">Entry & Staircase</span>
+          </div>
+
+          <div class="gallery-item col-span-2 md:col-span-1 relative overflow-hidden rounded-[5px] shadow-md aspect-[4/3]" data-index="5">
+            <img src="https://www.truelegacyhomes.com/renovations/1812-highland/images/highland-primary-suite.webp"
+                 alt="Primary suite design render" class="w-full h-full object-cover" loading="lazy">
+            <span class="absolute bottom-3 left-3 bg-black/50 text-white text-xs font-medium px-2 py-1 rounded">Primary Suite</span>
+          </div>
+
+          <div class="gallery-item relative overflow-hidden rounded-[5px] shadow-md aspect-[4/3]" data-index="6">
+            <img src="https://www.truelegacyhomes.com/renovations/1812-highland/images/highland-primary-bedroom.webp"
+                 alt="Primary bedroom design render" class="w-full h-full object-cover" loading="lazy">
+            <span class="absolute bottom-3 left-3 bg-black/50 text-white text-xs font-medium px-2 py-1 rounded">Primary Bedroom</span>
+          </div>
+
+          <div class="gallery-item relative overflow-hidden rounded-[5px] shadow-md aspect-[4/3]" data-index="7">
+            <img src="https://www.truelegacyhomes.com/renovations/1812-highland/images/highland-primary-bathroom-1.webp"
+                 alt="Primary bathroom design render" class="w-full h-full object-cover" loading="lazy">
+            <span class="absolute bottom-3 left-3 bg-black/50 text-white text-xs font-medium px-2 py-1 rounded">Primary Bath</span>
+          </div>
+
+          <div class="gallery-item relative overflow-hidden rounded-[5px] shadow-md aspect-[4/3]" data-index="8">
+            <img src="https://www.truelegacyhomes.com/renovations/1812-highland/images/highland-primary-bathroom-2.webp"
+                 alt="Primary bathroom design render 2" class="w-full h-full object-cover" loading="lazy">
+            <span class="absolute bottom-3 left-3 bg-black/50 text-white text-xs font-medium px-2 py-1 rounded">Primary Bath</span>
+          </div>
+
+          <div class="gallery-item relative overflow-hidden rounded-[5px] shadow-md aspect-[4/3]" data-index="9">
+            <img src="https://www.truelegacyhomes.com/renovations/1812-highland/images/highland-powder-room.webp"
+                 alt="Powder room design render" class="w-full h-full object-cover" loading="lazy">
+            <span class="absolute bottom-3 left-3 bg-black/50 text-white text-xs font-medium px-2 py-1 rounded">Powder Room</span>
+          </div>
+
+          <div class="gallery-item relative overflow-hidden rounded-[5px] shadow-md aspect-[4/3]" data-index="10">
+            <img src="https://www.truelegacyhomes.com/renovations/1812-highland/images/highland-laundry.webp"
+                 alt="Laundry room design render" class="w-full h-full object-cover" loading="lazy">
+            <span class="absolute bottom-3 left-3 bg-black/50 text-white text-xs font-medium px-2 py-1 rounded">Laundry Room</span>
+          </div>
+
+          <div class="gallery-item relative overflow-hidden rounded-[5px] shadow-md aspect-[4/3]" data-index="11">
+            <img src="https://www.truelegacyhomes.com/renovations/1812-highland/images/highland-laundry-2.webp"
+                 alt="Laundry room design render 2" class="w-full h-full object-cover" loading="lazy">
+            <span class="absolute bottom-3 left-3 bg-black/50 text-white text-xs font-medium px-2 py-1 rounded">Laundry Room</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── BRING A BUYER ─────────────────────────────────────────────────── -->
+    <section id="bring-buyer" class="py-16 md:py-24 bg-tlh-dark text-white">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-12 md:gap-20 items-start">
+
+          <!-- Left -->
+          <div>
+            <p class="text-sm font-semibold tracking-widest uppercase text-tlh-teal mb-4">Buyer's Agents</p>
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-5" style="font-family:'Source Serif Pro',Georgia,serif; color:#fff;">Bring your buyer in first.</h2>
+            <p class="text-white/70 text-lg leading-relaxed mb-8">
+              Your buyer gets exclusive access before this property hits MLS. They can see the design direction, understand the ARV, and close below finished value. You earn your commission plus a pre-renovation bonus.
+            </p>
+            <div class="space-y-4 mb-8">
+              <div class="flex items-center gap-4 p-4 rounded-[5px] bg-white/5">
+                <div class="text-2xl font-bold text-tlh-teal">2.5–3%</div>
+                <div>
+                  <div class="text-white font-semibold">Co-op Commission</div>
+                  <div class="text-white/50 text-sm">Paid at close through brokerage</div>
+                </div>
+              </div>
+              <div class="flex items-center gap-4 p-4 rounded-[5px] bg-white/5">
+                <div class="text-2xl font-bold text-tlh-teal">+0.5%</div>
+                <div>
+                  <div class="text-white font-semibold">Pre-Renovation Bonus</div>
+                  <div class="text-white/50 text-sm">We share the holding cost savings when you close early</div>
+                </div>
+              </div>
+            </div>
+            <div class="border-t border-white/10 pt-6">
+              <p class="text-white/40 text-sm">Questions? Call us directly — (619) 450-1702</p>
+            </div>
+          </div>
+
+          <!-- Right: Contact form -->
+          <div class="rounded-[5px] p-8 md:p-10" style="background-color:#f9f4eb;">
+            <p class="text-sm font-semibold tracking-widest uppercase text-tlh-teal mb-3">Let's Talk</p>
+            <h3 class="text-2xl font-bold text-tlh-dark mb-2">Ready to bring a buyer?</h3>
+            <p class="text-gray-600 text-base mb-5">Tell us about your buyer and we'll set up a private preview.</p>
+
+            <div id="buyer-success" class="hidden text-center py-8">
+              <svg class="w-12 h-12 text-tlh-teal mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <p class="text-tlh-dark font-bold text-xl">Got it — we'll reach out today.</p>
+              <p class="text-gray-600 mt-2">Keep an eye on your email.</p>
+            </div>
+
+            <form id="buyer-form">
+              <div class="hp-field" aria-hidden="true">
+                <label for="hp-buyer">Website</label>
+                <input type="text" id="hp-buyer" name="website" tabindex="-1" autocomplete="off">
+              </div>
+              <div class="space-y-4">
+                <div class="grid grid-cols-2 gap-4">
+                  <div>
+                    <label for="b-name" class="block text-sm font-semibold text-gray-700 mb-1">Your Name</label>
+                    <input type="text" id="b-name" required placeholder="Jane Smith"
+                      class="w-full border border-gray-300 rounded-[5px] px-4 py-3 text-gray-900 bg-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-tlh-teal text-base">
+                  </div>
+                  <div>
+                    <label for="b-phone" class="block text-sm font-semibold text-gray-700 mb-1">Phone</label>
+                    <input type="tel" id="b-phone" placeholder="(619) 555-0100"
+                      class="w-full border border-gray-300 rounded-[5px] px-4 py-3 text-gray-900 bg-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-tlh-teal text-base">
+                  </div>
+                </div>
+                <div>
+                  <label for="b-email" class="block text-sm font-semibold text-gray-700 mb-1">Email</label>
+                  <input type="email" id="b-email" required placeholder="jane@compass.com"
+                    class="w-full border border-gray-300 rounded-[5px] px-4 py-3 text-gray-900 bg-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-tlh-teal text-base">
+                </div>
+                <div>
+                  <label for="b-message" class="block text-sm font-semibold text-gray-700 mb-1">Tell us about your buyer <span class="text-gray-400 font-normal">(optional)</span></label>
+                  <textarea id="b-message" rows="3" placeholder="Budget, timeline, what they're looking for..."
+                    class="w-full border border-gray-300 rounded-[5px] px-4 py-3 text-gray-900 bg-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-tlh-teal text-base resize-none"></textarea>
+                </div>
+                <div id="buyer-error" class="hidden bg-red-50 border border-red-200 text-red-700 rounded-[5px] px-4 py-3 text-sm"></div>
+                <button type="submit" id="buyer-btn"
+                  class="w-full bg-tlh-teal text-white py-[15px] rounded-[5px] text-base font-semibold hover:bg-tlh-teal-dark transition flex items-center justify-center gap-2">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
+                  Let's Set Up a Preview
+                </button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── CTA BAR ────────────────────────────────────────────────────────── -->
+    <section class="bg-tlh-teal text-white py-12">
+      <div class="max-w-4xl mx-auto px-4 text-center">
+        <h2 class="text-2xl md:text-3xl font-bold text-white mb-3" style="color:#fff;">See all current properties</h2>
+        <p class="text-white/80 mb-6">1812 Highland is one of several projects in the pipeline across SD, OC, and LA.</p>
+        <a href="/renovations/" class="inline-flex items-center gap-2 bg-white text-tlh-teal px-8 py-[15px] rounded-[5px] text-base font-semibold hover:bg-gray-100 transition">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+          Back to All Properties
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ─── FOOTER ────────────────────────────────────────────────────────── -->
+  <footer class="bg-white border-t border-gray-100 py-10">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="flex items-center gap-3">
+          <img src="https://www.truelegacyhomes.com/images/tlhICON.webp" alt="True Legacy Homes" class="h-7 w-7">
+          <span class="text-sm font-semibold text-tlh-dark" style="font-family:'Source Serif Pro',Georgia,serif;">True Legacy Homes — Realtor Partners</span>
+        </div>
+        <nav class="flex gap-6 text-sm text-gray-500">
+          <a href="/renovations/" class="hover:text-tlh-teal transition">Properties</a>
+          <a href="/#buy-box" class="hover:text-tlh-teal transition">Buy Box</a>
+          <a href="/#contact" class="hover:text-tlh-teal transition">Contact</a>
+          <a href="https://www.truelegacyhomes.com" class="hover:text-tlh-teal transition">Main Site ↗</a>
+        </nav>
+        <p class="text-sm text-gray-400">© 2026 True Legacy Homes. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ─── LIGHTBOX ──────────────────────────────────────────────────────── -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true">
+    <button class="lightbox-close" aria-label="Close">&times;</button>
+    <button class="lightbox-prev" aria-label="Previous">&#8249;</button>
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="">
+    </div>
+    <button class="lightbox-next" aria-label="Next">&#8250;</button>
+    <div class="lightbox-caption">
+      <span id="lightbox-label"></span>
+      <span class="mx-2 opacity-40">·</span>
+      <span id="lightbox-cur">1</span> / <span id="lightbox-tot">12</span>
+    </div>
+  </div>
+
+  <script>
+    // Mobile nav
+    document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+      document.getElementById('mobile-menu').classList.toggle('open');
+    });
+
+    // Share / copy link
+    function copyPageLink() {
+      var url = window.location.href;
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(url).then(function() {
+          var btn = document.getElementById('share-btn');
+          btn.textContent = '✓ Link Copied!';
+          setTimeout(function() {
+            btn.innerHTML = '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg> Send Link to Buyer';
+          }, 2000);
+        });
+      }
+    }
+
+    // Lightbox
+    var galleryData = [
+      { src: 'https://www.truelegacyhomes.com/renovations/1812-highland/images/highland-kitchen.webp', label: 'Kitchen' },
+      { src: 'https://www.truelegacyhomes.com/renovations/1812-highland/images/highland-breakfast-nook.webp', label: 'Breakfast Nook' },
+      { src: 'https://www.truelegacyhomes.com/renovations/1812-highland/images/highland-family-fireplace.webp', label: 'Family Room' },
+      { src: 'https://www.truelegacyhomes.com/renovations/1812-highland/images/highland-fireplace-1.webp', label: 'Fireplace' },
+      { src: 'https://www.truelegacyhomes.com/renovations/1812-highland/images/highland-stairs-entry.webp', label: 'Entry & Staircase' },
+      { src: 'https://www.truelegacyhomes.com/renovations/1812-highland/images/highland-primary-suite.webp', label: 'Primary Suite' },
+      { src: 'https://www.truelegacyhomes.com/renovations/1812-highland/images/highland-primary-bedroom.webp', label: 'Primary Bedroom' },
+      { src: 'https://www.truelegacyhomes.com/renovations/1812-highland/images/highland-primary-bathroom-1.webp', label: 'Primary Bathroom' },
+      { src: 'https://www.truelegacyhomes.com/renovations/1812-highland/images/highland-primary-bathroom-2.webp', label: 'Primary Bathroom' },
+      { src: 'https://www.truelegacyhomes.com/renovations/1812-highland/images/highland-powder-room.webp', label: 'Powder Room' },
+      { src: 'https://www.truelegacyhomes.com/renovations/1812-highland/images/highland-laundry.webp', label: 'Laundry Room' },
+      { src: 'https://www.truelegacyhomes.com/renovations/1812-highland/images/highland-laundry-2.webp', label: 'Laundry Room' },
+    ];
+
+    var lb    = document.getElementById('lightbox');
+    var lbImg = document.getElementById('lightbox-img');
+    var lbLbl = document.getElementById('lightbox-label');
+    var lbCur = document.getElementById('lightbox-cur');
+    var lbTot = document.getElementById('lightbox-tot');
+    var idx   = 0;
+    lbTot.textContent = galleryData.length;
+
+    function openLb(i) { idx = i; renderLb(); lb.classList.add('active'); document.body.style.overflow = 'hidden'; }
+    function closeLb() { lb.classList.remove('active'); document.body.style.overflow = ''; }
+    function nextLb() { idx = (idx + 1) % galleryData.length; renderLb(); }
+    function prevLb() { idx = (idx - 1 + galleryData.length) % galleryData.length; renderLb(); }
+    function renderLb() { var d = galleryData[idx]; lbImg.src = d.src; lbImg.alt = '1812 Highland — ' + d.label; lbLbl.textContent = d.label; lbCur.textContent = idx + 1; }
+
+    document.querySelectorAll('.gallery-item').forEach(function(el) {
+      el.addEventListener('click', function() { openLb(parseInt(this.dataset.index)); });
+    });
+    document.querySelector('.lightbox-close').addEventListener('click', closeLb);
+    document.querySelector('.lightbox-next').addEventListener('click', nextLb);
+    document.querySelector('.lightbox-prev').addEventListener('click', prevLb);
+    lb.addEventListener('click', function(e) { if (e.target === lb) closeLb(); });
+    document.addEventListener('keydown', function(e) {
+      if (!lb.classList.contains('active')) return;
+      if (e.key === 'Escape') closeLb();
+      if (e.key === 'ArrowRight') nextLb();
+      if (e.key === 'ArrowLeft') prevLb();
+    });
+
+    // Buyer form
+    var _formLoadTime = Date.now();
+    var _timingReset = false;
+    document.getElementById('buyer-form').addEventListener('focusin', function() {
+      if (!_timingReset) { _formLoadTime = Date.now() - 3500; _timingReset = true; }
+    });
+
+    document.getElementById('buyer-form').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      var btn   = document.getElementById('buyer-btn');
+      var errEl = document.getElementById('buyer-error');
+      var hp    = document.getElementById('hp-buyer');
+
+      if (hp && hp.value) { showSuccess(); return; }
+      if (Date.now() - _formLoadTime < 1500) { showSuccess(); return; }
+
+      var name    = document.getElementById('b-name').value.trim();
+      var email   = document.getElementById('b-email').value.trim();
+      var phone   = document.getElementById('b-phone').value.trim();
+      var message = document.getElementById('b-message').value.trim();
+
+      btn.disabled = true;
+      btn.textContent = 'Sending…';
+      errEl.classList.add('hidden');
+
+      try {
+        var res = await fetch('https://inqbqchjxzvdvcslvskb.supabase.co/rest/v1/form_submissions', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'apikey': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlucWJxY2hqeHp2ZHZjc2x2c2tiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzMwNzA4NzEsImV4cCI6MjA4ODY0Njg3MX0.cqOtZQQOdSI9hwVxI8RSAMsgxI3hJsZ8ttzehJRKVgk',
+            'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlucWJxY2hqeHp2ZHZjc2x2c2tiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzMwNzA4NzEsImV4cCI6MjA4ODY0Njg3MX0.cqOtZQQOdSI9hwVxI8RSAMsgxI3hJsZ8ttzehJRKVgk',
+            'Prefer': 'return=minimal'
+          },
+          body: JSON.stringify({
+            form_type: 'agent-buyer-inquiry',
+            name: name,
+            email: email,
+            phone: phone,
+            message: '1812 Highland inquiry.\n' + message,
+            lead_source: 'Direct'
+          })
+        });
+        if (!res.ok) throw new Error('server error');
+        showSuccess();
+      } catch(err) {
+        errEl.textContent = 'Something went wrong. Please call (619) 450-1702.';
+        errEl.classList.remove('hidden');
+        btn.disabled = false;
+        btn.innerHTML = '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg> Let\'s Set Up a Preview';
+      }
+
+      function showSuccess() {
+        document.getElementById('buyer-form').classList.add('hidden');
+        document.getElementById('buyer-success').classList.remove('hidden');
+      }
+    });
+  </script>
+
+</body>
+</html>
