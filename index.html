@@ -19,15 +19,15 @@
     h1, h2, h3, h4 { font-family: 'Source Serif Pro', Georgia, serif; color: #132b42; }
     .hero-text { color: #fff !important; }
     .hp-field { position: absolute; left: -9999px; top: -9999px; opacity: 0; height: 0; overflow: hidden; pointer-events: none; }
-    .track-card { transition: box-shadow 0.2s, border-color 0.2s; }
-    .track-card:hover { box-shadow: 0 8px 32px rgba(19,43,66,0.12); }
+    .track-card { border: 2px solid transparent; transition: box-shadow 0.25s, border-color 0.25s; }
+    .track-card:hover { border-color: #158c8b; box-shadow: 0 8px 32px rgba(19,43,66,0.13); }
     .nav-link { transition: color 0.15s; }
     .nav-link:hover { color: #158c8b; }
     #mobile-menu { display: none; }
     #mobile-menu.open { display: block; }
   </style>
 </head>
-<body class="bg-white text-gray-800 text-lg leading-loose antialiased">
+<body class="bg-white text-gray-800 text-lg leading-relaxed antialiased">
 
   <!-- ─── NAV ─────────────────────────────────────────────────────────── -->
   <header class="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm">
@@ -44,7 +44,7 @@
         </a>
 
         <!-- Desktop nav -->
-        <nav class="hidden md:flex items-center gap-8">
+        <nav class="hidden md:flex items-center gap-6">
           <a href="/renovations/" class="nav-link text-sm font-semibold text-gray-700">Current Properties</a>
           <a href="#buy-box" class="nav-link text-sm font-semibold text-gray-700">Buy Box</a>
           <a href="#tracks" class="nav-link text-sm font-semibold text-gray-700">How It Works</a>
@@ -86,7 +86,7 @@
         <div class="absolute inset-0" style="background: linear-gradient(to right, rgba(19,43,66,0.94) 0%, rgba(19,43,66,0.88) 50%, rgba(19,43,66,0.45) 100%);"></div>
       </div>
 
-      <div class="relative z-10 max-w-6xl mx-auto px-4 py-28 md:py-36">
+      <div class="relative z-10 max-w-6xl mx-auto px-4 py-20 md:py-28">
         <div class="max-w-xl">
           <p class="text-sm font-semibold tracking-widest uppercase text-tlh-teal mb-5">Realtor Partner Program</p>
           <h1 class="hero-text text-4xl md:text-5xl font-bold mb-5 leading-tight" style="font-family:'Source Serif Pro',Georgia,serif;">
@@ -134,10 +134,10 @@
     </section>
 
     <!-- ─── TWO TRACKS ─────────────────────────────────────────────────────── -->
-    <section id="tracks" class="py-16 md:py-24 bg-white">
+    <section id="tracks" class="py-14 md:py-20 bg-white">
       <div class="max-w-6xl mx-auto px-4">
 
-        <div class="text-center mb-14">
+        <div class="text-center mb-10">
           <p class="text-sm font-semibold tracking-widest uppercase text-tlh-teal mb-3">Two Ways to Work Together</p>
           <h2 class="text-3xl md:text-4xl font-bold mb-4">Pick your track.</h2>
           <p class="text-gray-500 text-lg max-w-2xl mx-auto">Whether your client needs a quiet exit or your buyer wants first access to something special — there's a path here.</p>
@@ -146,8 +146,8 @@
         <div class="grid md:grid-cols-2 gap-8">
 
           <!-- Track 1 -->
-          <div class="track-card rounded-[5px] border-2 border-gray-100 p-8 md:p-10" style="background-color:#f9f4eb;">
-            <div class="w-12 h-12 bg-tlh-dark rounded-full flex items-center justify-center mb-6">
+          <div class="track-card rounded-[5px] p-8 md:p-10" style="background-color:#f9f4eb;">
+            <div class="w-12 h-12 bg-tlh-dark rounded-full flex items-center justify-center mb-4">
               <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
             </div>
             <p class="text-sm font-semibold tracking-widest uppercase text-tlh-teal mb-2">Track 1</p>
@@ -155,10 +155,10 @@
             <p class="text-gray-700 mb-6 leading-relaxed">
               Your client has an inherited home, a property full of contents, or a situation where a quiet, fast close beats the circus of going public. We're all-cash, no contingencies, and we close fast.
             </p>
-            <p class="text-gray-700 mb-8 leading-relaxed font-medium italic">
+            <p class="text-gray-600 mb-5 leading-relaxed italic text-base">
               "Before pricing and staging, this house needs a contents plan." — We help agents say that with confidence.
             </p>
-            <ul class="space-y-3 mb-8">
+            <ul class="space-y-2 mb-6">
               <li class="flex items-start gap-3 text-gray-700">
                 <svg class="w-5 h-5 text-tlh-teal mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
                 All-cash, no contingencies, fast close
@@ -183,8 +183,8 @@
           </div>
 
           <!-- Track 2 -->
-          <div class="track-card rounded-[5px] border-2 border-tlh-teal p-8 md:p-10" style="background-color:#f9f4eb;">
-            <div class="w-12 h-12 bg-tlh-teal rounded-full flex items-center justify-center mb-6">
+          <div class="track-card rounded-[5px] p-8 md:p-10" style="background-color:#f9f4eb;">
+            <div class="w-12 h-12 bg-tlh-teal rounded-full flex items-center justify-center mb-4">
               <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
             </div>
             <p class="text-sm font-semibold tracking-widest uppercase text-tlh-teal mb-2">Track 2</p>
@@ -192,10 +192,10 @@
             <p class="text-gray-700 mb-6 leading-relaxed">
               Your buyer is frustrated by bidding wars. Give them exclusive first look at our properties before they hit MLS — before renovation even begins. They choose finishes and buy below finished value.
             </p>
-            <p class="text-gray-700 mb-8 leading-relaxed font-medium italic">
+            <p class="text-gray-600 mb-5 leading-relaxed italic text-base">
               "Exclusive first look before it hits the market." — Your buyer gets to choose finishes and buy below finished value.
             </p>
-            <ul class="space-y-3 mb-8">
+            <ul class="space-y-2 mb-6">
               <li class="flex items-start gap-3 text-gray-700">
                 <svg class="w-5 h-5 text-tlh-teal mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
                 Preview before MLS — exclusive access
@@ -285,7 +285,7 @@
     </section>
 
     <!-- ─── BUY BOX ────────────────────────────────────────────────────────── -->
-    <section id="buy-box" class="py-16 md:py-24 bg-white">
+    <section id="buy-box" class="py-14 md:py-20 bg-white">
       <div class="max-w-6xl mx-auto px-4">
 
         <div class="grid md:grid-cols-2 gap-12 md:gap-20 items-start">
@@ -419,7 +419,7 @@
     </section>
 
     <!-- ─── CONTACT ────────────────────────────────────────────────────────── -->
-    <section id="contact" class="py-16 md:py-24 bg-tlh-dark">
+    <section id="contact" class="py-14 md:py-20 bg-tlh-dark">
       <div class="max-w-6xl mx-auto px-4">
         <div class="grid md:grid-cols-2 gap-12 md:gap-20 items-start">
 
