@@ -321,6 +321,9 @@ def enrich_property(prop):
     prop['images'] = valid_imgs
     prop['hero_img'] = valid_imgs[0] if valid_imgs else prop.get('hero_img', '')
     print(f"     ✅ {len(valid_imgs)} images, desc: {'yes' if prop.get('description') else 'no'}")
+    if not valid_imgs:
+        print(f"     ⛔ No valid images — skipping")
+        return None
     return prop
 
 
@@ -753,7 +756,8 @@ def main():
     enriched = []
     for prop in properties:
         enriched_prop = enrich_property(prop)
-        enriched.append(enriched_prop)
+        if enriched_prop is not None:
+            enriched.append(enriched_prop)
 
     # Generate property pages
     print(f"\n📝 Generating property pages ...")
