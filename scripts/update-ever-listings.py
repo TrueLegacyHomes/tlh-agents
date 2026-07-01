@@ -410,7 +410,7 @@ def build_property_page(prop):
           Back to Current Properties
         </a>
         <div class="flex flex-wrap items-start gap-2 mb-3">
-          <span class="bg-[#1d3557] text-white text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded-sm">Ever San Diego</span>
+
           <span class="bg-green-600 text-white text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded-sm">Active</span>
         </div>
         <h1 class="hero-text text-4xl md:text-5xl font-bold mb-2" style="font-family:'Source Serif Pro',Georgia,serif;">{address}</h1>
@@ -528,7 +528,7 @@ def build_properties_index(properties):
         cards.append(f'''          <a href="/properties/{slug}/" class="group block rounded-[5px] overflow-hidden shadow-sm border border-gray-200 hover:shadow-lg hover:border-tlh-teal transition bg-white">
             <div class="relative aspect-[4/3] overflow-hidden">
               <img src="{hero}" alt="{address} {city}" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
-              <span class="absolute top-3 left-3 bg-[#1d3557] text-white text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded-sm">Ever San Diego</span>
+  
             </div>
             <div class="p-6">
               <h3 class="text-xl font-bold text-tlh-dark mb-1 group-hover:text-tlh-teal transition">{address}</h3>
@@ -673,7 +673,7 @@ def update_index_html(properties):
             <div class="relative aspect-[4/3] overflow-hidden">
               <img src="{hero}" alt="{address} {city}"
                    class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
-              <span class="absolute top-3 left-3 bg-[#1d3557] text-white text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded-sm">Ever San Diego</span>
+  
             </div>
             <div class="p-6">
               <h3 class="text-xl font-bold text-tlh-dark mb-1 group-hover:text-tlh-teal transition">{address}</h3>
