@@ -175,20 +175,27 @@ def fetch_listing_page(url):
     # Property info fields
     for item in soup.select('.infos-item .item-copy, .infos-item .pg-copy'):
         text = item.get_text(' ', strip=True)
+        def clean(s):
+            """Strip Roya CMS 'span widget' artifacts and zero-width chars."""
+            s = re.sub(r'span widget', '', s, flags=re.IGNORECASE)
+            s = re.sub(r'[\u200b-\u200f\u00ad]', '', s)
+            return s.strip()
         if 'Year Built:' in text:
-            details['year_built'] = re.sub(r'.*Year Built:\s*', '', text).strip()
+            details['year_built'] = clean(re.sub(r'.*Year Built:\s*', '', text))
         elif 'Lot Sq Ft' in text:
             m = re.search(r'([\d,]+)\s*Lot Sq Ft', text)
             if m:
                 details['lot_sqft'] = m.group(1)
         elif 'Type:' in text:
-            details['type'] = re.sub(r'.*Type:\s*', '', text).strip()
+            details['type'] = clean(re.sub(r'.*Type:\s*', '', text))
         elif 'Stories:' in text:
-            details['stories'] = re.sub(r'.*Stories:\s*', '', text).strip()
+            details['stories'] = clean(re.sub(r'.*Stories:\s*', '', text))
         elif 'MLS#:' in text:
-            details['mls'] = re.sub(r'.*MLS#:\s*', '', text).strip()
+            details['mls'] = clean(re.sub(r'.*MLS#:\s*', '', text))
         elif 'Community:' in text:
-            details['community'] = re.sub(r'.*Community:\s*', '', text).strip()
+            raw = clean(re.sub(r'.*Community:\s*', '', text))
+            # Strip leading zip code prefix like '92075 - '
+            details['community'] = re.sub(r'^\d{5}\s*-\s*', '', raw)
 
     # Virtual tour
     vt = soup.find('a', href=re.compile(r'propertypanorama'))
@@ -340,16 +347,15 @@ def build_gallery_html(images, address):
 
     items = []
     for i, img in enumerate(images):
-        featured = 'col-span-2' if i == 0 and n > 2 else ''
-        items.append(f'''          <div class="gallery-item {featured} relative overflow-hidden rounded-[5px] shadow-sm aspect-[4/3]"
+        items.append(f'''          <div class="gallery-item relative overflow-hidden rounded-[5px] shadow-sm aspect-[4/3] cursor-pointer"
                data-src="{img}" data-alt="{address} photo {i+1}">
-            <img src="{img}" alt="{address} photo {i+1}" class="w-full h-full object-cover" loading="{'eager' if i==0 else 'lazy'}">
+            <img src="{img}" alt="{address} photo {i+1}" class="w-full h-full object-cover hover:scale-105 transition duration-300" loading="{'eager' if i==0 else 'lazy'}">
           </div>''')
 
     return f'''    <!-- ─── GALLERY ──────────────────────────────────────────────────────── -->
-    <section class="py-14 bg-white">
+    <section class="py-6 bg-white">
       <div class="max-w-6xl mx-auto px-4">
-        <div class="grid {grid_class} gap-3">
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
 {chr(10).join(items)}
         </div>
       </div>
