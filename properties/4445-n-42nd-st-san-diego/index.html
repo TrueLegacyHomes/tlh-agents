@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4445 N 42nd St — San Diego | True Legacy Homes Realtor Partners</title>
+  <meta name="description" content="View 4445 N 42nd St, San Diego, CA 92116 — $1,499,000. 5 bed, 3 bath, 1836 sqft. Partner listing via Ever San Diego.">
+  <link rel="icon" type="image/png" href="https://www.truelegacyhomes.com/images/tlhICON.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/tailwind.min.css">
+  <link rel="preload" as="image" href="https://media.crmls.org/mediaz/2ef1cabe-1c2c-45d9-9d1f-939986a95cd2.jpg">
+  <style>
+    html { scroll-behavior: smooth; }
+    [id] { scroll-margin-top: 80px; }
+    body { font-family: 'Inter', sans-serif; }
+    h1, h2, h3, h4 { font-family: 'Source Serif Pro', Georgia, serif; color: #132b42; }
+    .hero-text { color: #fff !important; }
+    .nav-link { transition: color 0.15s; }
+    .nav-link:hover { color: #158c8b; }
+    #mobile-menu { display: none; }
+    #mobile-menu.open { display: block; }
+    .gallery-item { cursor: pointer; }
+    .gallery-item img { transition: transform 0.35s ease; }
+    .gallery-item:hover img { transform: scale(1.04); }
+    .lightbox { display: none; position: fixed; z-index: 9999; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.92); align-items: center; justify-content: center; }
+    .lightbox.active { display: flex; }
+    .lightbox-content { position: relative; max-width: 90%; max-height: 90vh; display: flex; align-items: center; justify-content: center; }
+    .lightbox img { max-width: 100%; max-height: 90vh; object-fit: contain; border-radius: 4px; }
+    .lightbox-close, .lightbox-prev, .lightbox-next { position: absolute; background: rgba(255,255,255,0.1); color: white; border: none; cursor: pointer; padding: 1rem 1.25rem; font-size: 1.75rem; transition: background 0.2s; z-index: 10000; line-height: 1; }
+    .lightbox-close:hover, .lightbox-prev:hover, .lightbox-next:hover { background: rgba(255,255,255,0.22); }
+    .lightbox-close { top: 20px; right: 20px; font-size: 2rem; }
+    .lightbox-prev { left: 16px; top: 50%; transform: translateY(-50%); }
+    .lightbox-next { right: 16px; top: 50%; transform: translateY(-50%); }
+    .lightbox-caption { position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); background: rgba(0,0,0,0.6); color: white; padding: 0.4rem 1rem; border-radius: 9999px; font-size: 0.8rem; letter-spacing: 0.05em; white-space: nowrap; }
+  </style>
+</head>
+<body class="bg-white text-gray-800 text-lg leading-loose antialiased">
+
+  <!-- ─── NAV ─────────────────────────────────────────────────────────── -->
+  <header class="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex items-center justify-between h-16">
+        <a href="/" class="flex items-center gap-3">
+          <img src="/images/leafrealtor.png" alt="True Legacy Homes" class="h-10 w-10 object-contain">
+          <div class="leading-tight">
+            <div class="text-sm font-bold text-tlh-dark" style="font-family:'Source Serif Pro',Georgia,serif;">True Legacy Homes</div>
+            <div class="text-xs text-tlh-teal font-semibold tracking-widest uppercase">Realtor Partners</div>
+          </div>
+        </a>
+        <nav class="hidden md:flex items-center gap-8">
+          <a href="/properties/" class="nav-link text-sm font-semibold text-tlh-teal">Current Properties</a>
+          <a href="/#buy-box" class="nav-link text-sm font-semibold text-gray-700">Buy Box</a>
+          <a href="/#tracks" class="nav-link text-sm font-semibold text-gray-700">How It Works</a>
+          <a href="/#contact" class="nav-link text-sm font-semibold text-gray-700">Contact</a>
+        </nav>
+        <div class="hidden md:flex items-center gap-3">
+          <a href="tel:6194501702" class="text-sm font-semibold text-tlh-dark hover:text-tlh-teal transition">(619) 450-1702</a>
+          <a href="/#contact" class="bg-tlh-teal text-white px-5 py-2 rounded-[5px] text-sm font-semibold hover:bg-tlh-teal-dark transition">Send Us a Property</a>
+        </div>
+        <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-600" aria-label="Menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+      <div id="mobile-menu" class="pb-4 border-t border-gray-100">
+        <nav class="flex flex-col gap-1 pt-3">
+          <a href="/properties/" class="text-sm font-semibold text-tlh-teal py-2">Current Properties</a>
+          <a href="/#buy-box" class="text-sm font-semibold text-gray-700 py-2 hover:text-tlh-teal">Buy Box</a>
+          <a href="/#tracks" class="text-sm font-semibold text-gray-700 py-2 hover:text-tlh-teal">How It Works</a>
+          <a href="/#contact" class="text-sm font-semibold text-gray-700 py-2 hover:text-tlh-teal">Contact</a>
+          <a href="tel:6194501702" class="text-sm font-semibold text-tlh-teal py-2">(619) 450-1702</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ─── HERO ─────────────────────────────────────────────────────────── -->
+    <section class="py-14 md:py-20 bg-tlh-dark text-white">
+      <div class="max-w-6xl mx-auto px-4">
+        <a href="/properties/" class="inline-flex items-center gap-1 text-sm text-white/50 hover:text-white transition mb-6">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+          Back to Current Properties
+        </a>
+        <div class="flex flex-wrap items-start gap-2 mb-3">
+          <span class="bg-[#1d3557] text-white text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded-sm">Ever San Diego</span>
+          <span class="bg-green-600 text-white text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded-sm">Active</span>
+        </div>
+        <h1 class="hero-text text-4xl md:text-5xl font-bold mb-2" style="font-family:'Source Serif Pro',Georgia,serif;">4445 N 42nd St</h1>
+        <p class="text-white/70 text-xl mb-6">San Diego, CA 92116</p>
+        <div class="flex flex-wrap gap-6 items-center">
+          <span class="text-3xl font-bold text-tlh-teal">$1,499,000</span>
+          <div class="flex gap-4 text-white/80 text-base">
+            <span>5 Beds</span>
+            <span class="text-white/30">·</span><span>3 Baths</span>
+            <span class="text-white/30">·</span><span>1836 sqft</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── GALLERY ──────────────────────────────────────────────────────── -->
+    <section class="py-14 bg-white">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+          <div class="gallery-item col-span-2 relative overflow-hidden rounded-[5px] shadow-sm aspect-[4/3]"
+               data-src="https://media.crmls.org/mediaz/2ef1cabe-1c2c-45d9-9d1f-939986a95cd2.jpg" data-alt="4445 N 42nd St photo 1">
+            <img src="https://media.crmls.org/mediaz/2ef1cabe-1c2c-45d9-9d1f-939986a95cd2.jpg" alt="4445 N 42nd St photo 1" class="w-full h-full object-cover" loading="eager">
+          </div>
+          <div class="gallery-item  relative overflow-hidden rounded-[5px] shadow-sm aspect-[4/3]"
+               data-src="https://media.crmls.org/mediaz/bbba851d-8d66-494c-b932-b3a55e54d7a0.jpg" data-alt="4445 N 42nd St photo 2">
+            <img src="https://media.crmls.org/mediaz/bbba851d-8d66-494c-b932-b3a55e54d7a0.jpg" alt="4445 N 42nd St photo 2" class="w-full h-full object-cover" loading="lazy">
+          </div>
+          <div class="gallery-item  relative overflow-hidden rounded-[5px] shadow-sm aspect-[4/3]"
+               data-src="https://media.crmls.org/mediaz/9e5b54dd-7650-445f-ae16-446ec0194306.jpg" data-alt="4445 N 42nd St photo 3">
+            <img src="https://media.crmls.org/mediaz/9e5b54dd-7650-445f-ae16-446ec0194306.jpg" alt="4445 N 42nd St photo 3" class="w-full h-full object-cover" loading="lazy">
+          </div>
+          <div class="gallery-item  relative overflow-hidden rounded-[5px] shadow-sm aspect-[4/3]"
+               data-src="https://media.crmls.org/mediaz/e2ab517b-9733-4712-953b-e9a5d4a32de8.jpg" data-alt="4445 N 42nd St photo 4">
+            <img src="https://media.crmls.org/mediaz/e2ab517b-9733-4712-953b-e9a5d4a32de8.jpg" alt="4445 N 42nd St photo 4" class="w-full h-full object-cover" loading="lazy">
+          </div>
+          <div class="gallery-item  relative overflow-hidden rounded-[5px] shadow-sm aspect-[4/3]"
+               data-src="https://media.crmls.org/mediaz/8ce8177a-3d74-4b63-9d9c-a3b0b6964b5d.jpg" data-alt="4445 N 42nd St photo 5">
+            <img src="https://media.crmls.org/mediaz/8ce8177a-3d74-4b63-9d9c-a3b0b6964b5d.jpg" alt="4445 N 42nd St photo 5" class="w-full h-full object-cover" loading="lazy">
+          </div>
+          <div class="gallery-item  relative overflow-hidden rounded-[5px] shadow-sm aspect-[4/3]"
+               data-src="https://media.crmls.org/mediaz/8e5f490e-1d8d-4548-87b3-5d43cf2aaaca.jpg" data-alt="4445 N 42nd St photo 6">
+            <img src="https://media.crmls.org/mediaz/8e5f490e-1d8d-4548-87b3-5d43cf2aaaca.jpg" alt="4445 N 42nd St photo 6" class="w-full h-full object-cover" loading="lazy">
+          </div>
+          <div class="gallery-item  relative overflow-hidden rounded-[5px] shadow-sm aspect-[4/3]"
+               data-src="https://media.crmls.org/mediaz/0c16b703-0035-4bbf-97b0-a1901df8d6f7.jpg" data-alt="4445 N 42nd St photo 7">
+            <img src="https://media.crmls.org/mediaz/0c16b703-0035-4bbf-97b0-a1901df8d6f7.jpg" alt="4445 N 42nd St photo 7" class="w-full h-full object-cover" loading="lazy">
+          </div>
+          <div class="gallery-item  relative overflow-hidden rounded-[5px] shadow-sm aspect-[4/3]"
+               data-src="https://media.crmls.org/mediaz/5cb886b2-9cce-4f4a-8c71-5aca27352e26.jpg" data-alt="4445 N 42nd St photo 8">
+            <img src="https://media.crmls.org/mediaz/5cb886b2-9cce-4f4a-8c71-5aca27352e26.jpg" alt="4445 N 42nd St photo 8" class="w-full h-full object-cover" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── DETAILS ───────────────────────────────────────────────────────── -->
+    <section class="py-14 md:py-20" style="background-color:#f9f4eb;">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="grid md:grid-cols-3 gap-10">
+
+          <!-- Left: description + details table -->
+          <div class="md:col-span-2">
+            <h2 class="text-2xl font-bold mb-4">About This Property</h2>
+            <p class="text-gray-700 text-base leading-relaxed mb-8">Exceptional Investment Opportunity in Kensington! Welcome to your chance to own a beautifully renovated property in the charming Kensington neighborhood. This rare find features two meticulously updated homes on a single lot, offering incredible potential whether you're an investor looking for rental income or an end user wanting to offset your mortgage. The front unit is a delightful 1,274 sq-ft, 3-bedroom, 2-bathroom home brimming with character. From the moment you step inside, you'll be greeted by a cozy living room complete with a stylish fireplace, perfect for relaxing evenings. The heart of the home, the kitchen, boasts classic white cabinetry with warm oak and gold accents, and state-of-the-art appliances that will inspire your culinary creativity. The primary suite is a true retreat, featuring a spacious walk-in closet and a luxurious bathroom with a large shower, including a convenient bench and designer finishes. This unit also offers a charming front yard, a private gated backyard, and a freshly paved driveway leading to a 2-car standalone garage. The back unit is equally impressive, offering 562 sq-ft, 2 bedrooms and 1 bathroom with its own separate gated entrance. Recently remodeled to include a sleek white kitchen and a chic bathroom with designer touches, it’s an ideal rental unit or guest suite. The private yard and dedicated parking add to the convenience and appeal of this unit. Located just blocks away from Adams Avenue, the Copley-Price Family YMCA, and the 15 Freeway, this property places you in the heart of a vibrant community with easy access to everything you need. Don’t miss this unique opportunity to own a property that combines modern luxury with unbeatable functionality. Whether you're looking to generate rental income or enjoy the benefits of a well-appointed home with additional space, this Kensington gem is ready to welcome you home.</p>
+
+            <h3 class="text-xl font-bold mb-3">Property Details</h3>
+            <table class="w-full">
+              <tbody>
+              <tr class="border-b border-gray-100"><td class="py-2 pr-4 text-sm font-semibold text-gray-500 whitespace-nowrap">List Price</td><td class="py-2 text-sm text-gray-800">$1,499,000</td></tr>
+              <tr class="border-b border-gray-100"><td class="py-2 pr-4 text-sm font-semibold text-gray-500 whitespace-nowrap">Bedrooms</td><td class="py-2 text-sm text-gray-800">5</td></tr>
+              <tr class="border-b border-gray-100"><td class="py-2 pr-4 text-sm font-semibold text-gray-500 whitespace-nowrap">Bathrooms</td><td class="py-2 text-sm text-gray-800">3</td></tr>
+              <tr class="border-b border-gray-100"><td class="py-2 pr-4 text-sm font-semibold text-gray-500 whitespace-nowrap">Living Area</td><td class="py-2 text-sm text-gray-800">1,836 sq ft</td></tr>
+              <tr class="border-b border-gray-100"><td class="py-2 pr-4 text-sm font-semibold text-gray-500 whitespace-nowrap">Lot Size</td><td class="py-2 text-sm text-gray-800">5868 sq ft</td></tr>
+              <tr class="border-b border-gray-100"><td class="py-2 pr-4 text-sm font-semibold text-gray-500 whitespace-nowrap">Year Built</td><td class="py-2 text-sm text-gray-800">1936</td></tr>
+              <tr class="border-b border-gray-100"><td class="py-2 pr-4 text-sm font-semibold text-gray-500 whitespace-nowrap">Type</td><td class="py-2 text-sm text-gray-800">Single Family Residence</td></tr>
+              <tr class="border-b border-gray-100"><td class="py-2 pr-4 text-sm font-semibold text-gray-500 whitespace-nowrap">Stories</td><td class="py-2 text-sm text-gray-800">1 span widget</td></tr>
+              <tr class="border-b border-gray-100"><td class="py-2 pr-4 text-sm font-semibold text-gray-500 whitespace-nowrap">Community</td><td class="py-2 text-sm text-gray-800">92116 - Normal Heights​​​​​​​ span widget span widget span widget</td></tr>
+              <tr class="border-b border-gray-100"><td class="py-2 pr-4 text-sm font-semibold text-gray-500 whitespace-nowrap">MLS #</td><td class="py-2 text-sm text-gray-800">PTP2604462​​​​​​​ span widget span widget span widget span widget</td></tr>
+              </tbody>
+            </table>
+
+            <div class="mt-8 p-4 bg-white rounded-[5px] border border-gray-200 text-sm text-gray-500">
+              Listing data courtesy of <a href="https://eversandiego.com/properties/Listing_440221806+4445+N+42nd+St+San+Diego+CA+92116-crmls440221806.html" target="_blank" rel="noopener" class="text-tlh-teal hover:underline">eversandiego.com</a> and Ever Eternity, Pacific Sotheby's International Realty (CA DRE# 01794748).
+              Data © CRMLS. All information should be independently verified.
+            </div>
+          </div>
+
+          <!-- Right: contact sidebar -->
+          <div>
+            <div class="bg-white rounded-[5px] border border-gray-200 p-6 sticky top-24">
+              <h3 class="text-xl font-bold mb-1">Interested in this property?</h3>
+              <p class="text-sm text-gray-500 mb-5">Your buyer gets exclusive access — before bidding wars start.</p>
+              <form id="contact-form" action="https://formspree.io/f/info@truelegacyhomes.com" method="POST">
+                <input type="hidden" name="property" value="4445 N 42nd St, San Diego, CA 92116">
+                <input type="hidden" name="price" value="$1,499,000">
+                <div class="flex flex-col gap-3">
+                  <input type="text" name="name" placeholder="Your Name" required
+                    class="w-full border border-gray-200 rounded-[5px] px-4 py-2.5 text-sm focus:outline-none focus:border-tlh-teal">
+                  <input type="tel" name="phone" placeholder="Phone Number" required
+                    class="w-full border border-gray-200 rounded-[5px] px-4 py-2.5 text-sm focus:outline-none focus:border-tlh-teal">
+                  <input type="email" name="email" placeholder="Email Address" required
+                    class="w-full border border-gray-200 rounded-[5px] px-4 py-2.5 text-sm focus:outline-none focus:border-tlh-teal">
+                  <input type="text" name="brokerage" placeholder="Brokerage"
+                    class="w-full border border-gray-200 rounded-[5px] px-4 py-2.5 text-sm focus:outline-none focus:border-tlh-teal">
+                  <textarea name="message" placeholder="Message (optional)" rows="3"
+                    class="w-full border border-gray-200 rounded-[5px] px-4 py-2.5 text-sm focus:outline-none focus:border-tlh-teal resize-none"></textarea>
+                  <button type="submit"
+                    class="w-full bg-tlh-teal text-white py-3 rounded-[5px] text-sm font-semibold hover:bg-tlh-teal-dark transition">
+                    Request Info
+                  </button>
+                </div>
+              </form>
+              <div class="mt-4 pt-4 border-t border-gray-100 text-center">
+                <a href="tel:6194501702" class="text-sm font-semibold text-tlh-dark hover:text-tlh-teal transition">(619) 450-1702</a>
+                <span class="text-gray-300 mx-2">·</span>
+                <a href="mailto:info@truelegacyhomes.com" class="text-sm text-gray-500 hover:text-tlh-teal transition">Email Us</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── CTA ───────────────────────────────────────────────────────────── -->
+    <section class="py-14 bg-tlh-dark text-white text-center">
+      <div class="max-w-2xl mx-auto px-4">
+        <h2 class="hero-text text-3xl font-bold mb-3" style="font-family:'Source Serif Pro',Georgia,serif;">Have a seller who fits our buy box?</h2>
+        <p class="text-white/70 mb-6">All-cash, no contingencies, 24–48hr decision. Estate contents handled.</p>
+        <a href="/#contact" class="bg-tlh-teal text-white px-8 py-3 rounded-[5px] font-semibold hover:bg-tlh-teal-dark transition inline-block">Send Us a Property</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ─── FOOTER ────────────────────────────────────────────────────────── -->
+  <footer class="bg-white border-t border-gray-100 py-10">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="flex items-center gap-3">
+          <img src="/images/leafrealtor.png" alt="True Legacy Homes" class="h-7 w-auto">
+          <span class="text-sm font-semibold text-tlh-dark" style="font-family:'Source Serif Pro',Georgia,serif;">True Legacy Homes — Realtor Partners</span>
+        </div>
+        <nav class="flex gap-6 text-sm text-gray-500">
+          <a href="/properties/" class="hover:text-tlh-teal transition">Properties</a>
+          <a href="/#buy-box" class="hover:text-tlh-teal transition">Buy Box</a>
+          <a href="/#contact" class="hover:text-tlh-teal transition">Contact</a>
+          <a href="https://www.truelegacyhomes.com" class="hover:text-tlh-teal transition">Main Site ↗</a>
+        </nav>
+        <p class="text-sm text-gray-400">© 2026 True Legacy Homes. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+      document.getElementById('mobile-menu').classList.toggle('open');
+    });
+  </script>
+
+  <!-- ─── LIGHTBOX ──────────────────────────────────────────────────────── -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lb-close" aria-label="Close">×</button>
+      <button class="lightbox-prev" id="lb-prev" aria-label="Previous">‹</button>
+      <img id="lb-img" src="" alt="">
+      <button class="lightbox-next" id="lb-next" aria-label="Next">›</button>
+      <div class="lightbox-caption" id="lb-caption"></div>
+    </div>
+  </div>
+  <script>
+    (function(){
+      var items = Array.from(document.querySelectorAll('.gallery-item'));
+      var lb = document.getElementById('lightbox');
+      var lbImg = document.getElementById('lb-img');
+      var lbCap = document.getElementById('lb-caption');
+      var cur = 0;
+      function open(i){ cur=i; var it=items[i]; lbImg.src=it.dataset.src; lbImg.alt=it.dataset.alt||''; lbCap.textContent=(i+1)+' / '+items.length; lb.classList.add('active'); document.body.style.overflow='hidden'; }
+      function close(){ lb.classList.remove('active'); document.body.style.overflow=''; }
+      function prev(){ open((cur-1+items.length)%items.length); }
+      function next(){ open((cur+1)%items.length); }
+      items.forEach(function(el,i){ el.addEventListener('click',function(){ open(i); }); });
+      document.getElementById('lb-close').addEventListener('click',close);
+      document.getElementById('lb-prev').addEventListener('click',prev);
+      document.getElementById('lb-next').addEventListener('click',next);
+      lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
+      document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') prev(); if(e.key==='ArrowRight') next(); });
+    })();
+  </script>
+
+</body>
+</html>
