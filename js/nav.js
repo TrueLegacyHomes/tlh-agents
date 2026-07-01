@@ -29,7 +29,7 @@
         <!-- Desktop CTA -->
         <div class="hidden md:flex items-center gap-3">
           <a href="tel:6194501702" class="text-sm font-semibold text-tlh-dark hover:text-tlh-teal transition">(619) 450-1702</a>
-          <a href="/#contact" class="bg-tlh-teal text-white px-5 py-3 rounded-[5px] text-sm font-semibold hover:bg-tlh-teal-dark transition">Send Us a Property</a>
+          <a href="/#contact" class="bg-tlh-teal text-white rounded-[5px] text-sm font-semibold hover:bg-tlh-teal-dark transition" style="padding: 10px 20px; display:inline-block;">Send Us a Property</a>
         </div>
 
         <!-- Mobile hamburger -->
@@ -48,7 +48,7 @@
           <a href="/#tracks" class="text-sm font-semibold text-gray-700 py-2 hover:text-tlh-teal">How It Works</a>
           <a href="/#contact" class="text-sm font-semibold text-gray-700 py-2 hover:text-tlh-teal">Contact</a>
           <a href="tel:6194501702" class="text-sm font-semibold text-tlh-teal py-2">(619) 450-1702</a>
-          <a href="/#contact" class="inline-block mt-1 bg-tlh-teal text-white px-5 py-3 rounded-[5px] text-sm font-semibold text-center">Send Us a Property</a>
+          <a href="/#contact" class="bg-tlh-teal text-white rounded-[5px] text-sm font-semibold text-center" style="padding: 10px 20px; display:block; margin-top:4px;">Send Us a Property</a>
         </nav>
       </div>
     </div>
