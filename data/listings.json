@@ -1,0 +1,109 @@
+{
+  "updated": "2026-07-06",
+  "listings": [
+    {
+      "address": "12497 Gilmore Ave",
+      "city": "Los Angeles",
+      "zipcode": "90066",
+      "price": "$1,725,000",
+      "beds": "3",
+      "baths": "2",
+      "sqft": "1386",
+      "short_desc": "Positioned on the Westside between Culver City, Marina del Rey, and Venice, this thoughtfully remodeled single-story home delivers curated design and effortless",
+      "hero_img": "https://media.crmls.org/mediaz/b3fd608b-c770-4d70-832e-1a00d3957afe.jpg",
+      "slug": "12497-gilmore-ave-los-angeles",
+      "detail_url": "https://eversandiego.com/properties/Listing_444699407+12497+Gilmore+Ave+Los+Angeles+CA+90066-crmls444699407.html"
+    },
+    {
+      "address": "602 Fresca St",
+      "city": "Solana Beach",
+      "zipcode": "92075",
+      "price": "$2,795,000",
+      "beds": "3",
+      "baths": "2",
+      "sqft": "1793",
+      "short_desc": "Set on a corner lot in one of Solana Beach's most coveted neighborhoods, this fully reimagined single-story ranch delivers refined design and effortless coastal",
+      "hero_img": "https://media.crmls.org/mediaz/a15cf135-c0dc-4d40-bf1b-e0f0b9deaf87.jpg",
+      "slug": "602-fresca-st-solana-beach",
+      "detail_url": "https://eversandiego.com/properties/Listing_444714194+602+Fresca+St+Solana+Beach+CA+92075-crmls444714194.html"
+    },
+    {
+      "address": "4445 N 42nd St",
+      "city": "San Diego",
+      "zipcode": "92116",
+      "price": "$1,499,000",
+      "beds": "5",
+      "baths": "3",
+      "sqft": "1836",
+      "short_desc": "Exceptional Investment Opportunity in Kensington! Welcome to your chance to own a beautifully renovated property in the charming Kensington neighborhood.",
+      "hero_img": "https://media.crmls.org/mediaz/2ef1cabe-1c2c-45d9-9d1f-939986a95cd2.jpg",
+      "slug": "4445-n-42nd-st-san-diego",
+      "detail_url": "https://eversandiego.com/properties/Listing_440221806+4445+N+42nd+St+San+Diego+CA+92116-crmls440221806.html"
+    },
+    {
+      "address": "18438 Los Alimos St",
+      "city": "Northridge",
+      "zipcode": "91326",
+      "price": "$1,099,000",
+      "beds": "4",
+      "baths": "2",
+      "sqft": "1698",
+      "short_desc": "Completely reimagined inside, this single-story Porter Ranch residence pairs warm white oak cabinetry and brushed gold accents with a light-filled layout that o",
+      "hero_img": "https://media.crmls.org/mediaz/05c4accd-2a15-4110-b6bb-94709cab8d86.jpg",
+      "slug": "18438-los-alimos-st-northridge",
+      "detail_url": "https://eversandiego.com/properties/Listing_438422579+18438+Los+Alimos+St+Northridge+CA+91326-crmls438422579.html"
+    },
+    {
+      "address": "2215 Golden Cir",
+      "city": "Newport Beach",
+      "zipcode": "92660",
+      "price": "$2,795,000",
+      "beds": "4",
+      "baths": "3",
+      "sqft": "1997",
+      "short_desc": "With the Newport Beach Golf Course moments away and Upper Newport Bay trails at your doorstep, this fully reimagined coastal residence is a rare convergence of ",
+      "hero_img": "https://media.crmls.org/mediaz/829c98dc-ae51-493f-81ad-f89613e43f92.jpg",
+      "slug": "2215-golden-cir-newport-beach",
+      "detail_url": "https://eversandiego.com/properties/Listing_435866777+2215+Golden+Cir+Newport+Beach+CA+92660-crmls435866777.html"
+    },
+    {
+      "address": "3660 Purdue Ave",
+      "city": "Los Angeles",
+      "zipcode": "90066",
+      "price": "$2,349,000",
+      "beds": "3",
+      "baths": "3",
+      "sqft": "1569",
+      "short_desc": "From the two-tone charcoal and stacked stone facade to the designer-curated interiors, this Mar Vista home is where bold design meets everyday livability.",
+      "hero_img": "https://media.crmls.org/mediaz/bd72aaf1-ad55-4e13-a97d-6e67300a77b7.jpg",
+      "slug": "3660-purdue-ave-los-angeles",
+      "detail_url": "https://eversandiego.com/properties/Listing_428069083+3660+Purdue+Ave+Los+Angeles+CA+90066-crmls428069083.html"
+    },
+    {
+      "address": "219 W Acacia Ave",
+      "city": "El Segundo",
+      "zipcode": "90245",
+      "price": "$2,175,000",
+      "beds": "4",
+      "baths": "2",
+      "sqft": "2406",
+      "short_desc": "Impeccably remodeled coastal El Segundo home offering a refined blend of luxurious design and everyday functionality just minutes from the beach and downtown El",
+      "hero_img": "https://media.crmls.org/mediaz/512d9f0e-e3aa-46b6-ae09-65bbd0227174.jpg",
+      "slug": "219-w-acacia-ave-el-segundo",
+      "detail_url": "https://eversandiego.com/properties/Listing_426351115+219+W+Acacia+Ave+El+Segundo+CA+90245-crmls426351115.html"
+    },
+    {
+      "address": "4210 Alcove Ave",
+      "city": "Studio City",
+      "zipcode": "91604",
+      "price": "$1,575,000",
+      "beds": "3",
+      "baths": "2",
+      "sqft": "1766",
+      "short_desc": "Fully remodeled and impeccably designed, this Studio City residence blends modern style with everyday comfort just moments from Ventura Boulevard and convenient",
+      "hero_img": "https://media.crmls.org/mediaz/21d782f9-4576-4c78-860f-92e1b6100fb0.jpg",
+      "slug": "4210-alcove-ave-studio-city",
+      "detail_url": "https://eversandiego.com/properties/Listing_426371050+4210+Alcove+Ave+Studio+City+CA+91604-crmls426371050.html"
+    }
+  ]
+}

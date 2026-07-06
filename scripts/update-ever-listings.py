@@ -734,7 +734,7 @@ def main():
             f.write(page_html)
         print(f"  ✅ /properties/{slug}/")
 
-    # Generate properties index
+    # Generate properties index (kept for fallback / SEO)
     print(f"\n📄 Generating /properties/index.html ...")
     idx_html = build_properties_index(enriched)
     with open(os.path.join(BASE, 'properties', 'index.html'), 'w') as f:
@@ -744,6 +744,30 @@ def main():
     # Update main index
     print(f"\n🔄 Updating index.html Current Properties section ...")
     update_index_html(enriched)
+
+    # ── SINGLE SOURCE OF TRUTH: write data/listings.json ──────────────────
+    print(f"\n💾 Writing data/listings.json ...")
+    listings_data = [
+        {
+            'address':     p['address'],
+            'city':        p['city'],
+            'zipcode':     p['zipcode'],
+            'price':       p.get('price', ''),
+            'beds':        p.get('beds', ''),
+            'baths':       p.get('baths', ''),
+            'sqft':        p.get('sqft', ''),
+            'short_desc':  p.get('short_desc', '')[:160],
+            'hero_img':    p.get('hero_img', ''),
+            'slug':        p['slug'],
+            'detail_url':  p.get('detail_url', ''),
+        }
+        for p in enriched
+    ]
+    data_dir = os.path.join(BASE, 'data')
+    os.makedirs(data_dir, exist_ok=True)
+    with open(os.path.join(data_dir, 'listings.json'), 'w') as f:
+        json.dump({'updated': __import__('datetime').date.today().isoformat(), 'listings': listings_data}, f, indent=2)
+    print(f"  ✅ data/listings.json ({len(listings_data)} listings)")
 
     # Summary
     summary = {
