@@ -20,7 +20,7 @@
 
         <!-- Desktop nav -->
         <nav class="hidden md:flex items-center gap-6">
-          <a href="/properties/" class="nav-link text-sm font-semibold text-gray-700">Current Properties</a>
+          <a href="#properties" class="nav-link text-sm font-semibold text-gray-700">Current Properties</a>
           <a href="/#buy-box" class="nav-link text-sm font-semibold text-gray-700">Buy Box</a>
           <a href="/#tracks" class="nav-link text-sm font-semibold text-gray-700">How It Works</a>
           <a href="/#contact" class="nav-link text-sm font-semibold text-gray-700">Contact</a>
@@ -43,7 +43,7 @@
       <!-- Mobile menu -->
       <div id="mobile-menu" class="pb-4 border-t border-gray-100" style="display:none;">
         <nav class="flex flex-col gap-1 pt-3">
-          <a href="/properties/" class="text-sm font-semibold text-gray-700 py-2 hover:text-tlh-teal">Current Properties</a>
+          <a href="#properties" class="text-sm font-semibold text-gray-700 py-2 hover:text-tlh-teal">Current Properties</a>
           <a href="/#buy-box" class="text-sm font-semibold text-gray-700 py-2 hover:text-tlh-teal">Buy Box</a>
           <a href="/#tracks" class="text-sm font-semibold text-gray-700 py-2 hover:text-tlh-teal">How It Works</a>
           <a href="/#contact" class="text-sm font-semibold text-gray-700 py-2 hover:text-tlh-teal">Contact</a>
