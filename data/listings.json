@@ -1,6 +1,19 @@
 {
-  "updated": "2026-07-06",
+  "updated": "2026-07-09",
   "listings": [
+    {
+      "address": "1845 Thomas Ave",
+      "city": "San Diego",
+      "zipcode": "92109",
+      "price": "$2,195,000",
+      "beds": "5",
+      "baths": "3",
+      "sqft": "2098",
+      "short_desc": "Tucked between the Pacific Ocean and Mission Bay, this fully remodeled craftsman cottage on Thomas Avenue delivers optimal Pacific Beach living.",
+      "hero_img": "https://media.crmls.org/mediaz/8b6c0351-50a3-41ed-985b-a4bf99d4d275.jpg",
+      "slug": "1845-thomas-ave-san-diego",
+      "detail_url": "https://eversandiego.com/properties/Listing_445967113+1845+Thomas+Ave+San+Diego+CA+92109-crmls445967113.html"
+    },
     {
       "address": "12497 Gilmore Ave",
       "city": "Los Angeles",
@@ -52,19 +65,6 @@
       "hero_img": "https://media.crmls.org/mediaz/05c4accd-2a15-4110-b6bb-94709cab8d86.jpg",
       "slug": "18438-los-alimos-st-northridge",
       "detail_url": "https://eversandiego.com/properties/Listing_438422579+18438+Los+Alimos+St+Northridge+CA+91326-crmls438422579.html"
-    },
-    {
-      "address": "2215 Golden Cir",
-      "city": "Newport Beach",
-      "zipcode": "92660",
-      "price": "$2,795,000",
-      "beds": "4",
-      "baths": "3",
-      "sqft": "1997",
-      "short_desc": "With the Newport Beach Golf Course moments away and Upper Newport Bay trails at your doorstep, this fully reimagined coastal residence is a rare convergence of ",
-      "hero_img": "https://media.crmls.org/mediaz/829c98dc-ae51-493f-81ad-f89613e43f92.jpg",
-      "slug": "2215-golden-cir-newport-beach",
-      "detail_url": "https://eversandiego.com/properties/Listing_435866777+2215+Golden+Cir+Newport+Beach+CA+92660-crmls435866777.html"
     },
     {
       "address": "3660 Purdue Ave",
