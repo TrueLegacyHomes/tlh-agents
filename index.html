@@ -634,6 +634,19 @@
   </script>
   <script src="/js/listings-widget.js" defer></script>
   <script>
+    // Pre-fill message from property URL param
+    (function() {
+      var p = new URLSearchParams(window.location.search);
+      var prop = p.get('property');
+      if (prop) {
+        var msg = document.getElementById('c-message');
+        if (msg && !msg.value) {
+          msg.value = 'Interested in ' + prop.replace(/-/g,' ').replace(/\b\w/g,function(c){return c.toUpperCase();}) + '.';
+        }
+      }
+    })();
+  </script>
+  <script>
 
     // Contact form → Supabase
     var _formLoadTime = Date.now();
