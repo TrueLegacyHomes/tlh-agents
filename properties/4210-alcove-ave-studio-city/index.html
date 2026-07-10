@@ -144,7 +144,7 @@
             <div class="bg-white rounded-[5px] border border-gray-200 p-6 sticky top-24">
               <h3 class="text-xl font-bold mb-1">Interested in this property?</h3>
               <p class="text-sm text-gray-500 mb-5">Your buyer gets exclusive access — before bidding wars start.</p>
-              <form id="contact-form" action="https://formspree.io/f/jamison.luther@truelegacyhomes.com" method="POST">
+              <form id="contact-form">
                 <input type="hidden" name="property" value="4210 Alcove Ave, Studio City, CA 91604">
                 <input type="hidden" name="price" value="$1,575,000">
                 <div class="flex flex-col gap-3">
@@ -239,5 +239,50 @@
     })();
   </script>
 
+  <script>
+    (function() {
+      var form = document.getElementById('contact-form');
+      if (!form) return;
+      var btn = form.querySelector('button[type="submit"]');
+      var SUPABASE_URL = 'https://inqbqchjxzvdvcslvskb.supabase.co/rest/v1/form_submissions';
+      var SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlucWJxY2hqeHp2ZHZjc2x2c2tiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzMwNzA4NzEsImV4cCI6MjA4ODY0Njg3MX0.cqOtZQQOdSI9hwVxI8RSAMsgxI3hJsZ8ttzehJRKVgk';
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var honey = form.querySelector('[name="website"]');
+        if (honey && honey.value) return;
+        var data = {
+          form_type: 'property-inquiry',
+          name: (form.querySelector('[name="name"]') || {}).value || '',
+          email: (form.querySelector('[name="email"]') || {}).value || '',
+          phone: (form.querySelector('[name="phone"]') || {}).value || '',
+          brokerage: (form.querySelector('[name="brokerage"]') || {}).value || '',
+          message: (form.querySelector('[name="message"]') || {}).value || '',
+          property: (form.querySelector('[name="property"]') || {}).value || '',
+          price: (form.querySelector('[name="price"]') || {}).value || '',
+          lead_source: 'Direct'
+        };
+        if (btn) { btn.disabled = true; btn.textContent = 'Sending…'; }
+        fetch(SUPABASE_URL, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'apikey': SUPABASE_KEY,
+            'Authorization': 'Bearer ' + SUPABASE_KEY,
+            'Prefer': 'return=minimal'
+          },
+          body: JSON.stringify(data)
+        }).then(function(r) {
+          if (r.ok || r.status === 201) {
+            form.innerHTML = '<p style="text-align:center;padding:2rem 0;font-weight:600;color:#0f766e;">Thanks! We'll be in touch shortly.</p>';
+          } else {
+            if (btn) { btn.disabled = false; btn.textContent = 'Request Info'; }
+            alert('Something went wrong. Please call us at (619) 450-1702.');
+          }
+        }).catch(function() {
+          if (btn) { btn.disabled = false; btn.textContent = 'Request Info'; }
+        });
+      });
+    })();
+  </script>
 </body>
 </html>
