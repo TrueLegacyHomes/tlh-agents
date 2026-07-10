@@ -1,6 +1,32 @@
 {
-  "updated": "2026-07-09",
+  "updated": "2026-07-10",
   "listings": [
+    {
+      "address": "6946 Everglades Ave",
+      "city": "San Diego",
+      "zipcode": "92119",
+      "price": "$1,365,000",
+      "beds": "4",
+      "baths": "2",
+      "sqft": "1828",
+      "short_desc": "Fully renovated and move-in ready, this single-level San Carlos ranch home offers the kind of space that makes everyday living feel easier,",
+      "hero_img": "https://media.crmls.org/mediaz/6af032bd-2e1b-4799-b521-252e986cf24c.jpg",
+      "slug": "6946-everglades-ave-san-diego",
+      "detail_url": "https://agents.truelegacyhomes.com/properties/6946-everglades-ave-san-diego/"
+    },
+    {
+      "address": "1812 Highland Dr",
+      "city": "Newport Beach",
+      "zipcode": "92660",
+      "price": "$4,495,000",
+      "beds": "4",
+      "baths": "4",
+      "sqft": "3152",
+      "short_desc": "Tucked into one of Dover Shores' most coveted streets, this Newport Beach residence is undergoing a complete designer renovation \u2014 reimagine",
+      "hero_img": "https://media.crmls.org/mediaz/e1b7bca9-7335-4a2f-9763-2d597bad95c0.jpg",
+      "slug": "1812-highland-dr-newport-beach",
+      "detail_url": "https://agents.truelegacyhomes.com/properties/1812-highland-dr-newport-beach/"
+    },
     {
       "address": "1845 Thomas Ave",
       "city": "San Diego",
