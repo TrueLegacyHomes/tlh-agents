@@ -634,17 +634,13 @@
   </script>
   <script src="/js/listings-widget.js" defer></script>
   <script>
-    // Pre-fill message from property URL param
-    (function() {
-      var p = new URLSearchParams(window.location.search);
-      var prop = p.get('property');
-      if (prop) {
-        var msg = document.getElementById('c-message');
-        if (msg && !msg.value) {
-          msg.value = 'Interested in ' + prop.replace(/-/g,' ').replace(/\b\w/g,function(c){return c.toUpperCase();}) + '.';
-        }
+    // Re-scroll to hash after full page load (fixes layout-shift when navigating from another page)
+    window.addEventListener('load', function() {
+      if (window.location.hash) {
+        var el = document.querySelector(window.location.hash);
+        if (el) { setTimeout(function() { el.scrollIntoView({ behavior: 'smooth' }); }, 50); }
       }
-    })();
+    });
   </script>
   <script>
 
