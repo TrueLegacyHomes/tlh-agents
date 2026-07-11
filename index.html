@@ -648,7 +648,7 @@
   </script>
   <script>
 
-    // Contact form → Supabase
+    // Contact form → Formspree
     var _formLoadTime = Date.now();
     var _timingReset = false;
     document.getElementById('contact-form').addEventListener('focusin', function() {
@@ -676,21 +676,16 @@
       errEl.classList.add('hidden');
 
       try {
-        var res = await fetch('https://inqbqchjxzvdvcslvskb.supabase.co/rest/v1/form_submissions', {
+        var res = await fetch('https://formspree.io/f/xzdnprjg', {
           method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'apikey': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlucWJxY2hqeHp2ZHZjc2x2c2tiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzMwNzA4NzEsImV4cCI6MjA4ODY0Njg3MX0.cqOtZQQOdSI9hwVxI8RSAMsgxI3hJsZ8ttzehJRKVgk',
-            'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlucWJxY2hqeHp2ZHZjc2x2c2tiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzMwNzA4NzEsImV4cCI6MjA4ODY0Njg3MX0.cqOtZQQOdSI9hwVxI8RSAMsgxI3hJsZ8ttzehJRKVgk',
-            'Prefer': 'return=minimal'
-          },
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
           body: JSON.stringify({
-            form_type: 'agent-contact',
             name: name,
             email: email,
             phone: phone,
-            message: (brokerage ? 'Brokerage: ' + brokerage + '\nType: ' + agentType + '\n' : '') + message,
-            lead_source: 'Direct'
+            brokerage: brokerage,
+            reason: agentType,
+            message: message
           })
         });
         if (!res.ok) throw new Error('server error');
