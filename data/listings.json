@@ -1,31 +1,18 @@
 {
-  "updated": "2026-07-10",
+  "updated": "2026-07-11",
   "listings": [
     {
-      "address": "6946 Everglades Ave",
-      "city": "San Diego",
-      "zipcode": "92119",
-      "price": "$1,365,000",
-      "beds": "4",
-      "baths": "2",
-      "sqft": "1828",
-      "short_desc": "Fully renovated and move-in ready, this single-level San Carlos ranch home offers the kind of space that makes everyday living feel easier,",
-      "hero_img": "https://media.crmls.org/mediaz/6af032bd-2e1b-4799-b521-252e986cf24c.jpg",
-      "slug": "6946-everglades-ave-san-diego",
-      "detail_url": "https://agents.truelegacyhomes.com/properties/6946-everglades-ave-san-diego/"
-    },
-    {
-      "address": "1812 Highland Dr",
-      "city": "Newport Beach",
-      "zipcode": "92660",
-      "price": "$4,495,000",
-      "beds": "4",
-      "baths": "4",
-      "sqft": "3152",
-      "short_desc": "Tucked into one of Dover Shores' most coveted streets, this Newport Beach residence is undergoing a complete designer renovation \u2014 reimagine",
-      "hero_img": "https://media.crmls.org/mediaz/e1b7bca9-7335-4a2f-9763-2d597bad95c0.jpg",
-      "slug": "1812-highland-dr-newport-beach",
-      "detail_url": "https://agents.truelegacyhomes.com/properties/1812-highland-dr-newport-beach/"
+      "address": "17 Amber Sky Dr",
+      "city": "Rancho Palos Verdes",
+      "zipcode": "90275",
+      "price": "$2,295,000",
+      "beds": "3",
+      "baths": "3",
+      "sqft": "2174",
+      "short_desc": "BUILD YOUR DREAM HOME! Set on a 0.",
+      "hero_img": "https://media.crmls.org/mediaz/6e39dafd-c7d5-45e0-894a-c4f91009f36a.jpg",
+      "slug": "17-amber-sky-dr-rancho-palos-verdes",
+      "detail_url": "https://eversandiego.com/properties/Listing_446223137+17+Amber+Sky+Dr+Rancho+Palos+Verdes+CA+90275-crmls446223137.html"
     },
     {
       "address": "1845 Thomas Ave",
@@ -70,7 +57,7 @@
       "address": "4445 N 42nd St",
       "city": "San Diego",
       "zipcode": "92116",
-      "price": "$1,499,000",
+      "price": "$1,445,000",
       "beds": "5",
       "baths": "3",
       "sqft": "1836",
@@ -83,7 +70,7 @@
       "address": "18438 Los Alimos St",
       "city": "Northridge",
       "zipcode": "91326",
-      "price": "$1,099,000",
+      "price": "$1,049,000",
       "beds": "4",
       "baths": "2",
       "sqft": "1698",
@@ -91,19 +78,6 @@
       "hero_img": "https://media.crmls.org/mediaz/05c4accd-2a15-4110-b6bb-94709cab8d86.jpg",
       "slug": "18438-los-alimos-st-northridge",
       "detail_url": "https://eversandiego.com/properties/Listing_438422579+18438+Los+Alimos+St+Northridge+CA+91326-crmls438422579.html"
-    },
-    {
-      "address": "3660 Purdue Ave",
-      "city": "Los Angeles",
-      "zipcode": "90066",
-      "price": "$2,349,000",
-      "beds": "3",
-      "baths": "3",
-      "sqft": "1569",
-      "short_desc": "From the two-tone charcoal and stacked stone facade to the designer-curated interiors, this Mar Vista home is where bold design meets everyday livability.",
-      "hero_img": "https://media.crmls.org/mediaz/bd72aaf1-ad55-4e13-a97d-6e67300a77b7.jpg",
-      "slug": "3660-purdue-ave-los-angeles",
-      "detail_url": "https://eversandiego.com/properties/Listing_428069083+3660+Purdue+Ave+Los+Angeles+CA+90066-crmls428069083.html"
     },
     {
       "address": "219 W Acacia Ave",
