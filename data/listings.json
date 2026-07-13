@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-11",
+  "updated": "2026-07-13",
   "listings": [
     {
       "address": "17 Amber Sky Dr",
@@ -78,32 +78,6 @@
       "hero_img": "https://media.crmls.org/mediaz/05c4accd-2a15-4110-b6bb-94709cab8d86.jpg",
       "slug": "18438-los-alimos-st-northridge",
       "detail_url": "https://eversandiego.com/properties/Listing_438422579+18438+Los+Alimos+St+Northridge+CA+91326-crmls438422579.html"
-    },
-    {
-      "address": "219 W Acacia Ave",
-      "city": "El Segundo",
-      "zipcode": "90245",
-      "price": "$2,175,000",
-      "beds": "4",
-      "baths": "2",
-      "sqft": "2406",
-      "short_desc": "Impeccably remodeled coastal El Segundo home offering a refined blend of luxurious design and everyday functionality just minutes from the beach and downtown El",
-      "hero_img": "https://media.crmls.org/mediaz/512d9f0e-e3aa-46b6-ae09-65bbd0227174.jpg",
-      "slug": "219-w-acacia-ave-el-segundo",
-      "detail_url": "https://eversandiego.com/properties/Listing_426351115+219+W+Acacia+Ave+El+Segundo+CA+90245-crmls426351115.html"
-    },
-    {
-      "address": "4210 Alcove Ave",
-      "city": "Studio City",
-      "zipcode": "91604",
-      "price": "$1,575,000",
-      "beds": "3",
-      "baths": "2",
-      "sqft": "1766",
-      "short_desc": "Fully remodeled and impeccably designed, this Studio City residence blends modern style with everyday comfort just moments from Ventura Boulevard and convenient",
-      "hero_img": "https://media.crmls.org/mediaz/21d782f9-4576-4c78-860f-92e1b6100fb0.jpg",
-      "slug": "4210-alcove-ave-studio-city",
-      "detail_url": "https://eversandiego.com/properties/Listing_426371050+4210+Alcove+Ave+Studio+City+CA+91604-crmls426371050.html"
     }
   ]
 }
