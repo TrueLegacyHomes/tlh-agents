@@ -1,6 +1,32 @@
 {
-  "updated": "2026-07-13",
+  "updated": "2026-07-15",
   "listings": [
+    {
+      "address": "219 W Acacia Ave",
+      "city": "El Segundo",
+      "zipcode": "90245",
+      "price": "$2,095,000",
+      "beds": "4",
+      "baths": "2",
+      "sqft": "2406",
+      "short_desc": "Impeccably remodeled coastal El Segundo home offering a refined blend of luxurious design and everyday functionality just minutes from the beach and downtown El",
+      "hero_img": "https://media.crmls.org/mediaz/a4685492-117c-46e1-b605-f3e52738e496.jpg",
+      "slug": "219-w-acacia-ave-el-segundo",
+      "detail_url": "https://eversandiego.com/properties/Listing_446657719+219+W+Acacia+Ave+El+Segundo+CA+90245-crmls446657719.html"
+    },
+    {
+      "address": "4210 Alcove Ave",
+      "city": "Studio City",
+      "zipcode": "91604",
+      "price": "$1,499,000",
+      "beds": "3",
+      "baths": "2",
+      "sqft": "1766",
+      "short_desc": "Fully remodeled and impeccably designed, this Studio City residence blends modern style with everyday comfort just moments from Ventura Boulevard and convenient",
+      "hero_img": "https://media.crmls.org/mediaz/9d5b0851-ab9d-4be9-aad3-2758f8ab156e.jpg",
+      "slug": "4210-alcove-ave-studio-city",
+      "detail_url": "https://eversandiego.com/properties/Listing_446654091+4210+Alcove+Ave+Studio+City+CA+91604-crmls446654091.html"
+    },
     {
       "address": "17 Amber Sky Dr",
       "city": "Rancho Palos Verdes",
