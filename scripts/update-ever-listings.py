@@ -105,7 +105,11 @@ def slugify(address, city):
     return combined
 
 
+PLACEHOLDER_PATTERNS = ['no_preview_available', 'no_image', 'placeholder', 'royacdn.com']
+
 def validate_image(url):
+    if any(p in url.lower() for p in PLACEHOLDER_PATTERNS):
+        return False
     try:
         r = SESSION.head(url, timeout=5, allow_redirects=True)
         return r.status_code == 200
@@ -768,6 +772,29 @@ def main():
     with open(os.path.join(data_dir, 'listings.json'), 'w') as f:
         json.dump({'updated': __import__('datetime').date.today().isoformat(), 'listings': listings_data}, f, indent=2)
     print(f"  ✅ data/listings.json ({len(listings_data)} listings)")
+
+    # Clean up old property directories no longer in current featured list
+    print(f"\n🧹 Cleaning up stale property directories ...")
+    current_slugs = {p['slug'] for p in enriched}
+    props_dir = os.path.join(BASE, 'properties')
+    removed = []
+    for entry in os.listdir(props_dir):
+        entry_path = os.path.join(props_dir, entry)
+        if not os.path.isdir(entry_path):
+            continue
+        if entry in ('1812-highland-dr-newport-beach',):  # TLH-managed, always keep
+            continue
+        if entry not in current_slugs:
+            import subprocess
+            subprocess.run(['git', 'rm', '-r', '--quiet', '--force', os.path.join('properties', entry)],
+                          cwd=BASE, capture_output=True)
+            if os.path.exists(entry_path):
+                import shutil
+                shutil.rmtree(entry_path)
+            removed.append(entry)
+            print(f"  🗑️  Removed: /properties/{entry}/")
+    if not removed:
+        print(f"  ✅ Nothing to clean up")
 
     # Summary
     summary = {
