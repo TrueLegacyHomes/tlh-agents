@@ -277,29 +277,30 @@
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-          <!-- 2206 Francisco Dr — Under Construction -->
-          <a href="/renovations/2206-francisco-dr/" class="group block rounded-[5px] overflow-hidden shadow-sm border border-gray-200 hover:shadow-lg hover:border-amber-400 transition bg-white">
+          <!-- 2206 Francisco Dr - Under Construction -->
+          <a href="/renovations/2206-francisco-dr/" class="group block rounded-[5px] overflow-hidden shadow-sm border-2 border-amber-400 hover:shadow-xl hover:border-amber-500 transition bg-white">
             <div class="relative aspect-[4/3] overflow-hidden">
               <img src="/renovations/2206-francisco-dr/images/exterior.webp" alt="2206 Francisco Dr Newport Beach"
                    class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
-              <span class="absolute top-3 left-3 inline-flex items-center gap-1.5 bg-amber-500 text-white text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-sm">
-                <span class="inline-block w-1.5 h-1.5 rounded-full bg-white animate-pulse"></span>
+              <span style="position:absolute;top:12px;left:12px;display:inline-flex;align-items:center;gap:7px;background:#b45309;color:#fff;font-size:0.7rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;padding:6px 12px;border-radius:3px;">
+                <span style="display:block;width:8px;height:8px;border-radius:50%;background:#fff;animation:uc-pulse 1.6s ease-in-out infinite;"></span>
                 Under Construction
               </span>
             </div>
-            <div class="p-6">
-              <h3 class="text-xl font-bold text-tlh-dark mb-1 group-hover:text-amber-600 transition">2206 Francisco Dr</h3>
+            <div style="background:#fffbeb;" class="p-6 border-t-2 border-amber-300">
+              <h3 class="text-xl font-bold text-tlh-dark mb-1 group-hover:text-amber-700 transition">2206 Francisco Dr</h3>
               <p class="text-sm text-gray-500 mb-3">Newport Beach, CA &middot; Pre-Market</p>
-              <p class="text-gray-600 text-base mb-4">Full gut renovation underway. Oak, brass, zellige tile, Japandi primary suite. Partner access available before it lists.</p>
+              <p class="text-gray-600 text-base mb-4">Full gut renovation underway. Oak cabinets, brass hardware, zellige tile, wood-plank ceilings. Partner access before it lists.</p>
               <div class="flex items-center justify-between">
-                <span class="text-sm font-semibold text-amber-600">Early Access Available</span>
-                <span class="inline-flex items-center gap-1 text-amber-600 font-semibold text-sm group-hover:gap-2 transition-all">
+                <span style="color:#92400e;" class="text-sm font-bold">Early Access Available</span>
+                <span style="color:#b45309;" class="inline-flex items-center gap-1 font-semibold text-sm group-hover:gap-2 transition-all">
                   View Renderings
                   <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
                 </span>
               </div>
             </div>
           </a>
+          <style>@keyframes uc-pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.65)}}</style>
 
           <!-- Ever SD listings rendered by listings-widget.js from data/listings.json -->
           <div id="ever-listings-grid" style="display:contents;"></div>

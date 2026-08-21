@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>2206 Francisco Dr — Newport Beach | True Legacy Homes</title>
-  <meta name="description" content="Under construction in Newport Beach. Warm organic-modern renovation with oak cabinetry, zellige tile, and Japandi-inspired primary suite. Partner access available before it hits the market.">
-  <meta property="og:title" content="2206 Francisco Dr — Newport Beach | Under Construction">
-  <meta property="og:description" content="Exclusive pre-market access. Full renovation underway — oak, brass, zellige, wood-plank ceilings. Newport Beach, CA.">
+  <title>2206 Francisco Dr, Newport Beach | True Legacy Homes</title>
+  <meta name="description" content="Full gut renovation underway in Newport Beach. Oak cabinets, brass hardware, zellige tile, wood-plank ceilings. Partner access before it hits the market.">
+  <meta property="og:title" content="2206 Francisco Dr, Newport Beach | Under Construction">
+  <meta property="og:description" content="Full gut renovation underway. Oak cabinets, brass hardware, zellige tile, wood-plank ceilings. Partner access before it lists.">
   <meta property="og:image" content="https://agents.truelegacyhomes.com/renovations/2206-francisco-dr/images/exterior.webp">
   <link rel="icon" type="image/png" href="https://www.truelegacyhomes.com/images/tlhICON.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,25 +29,84 @@
     .hero-img-wrap {
       position: relative;
       width: 100%;
-      height: 520px;
+      height: 540px;
       overflow: hidden;
     }
-    @media (max-width: 768px) { .hero-img-wrap { height: 280px; } }
+    @media (max-width: 768px) { .hero-img-wrap { height: 260px; } }
     .hero-img-wrap img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       object-position: center;
     }
-    .hero-img-wrap .overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(to top, rgba(19,43,66,0.55) 0%, rgba(19,43,66,0.1) 60%, transparent 100%);
+
+    /* Badge */
+    .badge-construction {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #b45309;
+      color: #fff;
+      font-size: 0.7rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 7px 14px;
+      border-radius: 3px;
+    }
+    .badge-construction::before {
+      content: '';
+      display: block;
+      width: 8px;
+      height: 8px;
+      background: #fff;
+      border-radius: 50%;
+      animation: uc-pulse 1.6s ease-in-out infinite;
+      flex-shrink: 0;
+    }
+    @keyframes uc-pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.65); }
+    }
+
+    /* Buttons */
+    .btn-primary {
+      display: inline-block;
+      background: #38b5ad;
+      color: #fff;
+      padding: 16px 36px;
+      border-radius: 5px;
+      font-weight: 600;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .btn-primary:hover { background: #2a9990; }
+    .btn-outline {
+      display: inline-block;
+      border: 2px solid rgba(255,255,255,0.3);
+      color: #fff;
+      padding: 16px 36px;
+      border-radius: 5px;
+      font-weight: 600;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .btn-outline:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.5); }
+    .btn-group {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-top: 36px;
+    }
+    @media (min-width: 480px) {
+      .btn-group { flex-direction: row; align-items: center; }
     }
 
     /* Gallery */
     .gallery-item { cursor: pointer; }
-    .gallery-item img { transition: transform 0.35s ease; }
+    .gallery-item img { transition: transform 0.35s ease; display: block; }
     .gallery-item:hover img { transform: scale(1.04); }
 
     /* Lightbox */
@@ -62,137 +121,166 @@
     .lightbox-next { right: 16px; top: 50%; transform: translateY(-50%); }
     .lightbox-caption { position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); background: rgba(0,0,0,0.6); color: white; padding: 0.4rem 1rem; border-radius: 9999px; font-size: 0.8rem; letter-spacing: 0.05em; white-space: nowrap; }
 
-    /* Badge */
-    .badge-construction {
-      display: inline-flex; align-items: center; gap: 6px;
-      background: #d97706; color: #fff;
-      font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
-      padding: 0.3rem 0.75rem; border-radius: 3px;
-    }
-    .badge-construction::before {
-      content: '';
-      display: block; width: 7px; height: 7px;
-      background: #fff; border-radius: 50%;
-      animation: pulse-dot 1.8s ease-in-out infinite;
-    }
-    @keyframes pulse-dot {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.4; transform: scale(0.7); }
+    /* Feature icons */
+    .feature-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 5px;
+      background-color: #e6f4f4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
     }
 
-    /* Timeline */
-    .timeline-step { display: flex; gap: 16px; align-items: flex-start; }
-    .timeline-dot { flex-shrink: 0; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 700; }
-    .timeline-line { position: relative; }
-    .timeline-line::before { content:''; position: absolute; left: 15px; top: 32px; bottom: -16px; width: 2px; background: #e5e7eb; }
+    /* Form */
+    .form-input {
+      width: 100%;
+      border: 1px solid #e5e7eb;
+      border-radius: 5px;
+      padding: 14px 16px;
+      font-size: 0.9rem;
+      outline: none;
+      transition: border-color 0.15s;
+      font-family: 'Inter', sans-serif;
+      color: #374151;
+    }
+    .form-input:focus { border-color: #38b5ad; }
+    .form-stack { display: flex; flex-direction: column; gap: 14px; }
+    .btn-submit {
+      width: 100%;
+      background: #38b5ad;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 16px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+      font-family: 'Inter', sans-serif;
+      margin-top: 6px;
+    }
+    .btn-submit:hover { background: #2a9990; }
+    .btn-submit:disabled { opacity: 0.6; cursor: not-allowed; }
   </style>
 </head>
-<body class="bg-white text-gray-800 text-lg leading-loose antialiased">
+<body class="bg-white text-gray-800 antialiased" style="font-size:1.0625rem;line-height:1.75;">
 
   <div id="site-nav"></div>
   <script src="/js/nav.js"></script>
 
   <main>
 
-    <!-- ─── HERO ─────────────────────────────────────────────────────────── -->
-    <section class="bg-tlh-dark text-white pt-14 md:pt-20 pb-0">
-      <div class="max-w-6xl mx-auto px-4 pb-10">
-        <a href="/#properties" class="inline-flex items-center gap-1 text-sm text-white/50 hover:text-white transition mb-6">
+    <!-- HERO -->
+    <section class="bg-tlh-dark text-white" style="padding-top:56px;padding-bottom:0;">
+      <div class="max-w-6xl mx-auto px-4" style="padding-bottom:48px;">
+
+        <a href="/#properties" class="inline-flex items-center gap-1 text-white/50 hover:text-white transition" style="font-size:0.875rem;margin-bottom:28px;">
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
           Back to Properties
         </a>
-        <div class="flex flex-wrap items-center gap-3 mb-4">
+
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:18px;flex-wrap:wrap;">
           <span class="badge-construction">Under Construction</span>
-          <span class="text-white/40 text-sm">Newport Beach · Pre-Market</span>
+          <span class="text-white/40" style="font-size:0.875rem;">Newport Beach &middot; Pre-Market</span>
         </div>
-        <h1 class="hero-text text-4xl md:text-5xl font-bold mb-2" style="font-family:'Source Serif Pro',Georgia,serif;">2206 Francisco Dr</h1>
-        <p class="text-white/70 text-xl mb-6">Newport Beach, CA</p>
-        <p class="text-white/60 text-base max-w-2xl leading-relaxed">
-          A full gut renovation underway in one of Newport Beach's most sought-after neighborhoods. Partners get exclusive pre-market access — see the design, meet the team, bring your buyers before it lists.
+
+        <h1 class="hero-text" style="font-family:'Source Serif Pro',Georgia,serif;font-size:clamp(2.25rem,5vw,3.25rem);font-weight:700;margin-bottom:10px;line-height:1.15;">2206 Francisco Dr</h1>
+        <p class="text-white/70" style="font-size:1.25rem;margin-bottom:24px;">Newport Beach, CA</p>
+        <p class="text-white/60 max-w-2xl" style="font-size:1rem;line-height:1.7;">
+          Full gut renovation underway in Newport Beach. Every room is being rebuilt from scratch. Partners get first access to walk the property and see the design before it goes on market.
         </p>
-        <div class="mt-8 flex flex-wrap gap-4">
-          <a href="#contact" class="bg-tlh-teal text-white px-8 py-3.5 rounded-[5px] font-semibold text-base hover:bg-teal-600 transition">Request Partner Access</a>
-          <a href="#gallery" class="border border-white/25 text-white px-8 py-3.5 rounded-[5px] font-semibold text-base hover:bg-white/10 transition">See the Renderings</a>
+
+        <div class="btn-group">
+          <a href="#contact" class="btn-primary">Request Partner Access</a>
+          <a href="#gallery" class="btn-outline">See the Renderings</a>
         </div>
+
       </div>
     </section>
 
-    <!-- ─── EXTERIOR PHOTO ────────────────────────────────────────────────── -->
+    <!-- EXTERIOR PHOTO -->
     <div class="hero-img-wrap">
       <img src="/renovations/2206-francisco-dr/images/exterior.webp" alt="2206 Francisco Dr Newport Beach exterior rendering" fetchpriority="high">
-      <div class="overlay"></div>
     </div>
 
-    <!-- ─── DESIGN HIGHLIGHTS ─────────────────────────────────────────────── -->
-    <section class="py-14 md:py-20 bg-white">
+    <!-- RENOVATION DETAILS -->
+    <section class="bg-white" style="padding-top:72px;padding-bottom:72px;">
       <div class="max-w-6xl mx-auto px-4">
-        <div class="grid md:grid-cols-2 gap-12 md:gap-20 items-start">
+        <div class="grid md:grid-cols-2" style="gap:64px;">
 
+          <!-- Left: copy -->
           <div>
-            <p class="text-sm font-semibold tracking-widest uppercase text-tlh-teal mb-3">The Renovation</p>
-            <h2 class="text-3xl md:text-4xl font-bold mb-6">Warm modern. Built for Newport.</h2>
-            <p class="text-gray-600 text-base leading-relaxed mb-5">
-              This is a complete gut renovation — every room touched. The design language is warm organic-modern: pale oak cabinetry, brass hardware, zellige tile, and wood-plank ceilings that bring texture and warmth without going precious about it.
+            <p class="text-tlh-teal font-semibold uppercase tracking-widest" style="font-size:0.75rem;margin-bottom:14px;">The Renovation</p>
+            <h2 style="font-family:'Source Serif Pro',Georgia,serif;font-size:clamp(1.75rem,3vw,2.25rem);font-weight:700;color:#132b42;margin-bottom:24px;">Every room rebuilt from scratch.</h2>
+            <p class="text-gray-600" style="font-size:1rem;line-height:1.75;margin-bottom:20px;">
+              Full gut renovation. The kitchen has pale oak cabinetry, brass hardware, marble countertops, and a custom arched niche with zellige tile backsplash. Wood-plank ceilings run through the main living area. Every bathroom is being rebuilt.
             </p>
-            <p class="text-gray-600 text-base leading-relaxed mb-5">
-              The primary suite is the standout. Fluted oak paneling, custom built-ins, and a spa-caliber bathroom with two separate vanity areas and a walk-in closet that buyers will remember. The kitchen features a custom arched niche with mauve zellige tile backsplash — the kind of detail that photographs well and holds its value.
+            <p class="text-gray-600" style="font-size:1rem;line-height:1.75;margin-bottom:20px;">
+              The primary suite has fluted oak wall paneling, two separate vanity areas, and a walk-in closet. The arched kitchen niche with mauve zellige tile is the detail buyers mention when they call back.
             </p>
-            <p class="text-gray-600 text-base leading-relaxed">
-              Built for the buyer who wants something finished, distinctive, and move-in ready — without the two years of contractor headaches.
+            <p class="text-gray-600" style="font-size:1rem;line-height:1.75;">
+              Your buyer walks in when it is done and it is move-in ready. No punch list. No follow-up contractor calls.
             </p>
           </div>
 
-          <div class="space-y-6">
-            <p class="text-sm font-semibold tracking-widest uppercase text-tlh-teal mb-5">What's Inside</p>
+          <!-- Right: features -->
+          <div style="padding-top:4px;">
+            <p class="text-tlh-teal font-semibold uppercase tracking-widest" style="font-size:0.75rem;margin-bottom:28px;">What's Inside</p>
 
-            <div class="flex items-start gap-4">
-              <div class="w-10 h-10 rounded-[5px] flex items-center justify-center flex-shrink-0" style="background-color:#e6f4f4;">
-                <svg class="w-5 h-5 text-tlh-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
-              </div>
-              <div>
-                <div class="font-semibold text-tlh-dark text-base">Full Gut Renovation</div>
-                <div class="text-sm text-gray-500 leading-snug">Kitchen, primary suite, all bathrooms, living areas, foyer — fully rebuilt.</div>
-              </div>
-            </div>
+            <div style="display:flex;flex-direction:column;gap:28px;">
 
-            <div class="flex items-start gap-4">
-              <div class="w-10 h-10 rounded-[5px] flex items-center justify-center flex-shrink-0" style="background-color:#e6f4f4;">
-                <svg class="w-5 h-5 text-tlh-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+              <div style="display:flex;gap:16px;align-items:flex-start;">
+                <div class="feature-icon">
+                  <svg class="w-5 h-5 text-tlh-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+                </div>
+                <div>
+                  <div class="font-semibold text-tlh-dark" style="font-size:0.975rem;margin-bottom:4px;">Full Gut Renovation</div>
+                  <div class="text-gray-500" style="font-size:0.875rem;line-height:1.55;">Kitchen, primary suite, all bathrooms, living areas, foyer. All of it rebuilt.</div>
+                </div>
               </div>
-              <div>
-                <div class="font-semibold text-tlh-dark text-base">Designer Kitchen</div>
-                <div class="text-sm text-gray-500 leading-snug">Pale oak cabinetry, brass hardware, marble countertops, arched zellige niche.</div>
-              </div>
-            </div>
 
-            <div class="flex items-start gap-4">
-              <div class="w-10 h-10 rounded-[5px] flex items-center justify-center flex-shrink-0" style="background-color:#e6f4f4;">
-                <svg class="w-5 h-5 text-tlh-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+              <div style="display:flex;gap:16px;align-items:flex-start;">
+                <div class="feature-icon">
+                  <svg class="w-5 h-5 text-tlh-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+                </div>
+                <div>
+                  <div class="font-semibold text-tlh-dark" style="font-size:0.975rem;margin-bottom:4px;">Kitchen</div>
+                  <div class="text-gray-500" style="font-size:0.875rem;line-height:1.55;">Pale oak cabinetry, brass hardware, marble countertops, arched zellige niche backsplash.</div>
+                </div>
               </div>
-              <div>
-                <div class="font-semibold text-tlh-dark text-base">Japandi Primary Suite</div>
-                <div class="text-sm text-gray-500 leading-snug">Fluted oak paneling, dual vanities, walk-in closet. Calm, spa-caliber, and built to impress.</div>
-              </div>
-            </div>
 
-            <div class="flex items-start gap-4">
-              <div class="w-10 h-10 rounded-[5px] flex items-center justify-center flex-shrink-0" style="background-color:#e6f4f4;">
-                <svg class="w-5 h-5 text-tlh-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M4 6h16M4 10h16M4 14h16M4 18h16"/></svg>
+              <div style="display:flex;gap:16px;align-items:flex-start;">
+                <div class="feature-icon">
+                  <svg class="w-5 h-5 text-tlh-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+                </div>
+                <div>
+                  <div class="font-semibold text-tlh-dark" style="font-size:0.975rem;margin-bottom:4px;">Primary Suite</div>
+                  <div class="text-gray-500" style="font-size:0.875rem;line-height:1.55;">Fluted oak paneling, two separate vanity areas, walk-in closet.</div>
+                </div>
               </div>
-              <div>
-                <div class="font-semibold text-tlh-dark text-base">Open Living with Character</div>
-                <div class="text-sm text-gray-500 leading-snug">Wood-plank ceilings, fireplace, seamless flow from living to dining to kitchen.</div>
-              </div>
-            </div>
 
-            <div class="flex items-start gap-4">
-              <div class="w-10 h-10 rounded-[5px] flex items-center justify-center flex-shrink-0" style="background-color:#e6f4f4;">
-                <svg class="w-5 h-5 text-tlh-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <div style="display:flex;gap:16px;align-items:flex-start;">
+                <div class="feature-icon">
+                  <svg class="w-5 h-5 text-tlh-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M4 6h16M4 10h16M4 14h16M4 18h16"/></svg>
+                </div>
+                <div>
+                  <div class="font-semibold text-tlh-dark" style="font-size:0.975rem;margin-bottom:4px;">Living and Dining</div>
+                  <div class="text-gray-500" style="font-size:0.875rem;line-height:1.55;">Wood-plank ceilings, fireplace, living and dining open to each other.</div>
+                </div>
               </div>
-              <div>
-                <div class="font-semibold text-tlh-dark text-base">Move-In Ready Finish</div>
-                <div class="text-sm text-gray-500 leading-snug">No contractor required. Your buyer walks in and it's done.</div>
+
+              <div style="display:flex;gap:16px;align-items:flex-start;">
+                <div class="feature-icon">
+                  <svg class="w-5 h-5 text-tlh-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                </div>
+                <div>
+                  <div class="font-semibold text-tlh-dark" style="font-size:0.975rem;margin-bottom:4px;">Move-In Ready</div>
+                  <div class="text-gray-500" style="font-size:0.875rem;line-height:1.55;">No contractor follow-up. Your buyer walks in and it's done.</div>
+                </div>
               </div>
+
             </div>
           </div>
 
@@ -200,196 +288,191 @@
       </div>
     </section>
 
-    <!-- ─── GALLERY ────────────────────────────────────────────────────────── -->
-    <section id="gallery" class="py-14 md:py-20" style="background-color:#f9f4eb;">
+    <!-- GALLERY -->
+    <section id="gallery" style="background-color:#f9f4eb;padding-top:72px;padding-bottom:72px;">
       <div class="max-w-6xl mx-auto px-4">
-        <p class="text-sm font-semibold tracking-widest uppercase text-tlh-teal mb-3">Design Renderings</p>
-        <h2 class="text-3xl font-bold mb-2">See every room.</h2>
-        <p class="text-gray-500 text-base mb-10">Architectural renderings — final finishes may vary slightly. Click any image to enlarge.</p>
+        <p class="text-tlh-teal font-semibold uppercase tracking-widest" style="font-size:0.75rem;margin-bottom:12px;">Design Renderings</p>
+        <h2 style="font-family:'Source Serif Pro',Georgia,serif;font-size:clamp(1.75rem,3vw,2.25rem);font-weight:700;color:#132b42;margin-bottom:10px;">See every room.</h2>
+        <p class="text-gray-500" style="font-size:0.95rem;margin-bottom:40px;">Architectural renderings. Finishes may vary slightly. Click any image to enlarge.</p>
 
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4" style="gap:8px;">
 
-          <div class="gallery-item col-span-2 relative overflow-hidden rounded-[5px] shadow-sm aspect-[16/9] cursor-pointer"
+          <div class="gallery-item col-span-2 relative overflow-hidden rounded-[5px] shadow-sm cursor-pointer" style="aspect-ratio:16/9;"
                data-src="/renovations/2206-francisco-dr/images/exterior.webp" data-alt="Exterior">
             <img src="/renovations/2206-francisco-dr/images/exterior.webp" alt="Exterior" class="w-full h-full object-cover" loading="eager">
-            <span class="absolute bottom-3 left-3 bg-black/50 text-white text-xs font-semibold px-2 py-1 rounded-sm">Exterior</span>
+            <span style="position:absolute;bottom:10px;left:10px;background:rgba(0,0,0,0.5);color:#fff;font-size:0.75rem;font-weight:600;padding:3px 8px;border-radius:3px;">Exterior</span>
           </div>
 
-          <div class="gallery-item relative overflow-hidden rounded-[5px] shadow-sm aspect-[4/3] cursor-pointer"
+          <div class="gallery-item relative overflow-hidden rounded-[5px] shadow-sm cursor-pointer" style="aspect-ratio:4/3;"
                data-src="/renovations/2206-francisco-dr/images/kitchen-1.webp" data-alt="Kitchen">
             <img src="/renovations/2206-francisco-dr/images/kitchen-1.webp" alt="Kitchen" class="w-full h-full object-cover" loading="lazy">
-            <span class="absolute bottom-3 left-3 bg-black/50 text-white text-xs font-semibold px-2 py-1 rounded-sm">Kitchen</span>
+            <span style="position:absolute;bottom:10px;left:10px;background:rgba(0,0,0,0.5);color:#fff;font-size:0.75rem;font-weight:600;padding:3px 8px;border-radius:3px;">Kitchen</span>
           </div>
 
-          <div class="gallery-item relative overflow-hidden rounded-[5px] shadow-sm aspect-[4/3] cursor-pointer"
+          <div class="gallery-item relative overflow-hidden rounded-[5px] shadow-sm cursor-pointer" style="aspect-ratio:4/3;"
                data-src="/renovations/2206-francisco-dr/images/living-room.webp" data-alt="Living Room">
             <img src="/renovations/2206-francisco-dr/images/living-room.webp" alt="Living Room" class="w-full h-full object-cover" loading="lazy">
-            <span class="absolute bottom-3 left-3 bg-black/50 text-white text-xs font-semibold px-2 py-1 rounded-sm">Living Room</span>
+            <span style="position:absolute;bottom:10px;left:10px;background:rgba(0,0,0,0.5);color:#fff;font-size:0.75rem;font-weight:600;padding:3px 8px;border-radius:3px;">Living Room</span>
           </div>
 
-          <div class="gallery-item relative overflow-hidden rounded-[5px] shadow-sm aspect-[4/3] cursor-pointer"
+          <div class="gallery-item relative overflow-hidden rounded-[5px] shadow-sm cursor-pointer" style="aspect-ratio:4/3;"
                data-src="/renovations/2206-francisco-dr/images/kitchen-2.webp" data-alt="Kitchen Detail">
             <img src="/renovations/2206-francisco-dr/images/kitchen-2.webp" alt="Kitchen Detail" class="w-full h-full object-cover" loading="lazy">
-            <span class="absolute bottom-3 left-3 bg-black/50 text-white text-xs font-semibold px-2 py-1 rounded-sm">Kitchen Detail</span>
+            <span style="position:absolute;bottom:10px;left:10px;background:rgba(0,0,0,0.5);color:#fff;font-size:0.75rem;font-weight:600;padding:3px 8px;border-radius:3px;">Kitchen Detail</span>
           </div>
 
-          <div class="gallery-item relative overflow-hidden rounded-[5px] shadow-sm aspect-[4/3] cursor-pointer"
+          <div class="gallery-item relative overflow-hidden rounded-[5px] shadow-sm cursor-pointer" style="aspect-ratio:4/3;"
                data-src="/renovations/2206-francisco-dr/images/family-room.webp" data-alt="Family Room">
             <img src="/renovations/2206-francisco-dr/images/family-room.webp" alt="Family Room" class="w-full h-full object-cover" loading="lazy">
-            <span class="absolute bottom-3 left-3 bg-black/50 text-white text-xs font-semibold px-2 py-1 rounded-sm">Family Room</span>
+            <span style="position:absolute;bottom:10px;left:10px;background:rgba(0,0,0,0.5);color:#fff;font-size:0.75rem;font-weight:600;padding:3px 8px;border-radius:3px;">Family Room</span>
           </div>
 
-          <div class="gallery-item relative overflow-hidden rounded-[5px] shadow-sm aspect-[4/3] cursor-pointer"
+          <div class="gallery-item relative overflow-hidden rounded-[5px] shadow-sm cursor-pointer" style="aspect-ratio:4/3;"
                data-src="/renovations/2206-francisco-dr/images/dining.webp" data-alt="Dining">
             <img src="/renovations/2206-francisco-dr/images/dining.webp" alt="Dining" class="w-full h-full object-cover" loading="lazy">
-            <span class="absolute bottom-3 left-3 bg-black/50 text-white text-xs font-semibold px-2 py-1 rounded-sm">Dining</span>
+            <span style="position:absolute;bottom:10px;left:10px;background:rgba(0,0,0,0.5);color:#fff;font-size:0.75rem;font-weight:600;padding:3px 8px;border-radius:3px;">Dining</span>
           </div>
 
-          <div class="gallery-item relative overflow-hidden rounded-[5px] shadow-sm aspect-[4/3] cursor-pointer"
+          <div class="gallery-item relative overflow-hidden rounded-[5px] shadow-sm cursor-pointer" style="aspect-ratio:4/3;"
                data-src="/renovations/2206-francisco-dr/images/fireplace.webp" data-alt="Fireplace">
             <img src="/renovations/2206-francisco-dr/images/fireplace.webp" alt="Fireplace" class="w-full h-full object-cover" loading="lazy">
-            <span class="absolute bottom-3 left-3 bg-black/50 text-white text-xs font-semibold px-2 py-1 rounded-sm">Fireplace</span>
+            <span style="position:absolute;bottom:10px;left:10px;background:rgba(0,0,0,0.5);color:#fff;font-size:0.75rem;font-weight:600;padding:3px 8px;border-radius:3px;">Fireplace</span>
           </div>
 
-          <div class="gallery-item relative overflow-hidden rounded-[5px] shadow-sm aspect-[4/3] cursor-pointer"
+          <div class="gallery-item relative overflow-hidden rounded-[5px] shadow-sm cursor-pointer" style="aspect-ratio:4/3;"
                data-src="/renovations/2206-francisco-dr/images/foyer.webp" data-alt="Foyer">
             <img src="/renovations/2206-francisco-dr/images/foyer.webp" alt="Foyer" class="w-full h-full object-cover" loading="lazy">
-            <span class="absolute bottom-3 left-3 bg-black/50 text-white text-xs font-semibold px-2 py-1 rounded-sm">Foyer</span>
+            <span style="position:absolute;bottom:10px;left:10px;background:rgba(0,0,0,0.5);color:#fff;font-size:0.75rem;font-weight:600;padding:3px 8px;border-radius:3px;">Foyer</span>
           </div>
 
-          <div class="gallery-item relative overflow-hidden rounded-[5px] shadow-sm aspect-[4/3] cursor-pointer"
+          <div class="gallery-item relative overflow-hidden rounded-[5px] shadow-sm cursor-pointer" style="aspect-ratio:4/3;"
                data-src="/renovations/2206-francisco-dr/images/primary-bedroom.webp" data-alt="Primary Bedroom">
             <img src="/renovations/2206-francisco-dr/images/primary-bedroom.webp" alt="Primary Bedroom" class="w-full h-full object-cover" loading="lazy">
-            <span class="absolute bottom-3 left-3 bg-black/50 text-white text-xs font-semibold px-2 py-1 rounded-sm">Primary Bedroom</span>
+            <span style="position:absolute;bottom:10px;left:10px;background:rgba(0,0,0,0.5);color:#fff;font-size:0.75rem;font-weight:600;padding:3px 8px;border-radius:3px;">Primary Bedroom</span>
           </div>
 
-          <div class="gallery-item relative overflow-hidden rounded-[5px] shadow-sm aspect-[4/3] cursor-pointer"
+          <div class="gallery-item relative overflow-hidden rounded-[5px] shadow-sm cursor-pointer" style="aspect-ratio:4/3;"
                data-src="/renovations/2206-francisco-dr/images/primary-bath-1.webp" data-alt="Primary Bath">
             <img src="/renovations/2206-francisco-dr/images/primary-bath-1.webp" alt="Primary Bath" class="w-full h-full object-cover" loading="lazy">
-            <span class="absolute bottom-3 left-3 bg-black/50 text-white text-xs font-semibold px-2 py-1 rounded-sm">Primary Bath</span>
+            <span style="position:absolute;bottom:10px;left:10px;background:rgba(0,0,0,0.5);color:#fff;font-size:0.75rem;font-weight:600;padding:3px 8px;border-radius:3px;">Primary Bath</span>
           </div>
 
-          <div class="gallery-item relative overflow-hidden rounded-[5px] shadow-sm aspect-[4/3] cursor-pointer"
+          <div class="gallery-item relative overflow-hidden rounded-[5px] shadow-sm cursor-pointer" style="aspect-ratio:4/3;"
                data-src="/renovations/2206-francisco-dr/images/primary-bath-2.webp" data-alt="Primary Bath 2">
             <img src="/renovations/2206-francisco-dr/images/primary-bath-2.webp" alt="Primary Bath 2" class="w-full h-full object-cover" loading="lazy">
-            <span class="absolute bottom-3 left-3 bg-black/50 text-white text-xs font-semibold px-2 py-1 rounded-sm">Primary Bath 2</span>
+            <span style="position:absolute;bottom:10px;left:10px;background:rgba(0,0,0,0.5);color:#fff;font-size:0.75rem;font-weight:600;padding:3px 8px;border-radius:3px;">Primary Bath 2</span>
           </div>
 
-          <div class="gallery-item relative overflow-hidden rounded-[5px] shadow-sm aspect-[4/3] cursor-pointer"
+          <div class="gallery-item relative overflow-hidden rounded-[5px] shadow-sm cursor-pointer" style="aspect-ratio:4/3;"
                data-src="/renovations/2206-francisco-dr/images/walk-in-closet.webp" data-alt="Walk-In Closet">
             <img src="/renovations/2206-francisco-dr/images/walk-in-closet.webp" alt="Walk-In Closet" class="w-full h-full object-cover" loading="lazy">
-            <span class="absolute bottom-3 left-3 bg-black/50 text-white text-xs font-semibold px-2 py-1 rounded-sm">Walk-In Closet</span>
+            <span style="position:absolute;bottom:10px;left:10px;background:rgba(0,0,0,0.5);color:#fff;font-size:0.75rem;font-weight:600;padding:3px 8px;border-radius:3px;">Walk-In Closet</span>
           </div>
 
-          <div class="gallery-item relative overflow-hidden rounded-[5px] shadow-sm aspect-[4/3] cursor-pointer"
-               data-src="/renovations/2206-francisco-dr/images/hall-bath-1.webp" data-alt="Hall Bathroom">
-            <img src="/renovations/2206-francisco-dr/images/hall-bath-1.webp" alt="Hall Bathroom" class="w-full h-full object-cover" loading="lazy">
-            <span class="absolute bottom-3 left-3 bg-black/50 text-white text-xs font-semibold px-2 py-1 rounded-sm">Hall Bath</span>
+          <div class="gallery-item relative overflow-hidden rounded-[5px] shadow-sm cursor-pointer" style="aspect-ratio:4/3;"
+               data-src="/renovations/2206-francisco-dr/images/hall-bath-1.webp" data-alt="Hall Bath">
+            <img src="/renovations/2206-francisco-dr/images/hall-bath-1.webp" alt="Hall Bath" class="w-full h-full object-cover" loading="lazy">
+            <span style="position:absolute;bottom:10px;left:10px;background:rgba(0,0,0,0.5);color:#fff;font-size:0.75rem;font-weight:600;padding:3px 8px;border-radius:3px;">Hall Bath</span>
           </div>
 
-          <div class="gallery-item relative overflow-hidden rounded-[5px] shadow-sm aspect-[4/3] cursor-pointer"
-               data-src="/renovations/2206-francisco-dr/images/hall-bath-2.webp" data-alt="Hall Bathroom 2">
-            <img src="/renovations/2206-francisco-dr/images/hall-bath-2.webp" alt="Hall Bathroom 2" class="w-full h-full object-cover" loading="lazy">
-            <span class="absolute bottom-3 left-3 bg-black/50 text-white text-xs font-semibold px-2 py-1 rounded-sm">Hall Bath 2</span>
+          <div class="gallery-item relative overflow-hidden rounded-[5px] shadow-sm cursor-pointer" style="aspect-ratio:4/3;"
+               data-src="/renovations/2206-francisco-dr/images/hall-bath-2.webp" data-alt="Hall Bath 2">
+            <img src="/renovations/2206-francisco-dr/images/hall-bath-2.webp" alt="Hall Bath 2" class="w-full h-full object-cover" loading="lazy">
+            <span style="position:absolute;bottom:10px;left:10px;background:rgba(0,0,0,0.5);color:#fff;font-size:0.75rem;font-weight:600;padding:3px 8px;border-radius:3px;">Hall Bath 2</span>
           </div>
 
-          <div class="gallery-item relative overflow-hidden rounded-[5px] shadow-sm aspect-[4/3] cursor-pointer"
+          <div class="gallery-item relative overflow-hidden rounded-[5px] shadow-sm cursor-pointer" style="aspect-ratio:4/3;"
                data-src="/renovations/2206-francisco-dr/images/powder-room.webp" data-alt="Powder Room">
             <img src="/renovations/2206-francisco-dr/images/powder-room.webp" alt="Powder Room" class="w-full h-full object-cover" loading="lazy">
-            <span class="absolute bottom-3 left-3 bg-black/50 text-white text-xs font-semibold px-2 py-1 rounded-sm">Powder Room</span>
+            <span style="position:absolute;bottom:10px;left:10px;background:rgba(0,0,0,0.5);color:#fff;font-size:0.75rem;font-weight:600;padding:3px 8px;border-radius:3px;">Powder Room</span>
           </div>
 
         </div>
       </div>
     </section>
 
-    <!-- ─── PARTNER ACCESS + CONTACT ──────────────────────────────────────── -->
-    <section id="contact" class="py-14 md:py-20 bg-white">
+    <!-- PARTNER ACCESS + CONTACT -->
+    <section id="contact" class="bg-white" style="padding-top:72px;padding-bottom:72px;">
       <div class="max-w-6xl mx-auto px-4">
-        <div class="grid md:grid-cols-2 gap-12 md:gap-20 items-start">
+        <div class="grid md:grid-cols-2" style="gap:64px;">
 
-          <!-- Left: Why get early access -->
+          <!-- Left -->
           <div>
-            <p class="text-sm font-semibold tracking-widest uppercase text-tlh-teal mb-3">Partner Access</p>
-            <h2 class="text-3xl font-bold mb-5">Bring your buyer before it lists.</h2>
-            <p class="text-gray-600 text-base leading-relaxed mb-8">
-              This property will go on MLS when it's done. But partners get the call first. If your buyer is looking in Newport Beach and wants something finished and distinctive — this is the conversation to have now.
+            <p class="text-tlh-teal font-semibold uppercase tracking-widest" style="font-size:0.75rem;margin-bottom:14px;">Partner Access</p>
+            <h2 style="font-family:'Source Serif Pro',Georgia,serif;font-size:clamp(1.75rem,3vw,2.25rem);font-weight:700;color:#132b42;margin-bottom:20px;">Bring your buyer before it lists.</h2>
+            <p class="text-gray-600" style="font-size:1rem;line-height:1.75;margin-bottom:36px;">
+              This goes on MLS when construction wraps. Partners get the call first. If your buyer is looking in Newport Beach, reach out now and we will set up a walk-through when the property is ready.
             </p>
 
-            <!-- What partners get -->
-            <div class="space-y-5">
-              <div class="flex items-start gap-4">
-                <div class="w-8 h-8 rounded-full bg-tlh-teal/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <svg class="w-4 h-4 text-tlh-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            <div style="display:flex;flex-direction:column;gap:22px;">
+
+              <div style="display:flex;gap:16px;align-items:flex-start;">
+                <div style="width:36px;height:36px;border-radius:50%;background:#e6f4f4;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;">
+                  <svg style="width:18px;height:18px;color:#38b5ad;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
                 </div>
                 <div>
-                  <div class="font-semibold text-tlh-dark text-base">Pre-market showing</div>
-                  <div class="text-sm text-gray-500">Walk through with your buyer before it hits Zillow. No competition.</div>
+                  <div class="font-semibold text-tlh-dark" style="font-size:0.975rem;margin-bottom:4px;">Pre-market walk-through</div>
+                  <div class="text-gray-500" style="font-size:0.875rem;line-height:1.55;">See the property with your buyer before it goes on Zillow.</div>
                 </div>
               </div>
-              <div class="flex items-start gap-4">
-                <div class="w-8 h-8 rounded-full bg-tlh-teal/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <svg class="w-4 h-4 text-tlh-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+
+              <div style="display:flex;gap:16px;align-items:flex-start;">
+                <div style="width:36px;height:36px;border-radius:50%;background:#e6f4f4;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;">
+                  <svg style="width:18px;height:18px;color:#38b5ad;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
                 </div>
                 <div>
-                  <div class="font-semibold text-tlh-dark text-base">Buyer agent commission</div>
-                  <div class="text-sm text-gray-500">We work with buyer's agents. You're protected.</div>
+                  <div class="font-semibold text-tlh-dark" style="font-size:0.975rem;margin-bottom:4px;">Buyer agent commission</div>
+                  <div class="text-gray-500" style="font-size:0.875rem;line-height:1.55;">We work with buyer's agents. You are protected.</div>
                 </div>
               </div>
-              <div class="flex items-start gap-4">
-                <div class="w-8 h-8 rounded-full bg-tlh-teal/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <svg class="w-4 h-4 text-tlh-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+
+              <div style="display:flex;gap:16px;align-items:flex-start;">
+                <div style="width:36px;height:36px;border-radius:50%;background:#e6f4f4;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;">
+                  <svg style="width:18px;height:18px;color:#38b5ad;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
                 </div>
                 <div>
-                  <div class="font-semibold text-tlh-dark text-base">Direct line to the team</div>
-                  <div class="text-sm text-gray-500">Questions answered same day. No runaround.</div>
+                  <div class="font-semibold text-tlh-dark" style="font-size:0.975rem;margin-bottom:4px;">Direct access to the team</div>
+                  <div class="text-gray-500" style="font-size:0.875rem;line-height:1.55;">Call or text. Questions answered same day.</div>
                 </div>
               </div>
+
             </div>
 
-            <div class="mt-10 pt-8 border-t border-gray-100">
-              <p class="text-sm text-gray-500 mb-1">Prefer to call?</p>
-              <a href="tel:6194501702" class="text-xl font-bold text-tlh-dark hover:text-tlh-teal transition">(619) 450-1702</a>
+            <div style="margin-top:40px;padding-top:32px;border-top:1px solid #f3f4f6;">
+              <p class="text-gray-400" style="font-size:0.875rem;margin-bottom:6px;">Prefer to call?</p>
+              <a href="tel:6194501702" class="font-bold text-tlh-dark hover:text-tlh-teal transition" style="font-size:1.25rem;">(619) 450-1702</a>
             </div>
           </div>
 
-          <!-- Right: Contact form -->
+          <!-- Right: form -->
           <div>
-            <div class="bg-white rounded-[5px] border border-gray-200 p-8 shadow-sm">
-              <h3 class="text-xl font-bold mb-1">Get on the list.</h3>
-              <p class="text-sm text-gray-500 mb-6">We'll reach out when showings are available and keep you updated on timing.</p>
+            <div style="background:#fff;border:1px solid #e5e7eb;border-radius:5px;padding:36px;box-shadow:0 1px 6px rgba(0,0,0,0.06);">
+              <h3 style="font-family:'Source Serif Pro',Georgia,serif;font-size:1.3rem;font-weight:700;color:#132b42;margin-bottom:8px;">Get on the list.</h3>
+              <p class="text-gray-500" style="font-size:0.9rem;margin-bottom:24px;">Send us your info and we will be in touch on timing and walk-throughs.</p>
 
               <form id="contact-form">
                 <input type="hidden" name="property" value="2206 Francisco Dr, Newport Beach, CA">
-                <input type="hidden" name="_subject" value="Partner Access Request — 2206 Francisco Dr">
-                <div class="flex flex-col gap-4">
-                  <input type="text" name="name" placeholder="Your Name" required
-                    class="w-full border border-gray-200 rounded-[5px] px-4 py-3 text-sm focus:outline-none focus:border-tlh-teal transition">
-                  <input type="tel" name="phone" placeholder="Phone Number" required
-                    class="w-full border border-gray-200 rounded-[5px] px-4 py-3 text-sm focus:outline-none focus:border-tlh-teal transition">
-                  <input type="email" name="email" placeholder="Email Address" required
-                    class="w-full border border-gray-200 rounded-[5px] px-4 py-3 text-sm focus:outline-none focus:border-tlh-teal transition">
-                  <input type="text" name="brokerage" placeholder="Brokerage"
-                    class="w-full border border-gray-200 rounded-[5px] px-4 py-3 text-sm focus:outline-none focus:border-tlh-teal transition">
-                  <select name="interest" class="w-full border border-gray-200 rounded-[5px] px-4 py-3 text-sm text-gray-600 focus:outline-none focus:border-tlh-teal transition">
-                    <option value="">I'm reaching out because...</option>
+                <div class="form-stack">
+                  <input type="text" name="name" placeholder="Your Name" required class="form-input">
+                  <input type="tel" name="phone" placeholder="Phone Number" required class="form-input">
+                  <input type="email" name="email" placeholder="Email Address" required class="form-input">
+                  <input type="text" name="brokerage" placeholder="Brokerage" class="form-input">
+                  <select name="interest" class="form-input" style="color:#6b7280;">
+                    <option value="">I am reaching out because...</option>
                     <option value="buyer">I have a buyer for this property</option>
-                    <option value="showing">I'd like to schedule a showing</option>
+                    <option value="showing">I would like to schedule a walk-through</option>
                     <option value="updates">Keep me updated on timing</option>
-                    <option value="info">Just want more info</option>
+                    <option value="info">Just want more information</option>
                   </select>
-                  <textarea name="message" placeholder="Anything else? (optional)" rows="3"
-                    class="w-full border border-gray-200 rounded-[5px] px-4 py-3 text-sm focus:outline-none focus:border-tlh-teal transition resize-none"></textarea>
-                  <button type="submit" id="submit-btn"
-                    class="w-full bg-tlh-teal text-white py-3.5 rounded-[5px] text-sm font-semibold hover:bg-teal-600 transition">
-                    Request Partner Access
-                  </button>
+                  <textarea name="message" placeholder="Anything else? (optional)" rows="3" class="form-input" style="resize:none;"></textarea>
+                  <button type="submit" id="submit-btn" class="btn-submit">Request Partner Access</button>
                 </div>
               </form>
-              <div id="form-success" class="hidden text-center py-6">
-                <div class="text-2xl mb-2">✅</div>
-                <p class="font-semibold text-tlh-dark">You're on the list.</p>
-                <p class="text-sm text-gray-500 mt-1">We'll be in touch — usually same day.</p>
+
+              <div id="form-success" style="display:none;text-align:center;padding:32px 0;">
+                <div style="font-size:2rem;margin-bottom:10px;">&#x2705;</div>
+                <p class="font-semibold text-tlh-dark" style="font-size:1rem;">You are on the list.</p>
+                <p class="text-gray-500" style="font-size:0.875rem;margin-top:6px;">We will be in touch. Usually same day.</p>
               </div>
             </div>
           </div>
@@ -398,44 +481,44 @@
       </div>
     </section>
 
-    <!-- ─── CTA ───────────────────────────────────────────────────────────── -->
-    <section class="py-20 bg-tlh-dark text-white text-center">
+    <!-- CTA -->
+    <section class="bg-tlh-dark text-white text-center" style="padding-top:80px;padding-bottom:80px;">
       <div class="max-w-2xl mx-auto px-6">
-        <p class="text-sm font-semibold tracking-widest uppercase text-tlh-teal mb-4">True Legacy Homes</p>
-        <h2 class="hero-text text-3xl md:text-4xl font-bold mb-4" style="font-family:'Source Serif Pro',Georgia,serif;">Have a seller who needs a quiet exit?</h2>
-        <p class="text-white/70 text-lg mb-8 leading-relaxed">All-cash, no contingencies, offer in 24–48 hours. Estate contents handled. We make it easy for agents who bring us the right situations.</p>
-        <a href="/#contact" class="inline-block bg-tlh-teal text-white px-10 py-4 rounded-[5px] font-semibold text-base hover:bg-teal-600 transition">Send Us a Property</a>
+        <p class="text-tlh-teal font-semibold uppercase tracking-widest" style="font-size:0.75rem;margin-bottom:16px;">True Legacy Homes</p>
+        <h2 class="hero-text" style="font-family:'Source Serif Pro',Georgia,serif;font-size:clamp(1.75rem,3vw,2.5rem);font-weight:700;margin-bottom:16px;">Have a seller who needs a quiet exit?</h2>
+        <p class="text-white/70" style="font-size:1.1rem;line-height:1.7;margin-bottom:36px;">All-cash, no contingencies, offer in 24 to 48 hours. Estate contents handled. We make it straightforward for agents who bring us the right situations.</p>
+        <a href="/#contact" class="btn-primary">Send Us a Property</a>
       </div>
     </section>
 
   </main>
 
-  <!-- ─── FOOTER ────────────────────────────────────────────────────────── -->
-  <footer class="bg-white border-t border-gray-100 py-10">
+  <!-- FOOTER -->
+  <footer class="bg-white border-t border-gray-100" style="padding-top:40px;padding-bottom:40px;">
     <div class="max-w-6xl mx-auto px-4">
-      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
-        <div class="flex items-center gap-3">
-          <img src="/images/leafrealtor.png" alt="True Legacy Homes" class="h-7 w-auto">
-          <span class="text-sm font-semibold text-tlh-dark" style="font-family:'Source Serif Pro',Georgia,serif;">True Legacy Homes — Realtor Partners</span>
+      <div class="flex flex-col md:flex-row items-center justify-between" style="gap:24px;">
+        <div style="display:flex;align-items:center;gap:12px;">
+          <img src="/images/leafrealtor.png" alt="True Legacy Homes" style="height:28px;width:auto;">
+          <span class="font-semibold text-tlh-dark" style="font-size:0.875rem;font-family:'Source Serif Pro',Georgia,serif;">True Legacy Homes — Realtor Partners</span>
         </div>
-        <nav class="flex gap-6 text-sm text-gray-500">
-          <a href="/properties/" class="hover:text-tlh-teal transition">Properties</a>
-          <a href="/#buy-box" class="hover:text-tlh-teal transition">Buy Box</a>
-          <a href="/#contact" class="hover:text-tlh-teal transition">Contact</a>
-          <a href="https://www.truelegacyhomes.com" class="hover:text-tlh-teal transition">Main Site ↗</a>
+        <nav style="display:flex;gap:24px;">
+          <a href="/properties/" class="text-gray-500 hover:text-tlh-teal transition" style="font-size:0.875rem;">Properties</a>
+          <a href="/#buy-box" class="text-gray-500 hover:text-tlh-teal transition" style="font-size:0.875rem;">Buy Box</a>
+          <a href="/#contact" class="text-gray-500 hover:text-tlh-teal transition" style="font-size:0.875rem;">Contact</a>
+          <a href="https://www.truelegacyhomes.com" class="text-gray-500 hover:text-tlh-teal transition" style="font-size:0.875rem;">Main Site</a>
         </nav>
-        <p class="text-sm text-gray-400">© 2026 True Legacy Homes. All rights reserved.</p>
+        <p class="text-gray-400" style="font-size:0.875rem;">&#169; 2026 True Legacy Homes. All rights reserved.</p>
       </div>
     </div>
   </footer>
 
-  <!-- ─── LIGHTBOX ──────────────────────────────────────────────────────── -->
+  <!-- LIGHTBOX -->
   <div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
     <div class="lightbox-content">
-      <button class="lightbox-close" id="lb-close" aria-label="Close">×</button>
-      <button class="lightbox-prev" id="lb-prev" aria-label="Previous">‹</button>
+      <button class="lightbox-close" id="lb-close" aria-label="Close">&times;</button>
+      <button class="lightbox-prev" id="lb-prev" aria-label="Previous">&#8249;</button>
       <img id="lb-img" src="" alt="">
-      <button class="lightbox-next" id="lb-next" aria-label="Next">›</button>
+      <button class="lightbox-next" id="lb-next" aria-label="Next">&#8250;</button>
       <div class="lightbox-caption" id="lb-caption"></div>
     </div>
   </div>
@@ -460,7 +543,7 @@
       document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') prev(); if(e.key==='ArrowRight') next(); });
     })();
 
-    // Contact form — wire to Supabase
+    // Contact form
     (function(){
       var form = document.getElementById('contact-form');
       var btn = document.getElementById('submit-btn');
@@ -493,7 +576,7 @@
         }).then(function(r){
           if(r.ok || r.status === 201){
             form.style.display = 'none';
-            success.classList.remove('hidden');
+            success.style.display = 'block';
           } else {
             btn.disabled = false;
             btn.textContent = 'Request Partner Access';
