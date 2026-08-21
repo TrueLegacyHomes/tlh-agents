@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2206 Francisco Dr — Newport Beach | True Legacy Homes</title>
+  <meta name="description" content="Under construction in Newport Beach. Warm organic-modern renovation with oak cabinetry, zellige tile, and Japandi-inspired primary suite. Partner access available before it hits the market.">
+  <meta property="og:title" content="2206 Francisco Dr — Newport Beach | Under Construction">
+  <meta property="og:description" content="Exclusive pre-market access. Full renovation underway — oak, brass, zellige, wood-plank ceilings. Newport Beach, CA.">
+  <meta property="og:image" content="https://agents.truelegacyhomes.com/renovations/2206-francisco-dr/images/exterior.webp">
+  <link rel="icon" type="image/png" href="https://www.truelegacyhomes.com/images/tlhICON.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/tailwind.min.css">
+  <link rel="preload" as="image" href="/renovations/2206-francisco-dr/images/exterior.webp">
+  <style>
+    html { scroll-behavior: smooth; }
+    [id] { scroll-margin-top: 80px; }
+    body { font-family: 'Inter', sans-serif; }
+    h1, h2, h3, h4 { font-family: 'Source Serif Pro', Georgia, serif; color: #132b42; }
+    .hero-text { color: #fff !important; }
+    .nav-link { transition: color 0.15s; }
+    .nav-link:hover { color: #158c8b; }
+    #mobile-menu { display: none; }
+    #mobile-menu.open { display: block; }
+
+    /* Hero image */
+    .hero-img-wrap {
+      position: relative;
+      width: 100%;
+      height: 520px;
+      overflow: hidden;
+    }
+    @media (max-width: 768px) { .hero-img-wrap { height: 280px; } }
+    .hero-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+    .hero-img-wrap .overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(19,43,66,0.55) 0%, rgba(19,43,66,0.1) 60%, transparent 100%);
+    }
+
+    /* Gallery */
+    .gallery-item { cursor: pointer; }
+    .gallery-item img { transition: transform 0.35s ease; }
+    .gallery-item:hover img { transform: scale(1.04); }
+
+    /* Lightbox */
+    .lightbox { display: none; position: fixed; z-index: 9999; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.93); align-items: center; justify-content: center; }
+    .lightbox.active { display: flex; }
+    .lightbox-content { position: relative; max-width: 92%; max-height: 92vh; display: flex; align-items: center; justify-content: center; }
+    .lightbox img { max-width: 100%; max-height: 90vh; object-fit: contain; border-radius: 4px; }
+    .lightbox-close, .lightbox-prev, .lightbox-next { position: absolute; background: rgba(255,255,255,0.1); color: white; border: none; cursor: pointer; padding: 1rem 1.25rem; font-size: 1.75rem; transition: background 0.2s; z-index: 10000; line-height: 1; }
+    .lightbox-close:hover, .lightbox-prev:hover, .lightbox-next:hover { background: rgba(255,255,255,0.22); }
+    .lightbox-close { top: 20px; right: 20px; font-size: 2rem; }
+    .lightbox-prev { left: 16px; top: 50%; transform: translateY(-50%); }
+    .lightbox-next { right: 16px; top: 50%; transform: translateY(-50%); }
+    .lightbox-caption { position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); background: rgba(0,0,0,0.6); color: white; padding: 0.4rem 1rem; border-radius: 9999px; font-size: 0.8rem; letter-spacing: 0.05em; white-space: nowrap; }
+
+    /* Badge */
+    .badge-construction {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: #d97706; color: #fff;
+      font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+      padding: 0.3rem 0.75rem; border-radius: 3px;
+    }
+    .badge-construction::before {
+      content: '';
+      display: block; width: 7px; height: 7px;
+      background: #fff; border-radius: 50%;
+      animation: pulse-dot 1.8s ease-in-out infinite;
+    }
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.7); }
+    }
+
+    /* Timeline */
+    .timeline-step { display: flex; gap: 16px; align-items: flex-start; }
+    .timeline-dot { flex-shrink: 0; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 700; }
+    .timeline-line { position: relative; }
+    .timeline-line::before { content:''; position: absolute; left: 15px; top: 32px; bottom: -16px; width: 2px; background: #e5e7eb; }
+  </style>
+</head>
+<body class="bg-white text-gray-800 text-lg leading-loose antialiased">
+
+  <div id="site-nav"></div>
+  <script src="/js/nav.js"></script>
+
+  <main>
+
+    <!-- ─── HERO ─────────────────────────────────────────────────────────── -->
+    <section class="bg-tlh-dark text-white pt-14 md:pt-20 pb-0">
+      <div class="max-w-6xl mx-auto px-4 pb-10">
+        <a href="/#properties" class="inline-flex items-center gap-1 text-sm text-white/50 hover:text-white transition mb-6">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+          Back to Properties
+        </a>
+        <div class="flex flex-wrap items-center gap-3 mb-4">
+          <span class="badge-construction">Under Construction</span>
+          <span class="text-white/40 text-sm">Newport Beach · Pre-Market</span>
+        </div>
+        <h1 class="hero-text text-4xl md:text-5xl font-bold mb-2" style="font-family:'Source Serif Pro',Georgia,serif;">2206 Francisco Dr</h1>
+        <p class="text-white/70 text-xl mb-6">Newport Beach, CA</p>
+        <p class="text-white/60 text-base max-w-2xl leading-relaxed">
+          A full gut renovation underway in one of Newport Beach's most sought-after neighborhoods. Partners get exclusive pre-market access — see the design, meet the team, bring your buyers before it lists.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-4">
+          <a href="#contact" class="bg-tlh-teal text-white px-8 py-3.5 rounded-[5px] font-semibold text-base hover:bg-teal-600 transition">Request Partner Access</a>
+          <a href="#gallery" class="border border-white/25 text-white px-8 py-3.5 rounded-[5px] font-semibold text-base hover:bg-white/10 transition">See the Renderings</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── EXTERIOR PHOTO ────────────────────────────────────────────────── -->
+    <div class="hero-img-wrap">
+      <img src="/renovations/2206-francisco-dr/images/exterior.webp" alt="2206 Francisco Dr Newport Beach exterior rendering" fetchpriority="high">
+      <div class="overlay"></div>
+    </div>
+
+    <!-- ─── DESIGN HIGHLIGHTS ─────────────────────────────────────────────── -->
+    <section class="py-14 md:py-20 bg-white">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-12 md:gap-20 items-start">
+
+          <div>
+            <p class="text-sm font-semibold tracking-widest uppercase text-tlh-teal mb-3">The Renovation</p>
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Warm modern. Built for Newport.</h2>
+            <p class="text-gray-600 text-base leading-relaxed mb-5">
+              This is a complete gut renovation — every room touched. The design language is warm organic-modern: pale oak cabinetry, brass hardware, zellige tile, and wood-plank ceilings that bring texture and warmth without going precious about it.
+            </p>
+            <p class="text-gray-600 text-base leading-relaxed mb-5">
+              The primary suite is the standout. Fluted oak paneling, custom built-ins, and a spa-caliber bathroom with two separate vanity areas and a walk-in closet that buyers will remember. The kitchen features a custom arched niche with mauve zellige tile backsplash — the kind of detail that photographs well and holds its value.
+            </p>
+            <p class="text-gray-600 text-base leading-relaxed">
+              Built for the buyer who wants something finished, distinctive, and move-in ready — without the two years of contractor headaches.
+            </p>
+          </div>
+
+          <div class="space-y-6">
+            <p class="text-sm font-semibold tracking-widest uppercase text-tlh-teal mb-5">What's Inside</p>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-[5px] flex items-center justify-center flex-shrink-0" style="background-color:#e6f4f4;">
+                <svg class="w-5 h-5 text-tlh-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+              </div>
+              <div>
+                <div class="font-semibold text-tlh-dark text-base">Full Gut Renovation</div>
+                <div class="text-sm text-gray-500 leading-snug">Kitchen, primary suite, all bathrooms, living areas, foyer — fully rebuilt.</div>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-[5px] flex items-center justify-center flex-shrink-0" style="background-color:#e6f4f4;">
+                <svg class="w-5 h-5 text-tlh-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+              </div>
+              <div>
+                <div class="font-semibold text-tlh-dark text-base">Designer Kitchen</div>
+                <div class="text-sm text-gray-500 leading-snug">Pale oak cabinetry, brass hardware, marble countertops, arched zellige niche.</div>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-[5px] flex items-center justify-center flex-shrink-0" style="background-color:#e6f4f4;">
+                <svg class="w-5 h-5 text-tlh-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+              </div>
+              <div>
+                <div class="font-semibold text-tlh-dark text-base">Japandi Primary Suite</div>
+                <div class="text-sm text-gray-500 leading-snug">Fluted oak paneling, dual vanities, walk-in closet. Calm, spa-caliber, and built to impress.</div>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-[5px] flex items-center justify-center flex-shrink-0" style="background-color:#e6f4f4;">
+                <svg class="w-5 h-5 text-tlh-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M4 6h16M4 10h16M4 14h16M4 18h16"/></svg>
+              </div>
+              <div>
+                <div class="font-semibold text-tlh-dark text-base">Open Living with Character</div>
+                <div class="text-sm text-gray-500 leading-snug">Wood-plank ceilings, fireplace, seamless flow from living to dining to kitchen.</div>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-[5px] flex items-center justify-center flex-shrink-0" style="background-color:#e6f4f4;">
+                <svg class="w-5 h-5 text-tlh-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              </div>
+              <div>
+                <div class="font-semibold text-tlh-dark text-base">Move-In Ready Finish</div>
+                <div class="text-sm text-gray-500 leading-snug">No contractor required. Your buyer walks in and it's done.</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── GALLERY ────────────────────────────────────────────────────────── -->
+    <section id="gallery" class="py-14 md:py-20" style="background-color:#f9f4eb;">
+      <div class="max-w-6xl mx-auto px-4">
+        <p class="text-sm font-semibold tracking-widest uppercase text-tlh-teal mb-3">Design Renderings</p>
+        <h2 class="text-3xl font-bold mb-2">See every room.</h2>
+        <p class="text-gray-500 text-base mb-10">Architectural renderings — final finishes may vary slightly. Click any image to enlarge.</p>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+
+          <div class="gallery-item col-span-2 relative overflow-hidden rounded-[5px] shadow-sm aspect-[16/9] cursor-pointer"
+               data-src="/renovations/2206-francisco-dr/images/exterior.webp" data-alt="Exterior">
+            <img src="/renovations/2206-francisco-dr/images/exterior.webp" alt="Exterior" class="w-full h-full object-cover" loading="eager">
+            <span class="absolute bottom-3 left-3 bg-black/50 text-white text-xs font-semibold px-2 py-1 rounded-sm">Exterior</span>
+          </div>
+
+          <div class="gallery-item relative overflow-hidden rounded-[5px] shadow-sm aspect-[4/3] cursor-pointer"
+               data-src="/renovations/2206-francisco-dr/images/kitchen-1.webp" data-alt="Kitchen">
+            <img src="/renovations/2206-francisco-dr/images/kitchen-1.webp" alt="Kitchen" class="w-full h-full object-cover" loading="lazy">
+            <span class="absolute bottom-3 left-3 bg-black/50 text-white text-xs font-semibold px-2 py-1 rounded-sm">Kitchen</span>
+          </div>
+
+          <div class="gallery-item relative overflow-hidden rounded-[5px] shadow-sm aspect-[4/3] cursor-pointer"
+               data-src="/renovations/2206-francisco-dr/images/living-room.webp" data-alt="Living Room">
+            <img src="/renovations/2206-francisco-dr/images/living-room.webp" alt="Living Room" class="w-full h-full object-cover" loading="lazy">
+            <span class="absolute bottom-3 left-3 bg-black/50 text-white text-xs font-semibold px-2 py-1 rounded-sm">Living Room</span>
+          </div>
+
+          <div class="gallery-item relative overflow-hidden rounded-[5px] shadow-sm aspect-[4/3] cursor-pointer"
+               data-src="/renovations/2206-francisco-dr/images/kitchen-2.webp" data-alt="Kitchen Detail">
+            <img src="/renovations/2206-francisco-dr/images/kitchen-2.webp" alt="Kitchen Detail" class="w-full h-full object-cover" loading="lazy">
+            <span class="absolute bottom-3 left-3 bg-black/50 text-white text-xs font-semibold px-2 py-1 rounded-sm">Kitchen Detail</span>
+          </div>
+
+          <div class="gallery-item relative overflow-hidden rounded-[5px] shadow-sm aspect-[4/3] cursor-pointer"
+               data-src="/renovations/2206-francisco-dr/images/family-room.webp" data-alt="Family Room">
+            <img src="/renovations/2206-francisco-dr/images/family-room.webp" alt="Family Room" class="w-full h-full object-cover" loading="lazy">
+            <span class="absolute bottom-3 left-3 bg-black/50 text-white text-xs font-semibold px-2 py-1 rounded-sm">Family Room</span>
+          </div>
+
+          <div class="gallery-item relative overflow-hidden rounded-[5px] shadow-sm aspect-[4/3] cursor-pointer"
+               data-src="/renovations/2206-francisco-dr/images/dining.webp" data-alt="Dining">
+            <img src="/renovations/2206-francisco-dr/images/dining.webp" alt="Dining" class="w-full h-full object-cover" loading="lazy">
+            <span class="absolute bottom-3 left-3 bg-black/50 text-white text-xs font-semibold px-2 py-1 rounded-sm">Dining</span>
+          </div>
+
+          <div class="gallery-item relative overflow-hidden rounded-[5px] shadow-sm aspect-[4/3] cursor-pointer"
+               data-src="/renovations/2206-francisco-dr/images/fireplace.webp" data-alt="Fireplace">
+            <img src="/renovations/2206-francisco-dr/images/fireplace.webp" alt="Fireplace" class="w-full h-full object-cover" loading="lazy">
+            <span class="absolute bottom-3 left-3 bg-black/50 text-white text-xs font-semibold px-2 py-1 rounded-sm">Fireplace</span>
+          </div>
+
+          <div class="gallery-item relative overflow-hidden rounded-[5px] shadow-sm aspect-[4/3] cursor-pointer"
+               data-src="/renovations/2206-francisco-dr/images/foyer.webp" data-alt="Foyer">
+            <img src="/renovations/2206-francisco-dr/images/foyer.webp" alt="Foyer" class="w-full h-full object-cover" loading="lazy">
+            <span class="absolute bottom-3 left-3 bg-black/50 text-white text-xs font-semibold px-2 py-1 rounded-sm">Foyer</span>
+          </div>
+
+          <div class="gallery-item relative overflow-hidden rounded-[5px] shadow-sm aspect-[4/3] cursor-pointer"
+               data-src="/renovations/2206-francisco-dr/images/primary-bedroom.webp" data-alt="Primary Bedroom">
+            <img src="/renovations/2206-francisco-dr/images/primary-bedroom.webp" alt="Primary Bedroom" class="w-full h-full object-cover" loading="lazy">
+            <span class="absolute bottom-3 left-3 bg-black/50 text-white text-xs font-semibold px-2 py-1 rounded-sm">Primary Bedroom</span>
+          </div>
+
+          <div class="gallery-item relative overflow-hidden rounded-[5px] shadow-sm aspect-[4/3] cursor-pointer"
+               data-src="/renovations/2206-francisco-dr/images/primary-bath-1.webp" data-alt="Primary Bath">
+            <img src="/renovations/2206-francisco-dr/images/primary-bath-1.webp" alt="Primary Bath" class="w-full h-full object-cover" loading="lazy">
+            <span class="absolute bottom-3 left-3 bg-black/50 text-white text-xs font-semibold px-2 py-1 rounded-sm">Primary Bath</span>
+          </div>
+
+          <div class="gallery-item relative overflow-hidden rounded-[5px] shadow-sm aspect-[4/3] cursor-pointer"
+               data-src="/renovations/2206-francisco-dr/images/primary-bath-2.webp" data-alt="Primary Bath 2">
+            <img src="/renovations/2206-francisco-dr/images/primary-bath-2.webp" alt="Primary Bath 2" class="w-full h-full object-cover" loading="lazy">
+            <span class="absolute bottom-3 left-3 bg-black/50 text-white text-xs font-semibold px-2 py-1 rounded-sm">Primary Bath 2</span>
+          </div>
+
+          <div class="gallery-item relative overflow-hidden rounded-[5px] shadow-sm aspect-[4/3] cursor-pointer"
+               data-src="/renovations/2206-francisco-dr/images/walk-in-closet.webp" data-alt="Walk-In Closet">
+            <img src="/renovations/2206-francisco-dr/images/walk-in-closet.webp" alt="Walk-In Closet" class="w-full h-full object-cover" loading="lazy">
+            <span class="absolute bottom-3 left-3 bg-black/50 text-white text-xs font-semibold px-2 py-1 rounded-sm">Walk-In Closet</span>
+          </div>
+
+          <div class="gallery-item relative overflow-hidden rounded-[5px] shadow-sm aspect-[4/3] cursor-pointer"
+               data-src="/renovations/2206-francisco-dr/images/hall-bath-1.webp" data-alt="Hall Bathroom">
+            <img src="/renovations/2206-francisco-dr/images/hall-bath-1.webp" alt="Hall Bathroom" class="w-full h-full object-cover" loading="lazy">
+            <span class="absolute bottom-3 left-3 bg-black/50 text-white text-xs font-semibold px-2 py-1 rounded-sm">Hall Bath</span>
+          </div>
+
+          <div class="gallery-item relative overflow-hidden rounded-[5px] shadow-sm aspect-[4/3] cursor-pointer"
+               data-src="/renovations/2206-francisco-dr/images/hall-bath-2.webp" data-alt="Hall Bathroom 2">
+            <img src="/renovations/2206-francisco-dr/images/hall-bath-2.webp" alt="Hall Bathroom 2" class="w-full h-full object-cover" loading="lazy">
+            <span class="absolute bottom-3 left-3 bg-black/50 text-white text-xs font-semibold px-2 py-1 rounded-sm">Hall Bath 2</span>
+          </div>
+
+          <div class="gallery-item relative overflow-hidden rounded-[5px] shadow-sm aspect-[4/3] cursor-pointer"
+               data-src="/renovations/2206-francisco-dr/images/powder-room.webp" data-alt="Powder Room">
+            <img src="/renovations/2206-francisco-dr/images/powder-room.webp" alt="Powder Room" class="w-full h-full object-cover" loading="lazy">
+            <span class="absolute bottom-3 left-3 bg-black/50 text-white text-xs font-semibold px-2 py-1 rounded-sm">Powder Room</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── PARTNER ACCESS + CONTACT ──────────────────────────────────────── -->
+    <section id="contact" class="py-14 md:py-20 bg-white">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-12 md:gap-20 items-start">
+
+          <!-- Left: Why get early access -->
+          <div>
+            <p class="text-sm font-semibold tracking-widest uppercase text-tlh-teal mb-3">Partner Access</p>
+            <h2 class="text-3xl font-bold mb-5">Bring your buyer before it lists.</h2>
+            <p class="text-gray-600 text-base leading-relaxed mb-8">
+              This property will go on MLS when it's done. But partners get the call first. If your buyer is looking in Newport Beach and wants something finished and distinctive — this is the conversation to have now.
+            </p>
+
+            <!-- What partners get -->
+            <div class="space-y-5">
+              <div class="flex items-start gap-4">
+                <div class="w-8 h-8 rounded-full bg-tlh-teal/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <svg class="w-4 h-4 text-tlh-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <div>
+                  <div class="font-semibold text-tlh-dark text-base">Pre-market showing</div>
+                  <div class="text-sm text-gray-500">Walk through with your buyer before it hits Zillow. No competition.</div>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="w-8 h-8 rounded-full bg-tlh-teal/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <svg class="w-4 h-4 text-tlh-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <div>
+                  <div class="font-semibold text-tlh-dark text-base">Buyer agent commission</div>
+                  <div class="text-sm text-gray-500">We work with buyer's agents. You're protected.</div>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="w-8 h-8 rounded-full bg-tlh-teal/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <svg class="w-4 h-4 text-tlh-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <div>
+                  <div class="font-semibold text-tlh-dark text-base">Direct line to the team</div>
+                  <div class="text-sm text-gray-500">Questions answered same day. No runaround.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-10 pt-8 border-t border-gray-100">
+              <p class="text-sm text-gray-500 mb-1">Prefer to call?</p>
+              <a href="tel:6194501702" class="text-xl font-bold text-tlh-dark hover:text-tlh-teal transition">(619) 450-1702</a>
+            </div>
+          </div>
+
+          <!-- Right: Contact form -->
+          <div>
+            <div class="bg-white rounded-[5px] border border-gray-200 p-8 shadow-sm">
+              <h3 class="text-xl font-bold mb-1">Get on the list.</h3>
+              <p class="text-sm text-gray-500 mb-6">We'll reach out when showings are available and keep you updated on timing.</p>
+
+              <form id="contact-form">
+                <input type="hidden" name="property" value="2206 Francisco Dr, Newport Beach, CA">
+                <input type="hidden" name="_subject" value="Partner Access Request — 2206 Francisco Dr">
+                <div class="flex flex-col gap-4">
+                  <input type="text" name="name" placeholder="Your Name" required
+                    class="w-full border border-gray-200 rounded-[5px] px-4 py-3 text-sm focus:outline-none focus:border-tlh-teal transition">
+                  <input type="tel" name="phone" placeholder="Phone Number" required
+                    class="w-full border border-gray-200 rounded-[5px] px-4 py-3 text-sm focus:outline-none focus:border-tlh-teal transition">
+                  <input type="email" name="email" placeholder="Email Address" required
+                    class="w-full border border-gray-200 rounded-[5px] px-4 py-3 text-sm focus:outline-none focus:border-tlh-teal transition">
+                  <input type="text" name="brokerage" placeholder="Brokerage"
+                    class="w-full border border-gray-200 rounded-[5px] px-4 py-3 text-sm focus:outline-none focus:border-tlh-teal transition">
+                  <select name="interest" class="w-full border border-gray-200 rounded-[5px] px-4 py-3 text-sm text-gray-600 focus:outline-none focus:border-tlh-teal transition">
+                    <option value="">I'm reaching out because...</option>
+                    <option value="buyer">I have a buyer for this property</option>
+                    <option value="showing">I'd like to schedule a showing</option>
+                    <option value="updates">Keep me updated on timing</option>
+                    <option value="info">Just want more info</option>
+                  </select>
+                  <textarea name="message" placeholder="Anything else? (optional)" rows="3"
+                    class="w-full border border-gray-200 rounded-[5px] px-4 py-3 text-sm focus:outline-none focus:border-tlh-teal transition resize-none"></textarea>
+                  <button type="submit" id="submit-btn"
+                    class="w-full bg-tlh-teal text-white py-3.5 rounded-[5px] text-sm font-semibold hover:bg-teal-600 transition">
+                    Request Partner Access
+                  </button>
+                </div>
+              </form>
+              <div id="form-success" class="hidden text-center py-6">
+                <div class="text-2xl mb-2">✅</div>
+                <p class="font-semibold text-tlh-dark">You're on the list.</p>
+                <p class="text-sm text-gray-500 mt-1">We'll be in touch — usually same day.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── CTA ───────────────────────────────────────────────────────────── -->
+    <section class="py-20 bg-tlh-dark text-white text-center">
+      <div class="max-w-2xl mx-auto px-6">
+        <p class="text-sm font-semibold tracking-widest uppercase text-tlh-teal mb-4">True Legacy Homes</p>
+        <h2 class="hero-text text-3xl md:text-4xl font-bold mb-4" style="font-family:'Source Serif Pro',Georgia,serif;">Have a seller who needs a quiet exit?</h2>
+        <p class="text-white/70 text-lg mb-8 leading-relaxed">All-cash, no contingencies, offer in 24–48 hours. Estate contents handled. We make it easy for agents who bring us the right situations.</p>
+        <a href="/#contact" class="inline-block bg-tlh-teal text-white px-10 py-4 rounded-[5px] font-semibold text-base hover:bg-teal-600 transition">Send Us a Property</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ─── FOOTER ────────────────────────────────────────────────────────── -->
+  <footer class="bg-white border-t border-gray-100 py-10">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="flex items-center gap-3">
+          <img src="/images/leafrealtor.png" alt="True Legacy Homes" class="h-7 w-auto">
+          <span class="text-sm font-semibold text-tlh-dark" style="font-family:'Source Serif Pro',Georgia,serif;">True Legacy Homes — Realtor Partners</span>
+        </div>
+        <nav class="flex gap-6 text-sm text-gray-500">
+          <a href="/properties/" class="hover:text-tlh-teal transition">Properties</a>
+          <a href="/#buy-box" class="hover:text-tlh-teal transition">Buy Box</a>
+          <a href="/#contact" class="hover:text-tlh-teal transition">Contact</a>
+          <a href="https://www.truelegacyhomes.com" class="hover:text-tlh-teal transition">Main Site ↗</a>
+        </nav>
+        <p class="text-sm text-gray-400">© 2026 True Legacy Homes. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ─── LIGHTBOX ──────────────────────────────────────────────────────── -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lb-close" aria-label="Close">×</button>
+      <button class="lightbox-prev" id="lb-prev" aria-label="Previous">‹</button>
+      <img id="lb-img" src="" alt="">
+      <button class="lightbox-next" id="lb-next" aria-label="Next">›</button>
+      <div class="lightbox-caption" id="lb-caption"></div>
+    </div>
+  </div>
+
+  <script>
+    // Lightbox
+    (function(){
+      var items = Array.from(document.querySelectorAll('.gallery-item'));
+      var lb = document.getElementById('lightbox');
+      var lbImg = document.getElementById('lb-img');
+      var lbCap = document.getElementById('lb-caption');
+      var cur = 0;
+      function open(i){ cur=i; var it=items[i]; lbImg.src=it.dataset.src; lbImg.alt=it.dataset.alt||''; lbCap.textContent=(i+1)+' / '+items.length; lb.classList.add('active'); document.body.style.overflow='hidden'; }
+      function close(){ lb.classList.remove('active'); document.body.style.overflow=''; }
+      function prev(){ open((cur-1+items.length)%items.length); }
+      function next(){ open((cur+1)%items.length); }
+      items.forEach(function(el,i){ el.addEventListener('click',function(){ open(i); }); });
+      document.getElementById('lb-close').addEventListener('click',close);
+      document.getElementById('lb-prev').addEventListener('click',prev);
+      document.getElementById('lb-next').addEventListener('click',next);
+      lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
+      document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') prev(); if(e.key==='ArrowRight') next(); });
+    })();
+
+    // Contact form — wire to Supabase
+    (function(){
+      var form = document.getElementById('contact-form');
+      var btn = document.getElementById('submit-btn');
+      var success = document.getElementById('form-success');
+      if(!form) return;
+      form.addEventListener('submit', function(e){
+        e.preventDefault();
+        btn.disabled = true;
+        btn.textContent = 'Sending...';
+        var data = {
+          form_type: 'francisco-partner-access',
+          name: form.name.value,
+          phone: form.phone.value,
+          email: form.email.value,
+          brokerage: form.brokerage.value,
+          interest: form.interest.value,
+          message: form.message.value,
+          property: '2206 Francisco Dr, Newport Beach, CA',
+          submitted_at: new Date().toISOString()
+        };
+        fetch('https://inqbqchjxzvdvcslvskb.supabase.co/rest/v1/form_submissions', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'apikey': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlucWJxY2hqeHp2ZHZjc2x2c2tiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzMwNzA4NzEsImV4cCI6MjA4ODY0Njg3MX0.cqOtZQQOdSI9hwVxI8RSAMsgxI3hJsZ8ttzehJRKVgk',
+            'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlucWJxY2hqeHp2ZHZjc2x2c2tiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzMwNzA4NzEsImV4cCI6MjA4ODY0Njg3MX0.cqOtZQQOdSI9hwVxI8RSAMsgxI3hJsZ8ttzehJRKVgk',
+            'Prefer': 'return=minimal'
+          },
+          body: JSON.stringify(data)
+        }).then(function(r){
+          if(r.ok || r.status === 201){
+            form.style.display = 'none';
+            success.classList.remove('hidden');
+          } else {
+            btn.disabled = false;
+            btn.textContent = 'Request Partner Access';
+            alert('Something went wrong. Please call us at (619) 450-1702.');
+          }
+        }).catch(function(){
+          btn.disabled = false;
+          btn.textContent = 'Request Partner Access';
+          alert('Something went wrong. Please call us at (619) 450-1702.');
+        });
+      });
+    })();
+  </script>
+
+</body>
+</html>
