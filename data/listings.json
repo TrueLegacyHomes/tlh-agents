@@ -1,57 +1,18 @@
 {
-  "updated": "2026-08-21",
+  "updated": "2026-08-28",
   "listings": [
     {
-      "address": "870 Darrell St",
-      "city": "Costa Mesa",
-      "zipcode": "92627",
-      "price": "$1,249,000",
-      "beds": "3",
-      "baths": "2",
-      "sqft": "1017",
-      "short_desc": "This single-story Costa Mesa home offers an easy, open layout, with new wide-plank oak-toned flooring running throughout the main living areas and bedrooms.",
-      "hero_img": "https://media.crmls.org/mediaz/b554656a-13a2-48fd-95f9-e2cccc50d23f.jpg",
-      "slug": "870-darrell-st-costa-mesa",
-      "detail_url": "https://eversandiego.com/properties/Listing_521191028+870+Darrell+St+Costa+Mesa+CA+92627-crmls521191028.html"
-    },
-    {
-      "address": "198 Siesta St",
-      "city": "Anaheim",
-      "zipcode": "92801",
-      "price": "$1,049,000",
-      "beds": "3",
-      "baths": "2",
-      "sqft": "1438",
-      "short_desc": "Tucked in the southwest pocket of Anaheim between Disneyland and Knott's Berry Farm this single-story ranch pairs a top-to-bottom interior transformation with a",
-      "hero_img": "https://media.crmls.org/mediaz/37e8d88e-a618-4605-9777-0ede7151358c.jpg",
-      "slug": "198-siesta-st-anaheim",
-      "detail_url": "https://eversandiego.com/properties/Listing_503840580+198+Siesta+St+Anaheim+CA+92801-crmls503840580.html"
-    },
-    {
-      "address": "743 Sparks St",
-      "city": "Burbank",
-      "zipcode": "91506",
-      "price": "$1,445,000",
-      "beds": "3",
-      "baths": "2",
-      "sqft": "1658",
-      "short_desc": "Set on a quiet street in Burbank, this thoughtfully remodeled single-story residence delivers 3 bedrooms, 2 bathrooms and chic design choices.",
-      "hero_img": "https://media.crmls.org/mediaz/4532cccd-a0a3-437a-9291-893c7a9da941.jpg",
-      "slug": "743-sparks-st-burbank",
-      "detail_url": "https://eversandiego.com/properties/Listing_459998374+743+Sparks+St+Burbank+CA+91506-crmls459998374.html"
-    },
-    {
-      "address": "12441 La Bella Dr",
-      "city": "North Tustin",
-      "zipcode": "92705",
-      "price": "$2,395,000",
-      "beds": "4",
+      "address": "10659 Rookwood Dr",
+      "city": "San Diego",
+      "zipcode": "92131",
+      "price": "$1,849,000",
+      "beds": "5",
       "baths": "3",
-      "sqft": "2588",
-      "short_desc": "This 4-bedroom, 2.",
-      "hero_img": "https://media.crmls.org/mediaz/fdfc948b-8dbc-4154-bd11-8fc0b6a9563a.jpg",
-      "slug": "12441-la-bella-dr-north-tustin",
-      "detail_url": "https://eversandiego.com/properties/Listing_448279352+12441+La+Bella+Dr+North+Tustin+CA+92705-crmls448279352.html"
+      "sqft": "2802",
+      "short_desc": "Tucked along a quiet street in Scripps Ranch, this fully remodeled two-story residence delivers something increasingly rare: a main-floor primary suite paired w",
+      "hero_img": "https://media.crmls.org/mediaz/047474af-fa4a-4602-829e-1130bc0d9f87.jpg",
+      "slug": "10659-rookwood-dr-san-diego",
+      "detail_url": "https://eversandiego.com/properties/Listing_447064119+10659+Rookwood+Dr+San+Diego+CA+92131-crmls447064119.html"
     },
     {
       "address": "602 Fresca St",
