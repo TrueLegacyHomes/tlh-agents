@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-11",
+  "updated": "2026-09-18",
   "listings": [
     {
       "address": "602 Fresca St",
@@ -18,7 +18,7 @@
       "address": "22628 Juniper Ave",
       "city": "Torrance",
       "zipcode": "90505",
-      "price": "$1,999,000",
+      "price": "$1,950,000",
       "beds": "4",
       "baths": "3",
       "sqft": "2337",
@@ -31,7 +31,7 @@
       "address": "198 Siesta St",
       "city": "Anaheim",
       "zipcode": "92801",
-      "price": "$1,049,000",
+      "price": "$1,025,000",
       "beds": "3",
       "baths": "2",
       "sqft": "1438",
@@ -44,7 +44,7 @@
       "address": "743 Sparks St",
       "city": "Burbank",
       "zipcode": "91506",
-      "price": "$1,415,000",
+      "price": "$1,375,000",
       "beds": "3",
       "baths": "2",
       "sqft": "1658",
@@ -57,7 +57,7 @@
       "address": "12441 La Bella Dr",
       "city": "North Tustin",
       "zipcode": "92705",
-      "price": "$2,349,000",
+      "price": "$2,295,000",
       "beds": "4",
       "baths": "3",
       "sqft": "2588",
