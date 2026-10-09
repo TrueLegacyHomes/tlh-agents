@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-02",
+  "updated": "2026-10-09",
   "listings": [
     {
       "address": "741 Santa Olivia",
@@ -13,19 +13,6 @@
       "hero_img": "https://media.crmls.org/mediaz/513c7488-f84a-4297-af6b-288b0c28b45b.jpg",
       "slug": "741-santa-olivia-solana-beach",
       "detail_url": "https://eversandiego.com/properties/Listing_668206231+741+Santa+Olivia+Solana+Beach+CA+92075-crmls668206231.html"
-    },
-    {
-      "address": "4144 Le Bourget Ave",
-      "city": "Culver City",
-      "zipcode": "90232",
-      "price": "$2,395,000",
-      "beds": "3",
-      "baths": "2",
-      "sqft": "1400",
-      "short_desc": "On a palm tree-lined street in Culver City's Carlson Park neighborhood, this extensively renovated 1940s Spanish-style residence presents a red clay tile roof, ",
-      "hero_img": "https://media.crmls.org/mediaz/ec26e43d-d612-4c70-bf05-e5618f1b3019.jpg",
-      "slug": "4144-le-bourget-ave-culver-city",
-      "detail_url": "https://eversandiego.com/properties/Listing_663695868+4144+Le+Bourget+Ave+Culver+City+CA+90232-crmls663695868.html"
     }
   ]
 }
