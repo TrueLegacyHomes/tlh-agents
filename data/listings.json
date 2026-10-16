@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-09",
+  "updated": "2026-10-16",
   "listings": [
     {
       "address": "741 Santa Olivia",
@@ -13,6 +13,19 @@
       "hero_img": "https://media.crmls.org/mediaz/513c7488-f84a-4297-af6b-288b0c28b45b.jpg",
       "slug": "741-santa-olivia-solana-beach",
       "detail_url": "https://eversandiego.com/properties/Listing_668206231+741+Santa+Olivia+Solana+Beach+CA+92075-crmls668206231.html"
+    },
+    {
+      "address": "4470 30Th St B",
+      "city": "San Diego",
+      "zipcode": "92116",
+      "price": "$1,399,000",
+      "beds": "3",
+      "baths": "4",
+      "sqft": "1900",
+      "short_desc": "Built in 2016 within a gated community along North Parks 30th Street corridor, this contemporary townhome at The Dakota offers a peaceful, private refuge in the",
+      "hero_img": "https://media.crmls.org/mediaz/1fdbcf9a-9afe-43db-879a-83a0ab56d073.jpg",
+      "slug": "4470-30th-st-b-san-diego",
+      "detail_url": "https://eversandiego.com/properties/Listing_681468384+4470+30Th+St+B+San+Diego+CA+92116-crmls681468384.html"
     }
   ]
 }
