@@ -436,14 +436,9 @@
       errEl.classList.add('hidden');
 
       try {
-        var res = await fetch('https://inqbqchjxzvdvcslvskb.supabase.co/rest/v1/form_submissions', {
+        var res = await fetch('https://form-intake.tlh-marketing.workers.dev', {
           method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'apikey': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlucWJxY2hqeHp2ZHZjc2x2c2tiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzMwNzA4NzEsImV4cCI6MjA4ODY0Njg3MX0.cqOtZQQOdSI9hwVxI8RSAMsgxI3hJsZ8ttzehJRKVgk',
-            'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlucWJxY2hqeHp2ZHZjc2x2c2tiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzMwNzA4NzEsImV4cCI6MjA4ODY0Njg3MX0.cqOtZQQOdSI9hwVxI8RSAMsgxI3hJsZ8ttzehJRKVgk',
-            'Prefer': 'return=minimal'
-          },
+          headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
             form_type: 'agent-buyer-inquiry',
             name: name,
