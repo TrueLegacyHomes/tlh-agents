@@ -1,19 +1,6 @@
 {
-  "updated": "2026-11-13",
+  "updated": "2026-11-20",
   "listings": [
-    {
-      "address": "741 Santa Olivia",
-      "city": "Solana Beach",
-      "zipcode": "92075",
-      "price": "$3,335,000",
-      "beds": "5",
-      "baths": "4",
-      "sqft": "3053",
-      "short_desc": "Few homes in Santa Fe Hills offer views like this one ocean and lagoon visible from nearly every room, morning to sunset.",
-      "hero_img": "https://media.crmls.org/mediaz/513c7488-f84a-4297-af6b-288b0c28b45b.jpg",
-      "slug": "741-santa-olivia-solana-beach",
-      "detail_url": "https://www.eversandiego.com/properties/Listing_668206231+741+Santa+Olivia+Solana+Beach+CA+92075-crmls668206231.html"
-    },
     {
       "address": "4470 30Th St B",
       "city": "San Diego",
